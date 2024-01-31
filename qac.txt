@@ -7221,21 +7221,106 @@
 {
     "question": "Hi everyone,Feel free to use the Google Calendar created for this course's OHs: here :)",
     "answers": [],
+    "comments": [
+        "Hi! It says I don't have access to the calendar, maybe because I'm Barnard?"
+    ]
+}
+{
+    "question": "Should we just use the given values (1/3 each) for lambda?",
+    "answers": [
+        "Yes."
+    ],
+    "comments": []
+}
+{
+    "question": "Is the optional portion of the homework extra credit? Or is it strictly for fun?",
+    "answers": [
+        "There's no extra credit in this course, so it's just for fun! :)"
+    ],
+    "comments": []
+}
+{
+    "question": "Are we using bigrams or trigrams to calculate the log probability?",
+    "answers": [
+        "Use trigrams."
+    ],
+    "comments": []
+}
+{
+    "question": "Can we compute the total words each time we run this function or will we be docked points for doing this?",
+    "answers": [
+        "Not necessarily; we'll only make deductions if your code takes too long to run when grading. If you want to err on the side of caution, we highly recommend creating a variable to store the total number of words, and reusing that for later computations."
+    ],
+    "comments": []
+}
+{
+    "question": "Hello, I am a medic in the Army National Guard, and I will have to go away for training for a week starting this Friday. I will try very hard to finish the HW as soon as I can and on time, but how could I obtain an extension given the circumstances? I can submit paperwork that showcases my responsibilities.  Thank you",
+    "answers": [
+        "Please email me directly. "
+    ],
+    "comments": []
+}
+{
+    "question": "Hi,Is M total number of unique word tokens or number of word tokens which might be repeated in the corpus?When we sum log probability for each sentence to calculate perplexity, do we include START and END tokens to calculate log probablity of a sentence?Do we include START and STOP tokens in M?ThanksAbhinav",
+    "answers": [
+        "For the log probability, you should include the probability of STOP/END, but not START. Think about the model as predicting one token at a time, given the left context. The last predicted token is STOP. START is never predicted, it just provides the context for the first token. M is the number of word tokens (i.e. including duplicate counts), not types. It should include STOP but not START (since the STOP token is predicted, but the START token is not). "
+    ],
+    "comments": []
+}
+{
+    "question": "For part 6, is the \"perplexity\" function supposed to return perplexity for a sentence or the entire corpus? The comments in the function is different from in the assignment on courseworks.Also for part 6, when we use the log2 probabilities for calculating perplexity, do we need to log the output of the function sentence_logprob again? or is the output already log2 prob?",
+    "answers": [
+        "The perplexity function is supposed to return the complexity of the model on the entire corpus. The sentence log probabilities should already use log2 (see part 5). "
+    ],
+    "comments": []
+}
+{
+    "question": "The starter code (acc = essay_scoring_experiment('train_high.txt', \"train_low.txt\",\"test_high\", \"test_low\") ) does not work for me and it keeps saying No such file or directory: 'train_high.txt' And my python file is in the same directory with them. I am not sure why it says no such file.So I used my exact file path which worked.I wonder if I should submit with my exact file path or change it back, or should I comment out the testing part?",
+    "answers": [
+        "Your working directory is probably different from the directory where the files are located. I recommend just switching it back after you are done testing for your final submission, but it's not a big deal to leave the absolute pathnames. "
+    ],
+    "comments": []
+}
+{
+    "question": "HiIf I understand correctly, total number of words is not including the (START,) and (STOP,) token? Why do we not count those tokens in unigrams? (My guess is the start and stop token are meaningless here.)Best,",
+    "answers": [
+        "This is for the unigram probabilities? START should definitely not be included, because the model would never predict it. I recommend including STOP. You will need the unigram probability of STOP when you compute linear interpolation in part 4. "
+    ],
+    "comments": []
+}
+{
+    "question": "Hi. I am perplexed by a perplexity score \ud83d\ude35\u200d\ud83d\udcab. Specifically, I ran perplexity on the brown_train which gave me 14.6, a low value as expected. However, when running on brown_test I  get 9.07 a low score, but importantly, it's lower than the training perplexity. This seemed odd since I expected the test perplexity to be higher than that of the training data. Can I assume there is a bug in my code, or is it possible for test perplexity be lower than train perplexity? ",
+    "answers": [
+        "The test perplexity should never be lower than the one on the training set. I would double check whether you're using the number of tokens in the training set when computing your test perplexity."
+    ],
+    "comments": []
+}
+{
+    "question": "For HW1 part 3 where we need to compute the total words for unigram, can we edit __init__ directly to add object variables? Or can we only edit the functions specifically for each part?",
+    "answers": [
+        "That's fine. As long as you keep the function signatures and return types the same, you're free to make any other modifications."
+    ],
     "comments": []
 }
 {
     "question": "Does V (the size of the vocab) in the denominator include all the START and END tokens? ",
-    "answers": [],
+    "answers": [
+        "We never count START as part of the vocabulary because it never appears on the left side of any conditional probability calculation we do in training. We count END because we will always see something like (END|word)."
+    ],
     "comments": []
 }
 {
     "question": "For the exams will there be coding? How are they formatted? Sorry I know this is super in advance just curious! ",
-    "answers": [],
+    "answers": [
+        "The exams will consist of short answer and free response questions that are similar to the ungraded exercises. You may have to adjust a couple lines of pseudocode for a specific algorithm, but we will not ask you to directly code anything from scratch."
+    ],
     "comments": []
 }
 {
     "question": "Do we need to regard the punctuations as a \"word\" or we need to remove all of them?Eg. For bigram, \"Hi, Bob.\", do we use [...('Hi', ','), (',', 'Bob')...] or [...('Hi', 'Bob'), ...]",
-    "answers": [],
+    "answers": [
+        "The corpus reader is performing any text normalization for you. You don\u2019t have to worry about tokenization or removing symbols.\u00a0"
+    ],
     "comments": []
 }
 {
@@ -7405,7 +7490,11 @@
         "I was born in Buenos Aires, Argentina and the Spanish spoken in Argentina consists of various unique sayings that can be considered ambiguous linguistic expressions. A phrase that comes to mind is when someone says: \"No tengo un mango\". This phrase has two potential meanings based on the situation it is said in. The phrase, in a literal translation, means \"I don't have a mango\". However, when someone says this outside of a conversation dealing with fruit - they are actually saying: \"I don't have any money\".",
         "Lexical Ambiguity: There is an example in Chinese that demonstrates lexical ambiguity similar to English. The phrase \"\u4ed6\u5df2\u7ecf\u8d70\u4e86\" translates to \"He is already gone,\" but it can also imply \"he is dead\" as a euphemism.While it may not exactly fit the categories discussed in class, homophonic ambiguity \u2014 where two or more words sound the same or very similar but have different meanings \u2014 is also quite common in Chinese. A humorous instance of this was captured during a street interview conducted by China Central Television. The interviewer asked people \"\u4f60\u5e78\u798f\u5417?\" (Are you happy?). One interviewee responded, \"\u6211\u4e0d\u59d3\u798f\uff0c\u6211\u59d3\u66fe\" (My surname isn't Fu; it's Zeng). This confusion arises because in Chinese, \u2018\u5e78\u2019 (xing, meaning lucky) and \u2018\u59d3\u2019 (xing, meaning surname) sound identical but have different meanings.",
         "All electronics engineers working on semi-conductors have faced that saying \"I work on chips\" is almost always misleading :D (People assume chips = eating kind rather than the ones in our phones, laptops etc.)",
-        "In Chinese, \"\u9ebb\u7169\u8aaa\u4e00\u4e0b\u8b1d\u8b1d\" can mean two things when spoken:It can be a request for someone to express gratitude to another person.It can be a request for information or clarification, followed by an expression of gratitude.The phrase \"\u9ebb\u7169\u8aaa\u4e00\u4e0b\" implies asking someone to speak or inform about something, and when followed by \"\u8b1d\u8b1d\" (thank you), it introduces structural ambiguity. This ambiguity arises because it can either be interpreted as asking someone to express gratitude to others or simply thanking someone for providing information."
+        "In Chinese, \"\u9ebb\u7169\u8aaa\u4e00\u4e0b\u8b1d\u8b1d\" can mean two things when spoken:It can be a request for someone to express gratitude to another person.It can be a request for information or clarification, followed by an expression of gratitude.The phrase \"\u9ebb\u7169\u8aaa\u4e00\u4e0b\" implies asking someone to speak or inform about something, and when followed by \"\u8b1d\u8b1d\" (thank you), it introduces structural ambiguity. This ambiguity arises because it can either be interpreted as asking someone to express gratitude to others or simply thanking someone for providing information.",
+        "In Chinese, the phrase \u706b\u661f has multiple meanings. On one hand, it can be used to refer to the planet Mars. On the other hand, it can also refer to fire sparks. Ultimately, this results in lexical ambiguity, where someone could be saying that they want to see Mars for example, which could potentially be interpreted as them saying that they want to see sparks instead.",
+        "Lexical ambiguityIn Korean, word \"\ubc30\" means pear, boat, and stomach. So we need the context to understand what the word means. Structural ambiguityAnd one famous example that is taught for Korean Structural ambiguity is \"\uc544\ubc84\uc9c0\uac00 \ubc29\uc5d0 \ub4e4\uc5b4\uac00\uc2e0\ub2e4\" and \"\uc544\ubc84\uc9c0 \uac00\ubc29\uc5d0 \ub4e4\uc5b4\uac00\uc2e0\ub2e4\". This is ambiguity caused by word spacing. (not sure if this is also a structural ambiguity)So here depending on where the word \"\uac00\" is attached, it can be interpreted in a totally different way. If \"\uac00\" is part of the word \"\uac00\ubc29\", which means a bag, then it means that \"My dad in going into a bag\". And if \"\uac00\" is a postposition for word \"\uc544\ubc84\uc9c0\", which means dad, then it means \"My dad is going into the room\". ",
+        "In Spanish, \"Le compr\u00e9 una camisa a Andrea\" can mean \"I bought a shirt for Andrea\" or \"I bought a shirt from Andrea.\"Another example is \"Mira mi caballo.\" This can mean \"Look at my horse\" or \"My horse looks.\"",
+        "In Urdu, \u062a\u0645\u06c1\u0627\u0631\u0627 \u06c1\u0627\u062a\u06be \u0645\u06cc\u06ba \u06c1\u06d2 can have various meanings. The word '\u06c1\u0627\u062a\u06be' (haath) literally means 'hand' however, the ambiguity arises due to the versatility of the word '\u06c1\u0627\u062a\u06be,' which includes the concept of \u2018control\u2019. Therefore, this sentence,  \u062a\u0645\u06c1\u0627\u0631\u0627 \u06c1\u0627\u062a\u06be \u0645\u06cc\u06ba \u06c1\u06d2, can mean both \"It is in your hand\" and \"You have control\"."
     ]
 }
 {
@@ -7499,6 +7588,8 @@
         "At this stage, I don't believe that ChatGPT can pass the Turing test for a couple of reasons. First, ChatGPT is based on webpages and data that were collected until 2019 or 2020, which is clearly outdated from today's perspective. Second, ChatGPT answers usually have the pattern of throwing an opinion and using a \"but\" statement to introduce its true idea, which can be used as a way to identify. Lastly, ChatGPT shows zero knowledge about emotions and always loves to restate or emphasize its statement after a huge paragraph of explanation, which is quite different from human response. ",
         "In my opinion, I don't believe ChatGPT can currently pass the Turing Test. I tried it out with a friend once, even provided it with sufficient background information and part of my chat history to mimic our conversation style. However, my friend identified it as ChatGPT after just a few sentences (less than ten). I noticed that the sentences generated by ChatGPT were somewhat overly polite, despite my indicating that the conversation was with a close friend and could be casual. I think ChatGPT's inability to accurately detect subtle emotions plays a significant role in this. It lacks true understanding and consciousness, processing language based on patterns and probabilities rather than comprehension or intent. But it may also be caused by the rules and constraints imposed by OpenAI. Moreover, the quality and extent of its training data significantly influence its power. when using ChatGPT in Chinese, I sometimes I occasionally encountered responses that were illogical. I think this might be a result of inadequate training data in Chinese. ",
         "I don't think chatgpt can pass Turing's \"Imitation Game\". Because it can't think like a human and lacks the true understanding that humans have developed by evolving into autonomous individuals embedded in a network of social practices. This is an experience that AI does not have. At the same time, ChatGPT works by learning statistical patterns of language from huge online text databases, which include untruths, biases, or outdated knowledge, and thus is prone to produce incorrect or even absurd answers, especially in areas of the technology where it has not been trained on large amounts of data. This can make it vulnerable to being exposed as a chatbot.",
-        "I don't think it can pass Turing's \"Imitation Game\". Currently, ChatGPT has significant pattern that make it noticeable to identify. It's excessively polite and it has high tendency to agree with the user when it's challenged. Besides, ChatGPT tend to use some specific words frequently. It should improve the skills for logical judgement and fluency in using words to make it more natural. "
+        "I don't think it can pass Turing's \"Imitation Game\". Currently, ChatGPT has significant pattern that make it noticeable to identify. It's excessively polite and it has high tendency to agree with the user when it's challenged. Besides, ChatGPT tend to use some specific words frequently. It should improve the skills for logical judgement and fluency in using words to make it more natural. ",
+        "I don't think ChatGPT would be able to pass \"Imitation Game\". One reason is that currently GPT is limited by its ability to respond to questions regarding current events. If one were to ask GPT about something that has happened recently for example i.e. 2024 US Presidential Campaign, one might expect a human being to be able to answer questions regarding these, but GPT might just make things up or not be able to give real answers to this. Additionally, there is a certain style in which GPT writes that differs from humans. GPT answers tend to be display a level of eloquence that most humans wouldn\u2019t normally use when speaking/writing to someone. Additionally, GPT tends to equivocate a lot when asked for its opinion on something whereas a human would normally give a straightforward answer.",
+        "Just like many other comments here I don't think that ChatGPT would be able to pass the \"Imitation Game\". I guess it can depend on how the \"Imitation Game\" is well structured but I think we can still differentiate ChatGPT and real human through conversation. ChatGPT seems to be well working on solving or giving answers for questions that clearly have answers on the Internet but not for the ones that don't have clear answers. ChatGPT can't make judgements with the information it is trained so it gives very general/ not useful answers to questions without specific answers. So I think the version that we have today can't pass the \"Imitation Game\" but one day with a better version it might pass."
     ]
 }
