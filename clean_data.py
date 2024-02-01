@@ -18,6 +18,7 @@ def clean(text):
 with open("qa_list.json", 'r', encoding='utf-8') as file:
     data = json.load(file)
 
+count = 0
 for entry in data.values():
     entry['question'] = clean(entry['question'])
     entry['answers'] = [clean(answer) for answer in entry['answers']]
