@@ -1,6 +1,6 @@
-from edapi import EdAPI # API access
-import json # json processing
-import asyncio # asynchronous programming
+from edapi import EdAPI
+import json
+import asyncio
 
 # Initialize Ed API & log in
 ed = EdAPI()

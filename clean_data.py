@@ -1,5 +1,5 @@
-import json # json processing
-import re # regular expressions
+import json
+import re
 import unicodedata
 
 # Remove html tags and unicode punctuation from string
