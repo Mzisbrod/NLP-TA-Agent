@@ -11,7 +11,7 @@ user_info = ed.get_user_info()
 NLP_courses = {}
 for course in user_info.get('courses', []):
     if course['course']['name'] == 'Natural Language Processing':
-        course_info = (f"NLP {course['course']['session']} "
+        course_info = (f"{course['course']['session'].lower()}_"
                        f"{course['course']['year']}")
         NLP_courses[course['course']['id']] = course_info
 
@@ -32,11 +32,13 @@ async def retrieve_thread_info(thread_id):
     assign answers to available answers/comments of each thread """
 async def process_thread(thread):
     thread_info = await retrieve_thread_info(thread['id'])
-    answers_or_comments = thread_info['answers'] if thread_info['answers'] \
-        else thread_info['comments']
+
     return {
-        "question": thread['content'],
-        "answers": [answer['content'] for answer in answers_or_comments]
+        "title": thread_info['title'],
+        "category": thread_info['category'],
+        "question": thread_info['content'],
+        "comments": [content['content'] for content in thread_info['comments']],
+        "answers": [answer['content'] for answer in thread_info['answers']],
     }
 
 """ Given thread dictionary, return True if it was made by a student:
@@ -82,19 +84,19 @@ async def retrieve_and_process_threads(course_id):
 
     return qa_dict
 
-# Process threads for all NLP courses and save the data to a file qac.txt
+# # Process threads for all NLP courses and save the data to a file qac.txt
 async def main():
-    all_qa = {}
+    num_questions = 0
 
-    for course_id in NLP_courses.keys():
+    for course_id, course_info in NLP_courses.items():
         qa_dict = await retrieve_and_process_threads(course_id)
-        all_qa.update(qa_dict) # Merge the dictionaries
+        num_questions += len(qa_dict)
+        file_name = f"{course_info}.json"
+        with open(file_name, "w") as file:
+            json.dump(qa_dict, file, indent=4)
         print(f"Processed course {course_id}")
 
-    with open("qa_list.json", "w") as file:
-        json.dump(all_qa, file, indent=4)
-
-    print(f"Total of {len(all_qa)} questions were fetched from NLP courses")
+    print(f"Total of {num_questions} questions were fetched from NLP courses")
 
 asyncio.run(main())
 

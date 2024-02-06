@@ -1,6 +1,7 @@
 import json
 import re
 import unicodedata
+import glob
 
 # Remove html tags and unicode punctuation from string
 def clean(text):
@@ -15,13 +16,32 @@ def clean(text):
 
     return text
 
-with open("qa_list.json", 'r', encoding='utf-8') as file:
-    data = json.load(file)
+# with open("qa_list.json", 'r', encoding='utf-8') as file:
+#     data = json.load(file)
+#
+# count = 0
+# for entry in data.values():
+#     entry['question'] = clean(entry['question'])
+#     entry['answers'] = [clean(answer) for answer in entry['answers']]
+#
+# with open("qa_list_cleaned.json", 'w', encoding='utf-8') as file:
+#     json.dump(data, file, indent=4)
 
-count = 0
-for entry in data.values():
-    entry['question'] = clean(entry['question'])
-    entry['answers'] = [clean(answer) for answer in entry['answers']]
+def clean_json_file(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        data = json.load(file)
 
-with open("qa_list_cleaned.json", 'w', encoding='utf-8') as file:
-    json.dump(data, file, indent=4)
+    for entry in data.values():
+        entry['question'] = clean(entry['question'])
+        entry['answers'] = [clean(answer) for answer in entry['answers']]
+
+    cleaned_file_path = file_path.replace('.json', '_cleaned.json')
+    with open(cleaned_file_path, 'w', encoding='utf-8') as file:
+        json.dump(data, file, indent=4)
+
+# List all JSON files in the current directory
+json_files = glob.glob('*.json')
+
+for json_file in json_files:
+    clean_json_file(json_file)
+    print(f"Processed and cleaned {json_file}")
