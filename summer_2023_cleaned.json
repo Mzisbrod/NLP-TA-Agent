@@ -290,7 +290,7 @@
         "category": "General",
         "question": "I personally work on recommendations and ranking use GPT-4 not only to generate high quality relevance labels at scale but also generate feature scores to be fed into a more light-weight transformer at production, generate queries and more. LLMs/GPT models have many new applications in the field of recommendations. This paper is an interesting application of using GPT for query generation given item sequences a user has interacted with. [2304. 03879] GPT4Rec: A Generative Framework for Personalized Recommendation and User Interests Interpretation (arxiv. org) ",
         "comments": [
-            "<document version=\"2.0\"><paragraph>Wow! So cool!! </paragraph><paragraph>Just quick question -- is there a way here, or on what you work with, for spam recommendations to get filtered out?</paragraph><paragraph/><paragraph> I.e. I am assuming that new responses are used to \"re-train\" further recommendations like in pre-training. I guess there may be malicious people who want to wrongly influence the models, such as maybe a company recommending its products and \"inserting itself\" into the model through user input. Is there a way we have devised to prevent that or at least detect that in some way? </paragraph></document>"
+            "Wow! So cool! ! Just quick question -- is there a way here, or on what you work with, for spam recommendations to get filtered out? I. e. I am assuming that new responses are used to \"re-train\" further recommendations like in pre-training. I guess there may be malicious people who want to wrongly influence the models, such as maybe a company recommending its products and \"inserting itself\" into the model through user input. Is there a way we have devised to prevent that or at least detect that in some way? "
         ],
         "answers": []
     },
@@ -628,7 +628,7 @@
         "category": "Homework 4",
         "question": "If so, could you please share the zone that worked? I've tried several zones with no luck",
         "comments": [
-            "<document version=\"2.0\"><paragraph>was able to get an L4 in us-central-a</paragraph></document>"
+            "was able to get an L4 in us-central-a"
         ],
         "answers": [
             "Please refer to the video recently posted on Courseworks (recorded by TA - Shreya) in Files -&gt; homework5 -&gt; hw5_gcp_tutorial. mp4"
@@ -648,7 +648,7 @@
         "category": "Homework 4",
         "question": "Both my Word2Vec and Bert predictors produce the exact same precision and recall results, but I'm not sure if this means that there's something wrong with my Bert predictor since the assignment handout states that it performed slightly better than the Word2Vec predictor in experiments?  I can't seem to find any bugs in the Bert predictor and I'm following the encoding method directly from the handout, but I'm not sure if some kind of optimization needs to be added for the Bert predictor to perform better to achieve full credit?  I've included the results output for both parts below for reference:Total = 298, attempted = 298\nprecision = 0. 115, recall = 0. 115\nTotal with mode 206 attempted 206\nprecision = 0. 170, recall = 0. 170\n",
         "comments": [
-            "<document version=\"2.0\"><paragraph>I get the exact same performance for both the models as well. According to post #182  I am guessing that should be okay.</paragraph><paragraph/></document>"
+            "I get the exact same performance for both the models as well. According to post #182  I am guessing that should be okay."
         ],
         "answers": [
             "I have the same concern, but for what it's worth, I have the same output that you do for both. ",
@@ -748,7 +748,7 @@
         "category": "General",
         "question": "When I run a Python interpreter and try to include the Wordnet package, I get the following SSL error: \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate. \"  Some StackOverflow posts said to disable SSL checks, but can I confirm what is the best way to do this without totally disabling this? ",
         "comments": [
-            "<document version=\"2.0\"><paragraph>This sounds like you might be running into certificate errors when downloading the Wordnet package using Python. I don't know if you've already resolved this, but you could try installing a number of default Root Certificates for Python (assuming that you're on a Mac here).<break/><break/>Try running:</paragraph><pre>/Path-to-Python-Installation/Python\\ 3.9/Install\\ Certificates.command</pre><paragraph>If you have something other than 3.9 installed, swap that out. Usually the path is:</paragraph><pre>/Applications/Python</pre><paragraph>Hopefully this resolves it for you. Disabling SSL checks would be risky if you forget to turn them back on.</paragraph></document>"
+            "This sounds like you might be running into certificate errors when downloading the Wordnet package using Python. I don't know if you've already resolved this, but you could try installing a number of default Root Certificates for Python (assuming that you're on a Mac here). Try running:/Path-to-Python-Installation/Python\\ 3. 9/Install\\ Certificates. commandIf you have something other than 3. 9 installed, swap that out. Usually the path is:/Applications/PythonHopefully this resolves it for you. Disabling SSL checks would be risky if you forget to turn them back on."
         ],
         "answers": []
     },
@@ -959,8 +959,8 @@
         "category": "Homweork 3",
         "question": "CPU training for me was significantly faster(2x) in comparison to GPU training on an Nvidia GPU. Is this expected? CPU: AMD Ryzen 9 6900HX GPU: Laptop 3070Ti CPU Results:Epoch 1/5\n18996/18996 [==============================] - 59s 3ms/step - loss: 0. 5998\nEpoch 2/5\n18996/18996 [==============================] - 57s 3ms/step - loss: 0. 3834\nEpoch 3/5\n18996/18996 [==============================] - 57s 3ms/step - loss: 0. 3430\nEpoch 4/5\n18996/18996 [==============================] - 58s 3ms/step - loss: 0. 3199\nEpoch 5/5\n18996/18996 [==============================] - 56s 3ms/step - loss: 0. 3045\nGPU Results:Epoch 1/5\r\n2023-07-28 20:36:57. 712676: I tensorflow/compiler/xla/stream_executor/cuda/cuda_blas. cc:606] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.\r\n2023-07-28 20:36:57. 730501: I tensorflow/compiler/xla/service/service. cc:168] XLA service 0x7f92f7acd9d0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:\r\n2023-07-28 20:36:57. 730585: I tensorflow/compiler/xla/service/service. cc:176]   StreamExecutor device (0): NVIDIA GeForce RTX 3070 Ti Laptop GPU, Compute Capability 8. 6\r\n2023-07-28 20:36:57. 755000: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util. cc:255] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.\r\n2023-07-28 20:36:58. 281511: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn. cc:432] Loaded cuDNN version 8800\r\n2023-07-28 20:36:58. 502551: I . /tensorflow/compiler/jit/device_compiler. h:186] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.\r\n18996/18996 [==============================] - 147s 7ms/step - loss: 0. 5637\r\nEpoch 2/5\r\n18996/18996 [==============================] - 127s 7ms/step - loss: 0. 3674\r\nEpoch 3/5\r\n18996/18996 [==============================] - 129s 7ms/step - loss: 0. 3301\r\nEpoch 4/5\r\n18996/18996 [==============================] - 128s 7ms/step - loss: 0. 3099\r\nEpoch 5/5\r\n18996/18996 [==============================] - 131s 7ms/step - loss: 0. 2967\r\n/home/kguda/mambaforge/lib/python3. 10/site-packages/keras/src/engine/training. py:3000: UserWarning: You are saving your model as an HDF5 file via `model. save()`. This file format is considered legacy. We recommend using instead the native Keras format, e. g. `model. save('my_model. keras')`.",
         "comments": [
-            "<document version=\"2.0\"><paragraph>Same thing happened here, not sure why lol.</paragraph></document>",
-            "<document version=\"2.0\"><paragraph/><paragraph>You batch size is  small. As long as each   batch fits in GPU memory, processing each  batch takes the same amount of time ( regardless of its size). Therefore if you are using GPU you should increase the batch size (like 10000 instead of 10) to actually gain from the GPU. </paragraph></document>"
+            "Same thing happened here, not sure why lol.",
+            "You batch size is  small. As long as each   batch fits in GPU memory, processing each  batch takes the same amount of time ( regardless of its size). Therefore if you are using GPU you should increase the batch size (like 10000 instead of 10) to actually gain from the GPU. "
         ],
         "answers": []
     },
@@ -1187,7 +1187,7 @@
         "category": "Homweork 3",
         "question": "I did the entire homework on Mac and regardless what I try and debug, the result always turned out horrible. Then I saw  #132, so following this thread, using my GCP instance, here is the comparison:Training:GCP with T4:Mac with M1:Evaluation:T4M1It's the same code. Didn't change anything.   TLDR: Don't use Mac.",
         "comments": [
-            "<document version=\"2.0\"><paragraph>I hope I saw this earlier. I did a lot to my code and finally realized it's about Mac. After switching to Linux, everything became fine.</paragraph><paragraph/></document>"
+            "I hope I saw this earlier. I did a lot to my code and finally realized it's about Mac. After switching to Linux, everything became fine."
         ],
         "answers": [
             "Hi, I'm using an M2 MacBook that produces results similar to your T4, so I'm not sure if it's an M1 problem."
@@ -1720,7 +1720,7 @@
         "category": "General",
         "question": "Going forward, would it be possible to have two weekends to complete the HW rather than the one we currently get (have the assignment due Monday instead of Friday? ), even if this means more overlap of assignments. I feel it's not uncommon to attend/watch lectures during the week and review/ingest the material on the weekends, especially for those of us working full time. Having only the last weekend makes it a bit difficult time-wise to fully grasp everything from the week that follows and makes incorporating this material into the assignments more challenging. If there is an administrative/logistical reason that makes this impracticable that is totally understandable. Thank you!",
         "comments": [
-            "<document version=\"1.0\"><paragraph>I totally agree with the proposal. It would benefit all students, including those working in the summer.\u00a0</paragraph></document>"
+            "I totally agree with the proposal. It would benefit all students, including those working in the summer. "
         ],
         "answers": [
             "I think the class ends on August 10th, with Summer B ending on the 11th. So, it seems like this could be possible for all but the last HW."

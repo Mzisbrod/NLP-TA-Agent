@@ -33,6 +33,7 @@ def clean_json_file(file_path):
 
     for entry in data.values():
         entry['question'] = clean(entry['question'])
+        entry['comments'] = [clean(comment) for comment in entry['comments']]
         entry['answers'] = [clean(answer) for answer in entry['answers']]
 
     cleaned_file_path = file_path.replace('.json', '_cleaned.json')
