@@ -1,5 +1,6 @@
 from edapi import EdAPI
 import json
+import os
 import asyncio
 
 # Initialize Ed API & log in
@@ -33,13 +34,15 @@ async def retrieve_thread_info(thread_id):
 async def process_thread(thread):
     thread_info = await retrieve_thread_info(thread['id'])
 
-    return {
-        "title": thread_info['title'],
-        "category": thread_info['category'],
-        "question": thread_info['content'],
-        "comments": [content['content'] for content in thread_info['comments']],
-        "answers": [answer['content'] for answer in thread_info['answers']],
-    }
+    if thread_info['comments'] or thread_info['answers']:
+        return {
+            "title": thread_info['title'],
+            "category": thread_info['category'],
+            "question": thread_info['content'],
+            "comments": [content['content'] for content in thread_info['comments']],
+            "answers": [answer['content'] for answer in thread_info['answers']],
+        }
+    return None # If threads doesn't contain, comments/answers return None
 
 """ Given thread dictionary, return True if it was made by a student:
     None if it's by an anonymous person """
@@ -78,22 +81,31 @@ async def retrieve_and_process_threads(course_id):
     thread_counter = 0 # Key of each thread
     for thread in all_threads:
         processed_thread = await process_thread(thread)
-        if processed_thread is not None:
+        if processed_thread:
             qa_dict[thread_counter] = processed_thread
             thread_counter += 1
 
     return qa_dict
 
-# # Process threads for all NLP courses and save the data to a file qac.txt
+# Process threads for all NLP courses and save the data to a file qac.txt
 async def main():
     num_questions = 0
+
+    # Create 'EdStem Data' directory if it doesn't exist
+    directory = 'EdStem Data'
+    if not os.path.exists(directory):
+        os.makedirs(directory)
 
     for course_id, course_info in NLP_courses.items():
         qa_dict = await retrieve_and_process_threads(course_id)
         num_questions += len(qa_dict)
-        file_name = f"{course_info}.json"
+        # Change file extension to .jsonl for JSON Lines format
+        file_name = os.path.join(directory, f"{course_info}.jsonl")
         with open(file_name, "w") as file:
-            json.dump(qa_dict, file, indent=4)
+            for key, value in qa_dict.items():
+                # Write each thread as a separate JSON object per line
+                json.dump(value, file)
+                file.write('\n')  # Write a newline to separate JSON objects
         print(f"Processed course {course_id}")
 
     print(f"Total of {num_questions} questions were fetched from NLP courses")

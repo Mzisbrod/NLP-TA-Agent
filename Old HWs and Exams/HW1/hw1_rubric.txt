@@ -1,0 +1,45 @@
+Rubric
+
+Part 1: get_ngrams() (20 pts)
+-	appending appropriate amount of START (5)
+-	appending only one STOP/END as long as handled consistently (5)
+-	outputting correct n-gram (10)
+
+Part 2: count_ngrams() (15 pts)
+-	populating correct ngram dictionaries (8)
+-	populating dictionaries sentence by sentence (4)
+-	dictionary keys are tuples and values are counts (3)
+-	Additional deduction if the student doesn’t use get_ngrams and adds the ngrams incorrectly (-4).
+
+Part 3: raw n-gram probs (15 pts)
+-	dealing with unseen ngrams/"divide by 0" edge case in some reasonable way (3)
+-	correct implementation of trigram (4)
+-	Doesn’t handle (‘START’, ‘START’) and just returns 0 on all edge cases (-4)
+-	correct implementation of bigram (4)
+-	correct implementation of unigram (4)
+       -2 if not one of the following options.
+        Option1: produced unigram probability for START _and_ included START in the denominator.
+         Option 2: produced no unigram probability for START and did not include START in the denominator
+       -2 if they didn’t include STOP
+
+Part 4: smoothed prob (10 pts)
+-	getting correct bigrams and unigrams from trigram (4)
+-	general correctness (6)
+
+Part 5: sentence prob (10 pts)
+-	getting trigrams (3)
+-	taking the log of the probability of each trigram (3)
+-	summing the log prob (4)
+
+Part 6: perplexity (15 pts)
+-	finding total words in corpus and including STOP (5)  (-3 if STOP not included)
+-	finding the prob of the corpus by summing the prob of each sentence (5)
+-	applying correct formula to compute perplexity (5)
+
+Part 7: essay scoring (15 pts)
+-	correct logic to check if model is correct for "high" test files (5)
+-	correct logic to check if model is correct for "low" test files (5)
+-	general correctness (correctly applying accuracy formula) (5)
+
+
+
