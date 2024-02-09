@@ -17,28 +17,30 @@ def clean(text):
 
     return text
 
-def clean_jsonl_file(file_path):
-    cleaned_lines = []
-    with open(file_path, 'r', encoding='utf-8') as file:
-        for line in file:
-            entry = json.loads(line)
-            # Assuming entry is a dictionary like before
-            if 'question' in entry:
-                entry['question'] = clean(entry['question'])
-            if 'comments' in entry:
-                entry['comments'] = [clean(comment) for comment in entry['comments']]
-            if 'answers' in entry:
-                entry['answers'] = [clean(answer) for answer in entry['answers']]
-            cleaned_lines.append(json.dumps(entry))
+# Given a file path with json files, clean the file and create
+# a cleaned version of it
+def clean_json_file(file_path):
+    cleaned_file_path = file_path.replace('.json', '_cleaned.json')
+    with open(file_path, 'r', encoding='utf-8') as input_file, \
+         open(cleaned_file_path, 'w', encoding='utf-8') as output_file:
+        data = json.load(input_file)
+        cleaned_data = []
+        for entry in data:
+            cleaned_entry = {}
+            for key, value in entry.items():
+                if isinstance(value, str):
+                    cleaned_entry[key] = clean(value)
+                elif isinstance(value, list):
+                    cleaned_entry[key] = [clean(item) for item in value]
+                else:
+                    cleaned_entry[key] = value
+            cleaned_data.append(cleaned_entry)
+        json.dump(cleaned_data, output_file, indent=4)
 
-    cleaned_file_path = file_path.replace('.jsonl', '_cleaned.jsonl')
-    with open(cleaned_file_path, 'w', encoding='utf-8') as file:
-        for line in cleaned_lines:
-            file.write(line + '\n')
+    print(f"Processed and cleaned {file_path}")
 
-# List all JSON Lines files in EdStem Data directory
-jsonl_files = glob.glob(os.path.join('EdStem Data', '*.jsonl'))
+# List all JSON files in Edstem Data directory
+json_files = glob.glob(os.path.join('Edstem_Data', '*.json'))
 
-for jsonl_file in jsonl_files:
-    clean_jsonl_file(jsonl_file)
-    print(f"Processed and cleaned {jsonl_file}")
+for json_file in json_files:
+    clean_json_file(json_file)

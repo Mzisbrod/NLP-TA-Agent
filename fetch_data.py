@@ -77,35 +77,29 @@ async def retrieve_and_process_threads(course_id):
             else:
                 raise # Re-raise other exceptions
 
-    qa_dict = {}
-    thread_counter = 0 # Key of each thread
+    qa_list = []
     for thread in all_threads:
         processed_thread = await process_thread(thread)
         if processed_thread:
-            qa_dict[thread_counter] = processed_thread
-            thread_counter += 1
+            qa_list.append(processed_thread)
 
-    return qa_dict
+    return qa_list
 
 # Process threads for all NLP courses and save the data to a file qac.txt
 async def main():
     num_questions = 0
 
-    # Create 'EdStem Data' directory if it doesn't exist
-    directory = 'EdStem Data'
+    # Create 'Edstem Data' directory if it doesn't exist
+    directory = 'Edstem_Data'
     if not os.path.exists(directory):
         os.makedirs(directory)
 
     for course_id, course_info in NLP_courses.items():
         qa_dict = await retrieve_and_process_threads(course_id)
         num_questions += len(qa_dict)
-        # Change file extension to .jsonl for JSON Lines format
-        file_name = os.path.join(directory, f"{course_info}.jsonl")
+        file_name = os.path.join(directory, f"{course_info}.json")
         with open(file_name, "w") as file:
-            for key, value in qa_dict.items():
-                # Write each thread as a separate JSON object per line
-                json.dump(value, file)
-                file.write('\n')  # Write a newline to separate JSON objects
+            json.dump(qa_dict, file, indent=4)
         print(f"Processed course {course_id}")
 
     print(f"Total of {num_questions} questions were fetched from NLP courses")
