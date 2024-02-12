@@ -17,8 +17,7 @@ def clean(text):
 
     return text
 
-# Given a file path with json files, clean the file and create
-# a cleaned version of it
+# Given a file path with json files, clean the file and create a cleaned version of it
 def clean_json_file(file_path):
     cleaned_file_path = file_path.replace('.json', '_cleaned.json')
     with open(file_path, 'r', encoding='utf-8') as input_file, \
