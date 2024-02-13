@@ -1,14 +1,11 @@
 import json
 from txtinstruct.models import Instructor
 
-# Load the JSON data
-with open("Course_Data/hw1.json", encoding="utf-8") as file:
-    data1 = json.load(file)
+data = []
 
-with open("Course_Data/hw2.json", encoding="utf-8") as file:
-    data2 = json.load(file)
-
-data = data1 + data2
+for i in range(1, 5):
+    with open(f"Course_data/hw{i}.json", encoding="utf-8") as file:
+        data += json.load(file)
 
 # Initialize the Instructor
 instructor = Instructor()
@@ -19,7 +16,7 @@ model, tokenizer = instructor(
     data=data,  # Instruction-tuning dataset loaded from the JSON file
     task="sequence-sequence",  # Model task
     # Optional: specify a custom prompt template if necessary
-    # prompt="Custom prompt template here",
+    # prompt=
     learning_rate=1e-3,
     per_device_train_batch_size=8,
     gradient_accumulation_steps=128//8,
