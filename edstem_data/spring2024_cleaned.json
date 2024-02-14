@@ -1,0 +1,1302 @@
+[
+    {
+        "context": "General CVN Student and Exams",
+        "statements": [
+            {
+                "source": "To preface, I am a CVN student not in the New York area. Im not sure how I glossed over this, but in the syllabus and first lecture it is mentioned that the exams are in-person. Just to confirm, are there no provisions for remote test-tasking made to CVN students? I am a new CVN student, so I have assumed that there is always an option for me to take exams remotely as a CVN student.",
+                "target": [
+                    "The exams will be remote for CVN students. CVN should be in touch with more details as we get closer to the first exam."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Late Policy",
+        "statements": [
+            {
+                "source": "Hello, The syllabus said homework assignments may be submitted up to 4 days late for a 20-point penalty. Does it mean 5 points for each day, or no matter the days, the penalty is always 20 points? Thank you very much.",
+                "target": [
+                    "It's the latter."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW1 P5",
+        "statements": [
+            {
+                "source": "Hi, Just wanted to confirm that testing part 5 with this line -print(model. sentence_logprob([\"roey\", \"elmelech\"]))\nshould throw an error since these words are definitely not in the corpus and were never seen before when the dictionaries were created so this means they are not even recognized as \"UNK\", correct? Their probability is 0 and since math. log2() cannot take 0, it is expected to get a \"math domain error\" right?",
+                "target": [
+                    "Thats right. Because these dont come from the corpus reader, the tokens will be unseen and cause an error. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW1 P. 2 - How to count the bigrams and trigrams that contain START",
+        "statements": [
+            {
+                "source": "When we have a bigram that is, for example, ('START', 'natural'), do we add 1 to the unigram of 'natural', or do we include ('START', 'natural') in the bigram counts? What about ('START', 'START', 'natural')?",
+                "target": [
+                    "('START', 'natural') and ('START', 'START', 'natural') would be counted like any other ngram. However, when computing the probability you would treat these differently. For exampleP(natural | START) = count(START, natural) / number_of_traininf_sentences. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW1 6 Negative Perplexity",
+        "statements": [
+            {
+                "source": "I am observing low perplexity scores, so low they are negative. My train test perplexity is -7. 08 and my train train perplexity is -3. 71. Since each probability is less than 1, returning a negative log, and we sum negative logs, it is unclear to me how the perplexity could be positive. Are we just taking the absolute value, or am I missing something?",
+                "target": [
+                    "Nevermind-- completely missed that perplexity was defined as taking the sum of negative logs divided by number of words as an exponent I to 2^-I. Now my results look normal, with perplexities of 13 and 135 for train and test, respectively. Thanks!"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments 'STOP' for Sentences or Corpus",
+        "statements": [
+            {
+                "source": "Hello, For part 5, do we need to include 'STOP' for each sentence when we calculate probability? And for part 6, do we only include 'STOP' for the whole corpus? (M = number of words + 1)or Do we include 'STOP' for every sentence? (M = number of words + number of sentences)Thank you very much.",
+                "target": [
+                    "As far as I know, for part 5, your raw probabilities should include 'STOP', so your smoothed probability accounts for that when computed, and consequently when you are calculating your logprob you are applying it on each one of your sentences' smoothed probability. For part 6 I believe it is 1 'STOP' for every sentence (since every sentence is padded with a 'STOP' token)"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Getting error for for one of the missing file in 'test_high'.",
+        "statements": [
+            {
+                "source": "I am getting this error when I am trying to run the model for ETS data, does anyone else faced this, if so would appreciate any help with this. FileNotFoundError: [Errno 2] No such file or directory: 'ets_toefl_data/test_high/1449754. txt'\n",
+                "target": [
+                    "If you're using the skeleton code as it was posted on Courseworks, know that it needs to be modified a little. Here's the line you need to have (considering you kept the files in their original location):acc = essay_scoring_experiment(\"hw1_data/ets_toefl_data/train_high. txt\", \"hw1_data/ets_toefl_data/train_low. txt\", \"hw1_data/ets_toefl_data/test_high\", \"hw1_data/ets_toefl_data/test_low\")\n"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Part 6 Perplexity",
+        "statements": [
+            {
+                "source": "For part 6 of the homework, I keep getting a testing perplexity score of ~665 but my training perplexity and essay scoring seem to be fine. My M value is 93002. My accuracy score is 0. 804. Any advice on this? Thank you!",
+                "target": [
+                    "Actually, I think I solved my problem. I calculated one of my raw probabilities incorrectly when accounting for \"START\""
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Discriminative vs. generative models",
+        "statements": [
+            {
+                "source": "What's the working definition we're using for discriminative vs. generative models in this class? ",
+                "target": [
+                    "For an observation/input X, generative models describe the conditional distributions P(X|Y) and P(Y) and use inference to find the most likely Y that has \"caused\" X (typically using Bayes' rule). Discriminative models model P(Y|X) directly."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Smoothed_trigram_probability question",
+        "statements": [
+            {
+                "source": "Hey, I am trying to figure out why my perplexity score is so low since I am consistently getting &lt;20. Something that I noticed was in my sentence_log_prob function, when I call smoothed_trigram_probability on a trigram I get that the smoothed_trigram_probability == 0 pretty often. Professor Bauer mentioned to me in OH that this should not be 0, did anyone else have a similar issue? Thanks!",
+                "target": [
+                    "If smoothed trigram probability is 0 then it suggests that your unigram/bigram/trigram probabilities are all 0. Even if the bigram/trigram probabilities are 0, it is unlikely imo that unigram probabilities are zero since the tokens you're processing from the test file are either in the lexicon or replaced by \"UNK\" (which exists in the lexicon). Anything in the lexicon should be getting processed when we're parsing the training file to get the unigram counts. I'd look at your unigram counts as a starting point and checking if you're calculating them correctly."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW 1 PT 3",
+        "statements": [
+            {
+                "source": "Is there a difference between\"if bigram in self. bigramcounts:\"      and\" if self. bigramcounts[bigram]&gt;0:\" ? ",
+                "target": [
+                    "The first line checks if the bigram key exists in self. bigramcounts, and the second line checks if the bigram key is mapped to a value greater than 0. Are you using a defaultdict for self. bigramcounts?"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General submitting hw1",
+        "statements": [
+            {
+                "source": "we just submit the hws on courseworks, right? There is no gradescope for this course? Thank you!",
+                "target": [
+                    "Correct, you only need to submit the completed . py file to the Courseworks assignment portal."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW1 Perplexity",
+        "statements": [
+            {
+                "source": "Hi, I received a relatively low perplexity score of around 86. I thought this might be due to including counts for 'START' and 'STOP' when calculating M in perplexity(). After excluding them, the perplexity increased to 156, which falls within the normal range as reported by other students. Does this suggest that we shouldn't include counts of 'START' and 'STOP' when calculating M? If so, why is that the case? Thanks!",
+                "target": [
+                    "You need to include 'STOP' but not 'START'. See #80"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Perplexity Score",
+        "statements": [
+            {
+                "source": "Is a perplexity score of 109. 9 acceptable? I know the range I should be aiming to get is 150-300. I've been trying to fix this for a few hours but I still cannot figure out what is causing my lower perplexity score. My M value is 93002, so I'm guessing it's because my probabilities of the sentences are too high. Would really appreciate any insights into what could potentially be the issue (or if my current value is ok). My accuracy score is 0. 854. Thank you so much!",
+                "target": [
+                    "Seems a bit low. Your M value sounds about right, so make sure you're calculating your log odds correctly, using the proper denominators for your raw probabilities, etc."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Getting perplexity score of 575",
+        "statements": [
+            {
+                "source": "Dear professor/TA, I'm getting following result from my code. Perplexity on Brown Corpus Test Data: 575. 07025455153\nAccuracy of Essay Scoring Experiment: 0. 8047808764940239\nI'm including START and excluding STOP as instructed, and I think is calculating total_words of test corpus correctly with len(sentence) and then add 1 for STOP token.    def perplexity(self, corpus):\n        total_logprob = 0. 0\n        total_words = 0\n\n        for sentence in corpus:\n            total_logprob += self. sentence_logprob(sentence)\n            total_words += len(sentence) + 1  # adding 1 for STOP token\n\n        average_logprob = total_logprob / total_words\n        return 2 ** (-average_logprob)\n\nI'm not sure why I'm getting &gt;400 perplexity, when the HW instruction says we're expected to get lower than 400. Which part am I doing sth wrong, or is this score range falls in to get full grade? Thank you!",
+                "target": [
+                    "Hm something is wrong, unfortunately. Your perplexity calculation looks okay, which suggests that the probabilities are somehow incorrect. I would test the raw probabilities with a mini-corpus (a sentence, or two) so you can test by hand that these are calculated correctly. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW1 PT6",
+        "statements": [
+            {
+                "source": "Hi, I was wondering if someone could help me debug this. I'm getting an error trying to compute the raw_unigram_probability for the first sentence since it's trying to get the probability of ('START', ) and that is not included in my unigramcounts. I thought about some things:1. if unigram='start' in the smoothed trigram probability, I should use prob=0. 0* lambda32. I actually need to include ('START', ) in the unigram count. 3. I am slicing something wrong. From what I understand, to do the smoothed trigram probability of the first sentence:I calculate the trigram probability of [START START the] as p (the | START START). then, I calculate the bigram probability of [START START] as p (START | START). And I would need p (START) for the unigram probability --&gt; which I don't have. I would really appreciate it if someone could tell me what part of this is wrong.",
+                "target": [
+                    "I'm getting an error trying to compute the raw_unigram_probability for the first sentence since it's trying to get the probability of ('START', ) and that is not included in my unigramcounts. I would recommend keeping track of the number of sentences in the training data (in a new instance variable). Then treat bigrams like (START, w) and trigrams like (START, START, w) as special cases, using the number of sentences in the denominator. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW1 - 'START' unigrams, smoothing, and lexicons",
+        "statements": [
+            {
+                "source": "Hello, I just have a few questions about HW1. I read #26 and tried to incorporate the advice there - namely, for unigram ('START', ), I return probability 0, and I also exclude this unigram from the overall unigram count for counting the probabilities. I am less sure about how to approach the bigram probability - here, I simply return 0 for ('START', 'START'). Doing this slightly improves my perplexity (212 from 215) but also worsens the experimental test accuracy (by 0. 004 to 0. 842). Do I understand the notes about excluding the probability for the start unigram correctly? Also, for grading, does perplexity &lt;400 and accuracy &gt;0. 8 suggest full grade, or is it more nuanced and we should try to improve the model even further? I am afraid that with these small edits, I will inadvertently create some edge-case bug. Also, for context, if a trigram context is missing, I use the probability of the unigram instead (P(v | u, w) = P(v)). Just to be sure since it's not explicitly mentioned, for sentence_logprob() we use the output of smoothed_trigram_probability(), right? And for perplexity(), we use sentence_logprob() to compute the probability of each sentence (and thus we don't need to do the log again), right? FInally, for the perplexity calculation in the classification function, we always use the lexicon of the corresponding model, right? So whenever we calculate perplexity of model1, we use model1. lexicon for corpus_reader() and similarly for model2. I think it makes sense this way, as otherwise, we could risk getting words that are not in the corpus, but I just wanted to double-check. Thank you in advance. I think these all make some sense, but I just want to make sure because I was surprised that my code worked well with the expected results on pretty much the first try, which got me paranoid. ..",
+                "target": [
+                    "1. (\"START\", \"START\") shouldn't be included. Your perplexity and accuracy sound fine enough based on #59 and the accuracy listed in the homework problem. 2. Yes. 3. Yes."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW 1 Part 6",
+        "statements": [
+            {
+                "source": "I am getting low perplexity numbers ~ 10-20 and I think it has to do with my value of M, but I'm not sure what to change.",
+                "target": [
+                    "Hm whats the idea behind checking if the line is numeric? You should add the length of the sentence to M, for each of the test sentences. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments hw1 - Is it ok to use deque data structure?",
+        "statements": [
+            {
+                "source": "I used deque for quicker front pops and appends and was wondering if that is acceptable. ",
+                "target": [
+                    "Hmm yes thats generally fine.  Yet what part of the assignment are you using this for? ",
+                    "Assuming that you are using this in count_ngrams, something that I was doing earlier. If it's so, then you can use the get_ngrams function to get the count of bigrams and trigrams."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW1 Part 6",
+        "statements": [
+            {
+                "source": "When calculating the perplexity for \"brown_test\" I get the following result:sum of log probabilities: -385547. 4037536603total number of tokens: 93001perplexity: 17. 69937401609537I think this is too low considering how the assignment specification said it would be around 400. I read the posts before and made sure I was using # of tokens for M value, but does 93001 seem like the right value for M? I do not know which of the two values I am using (log prob or # of tokens) is wrong. ",
+                "target": [
+                    "Did you train on \"brown_train\" and test on \"brown_test\"? Your M sounds reasonable.",
+                    "I am getting the same results, any luck in finding what is wrong?"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments hw1 part 7 - output format",
+        "statements": [
+            {
+                "source": "just to sanity check, should we output the percentage accuracy on a 0-1 scale or a 0-100 scale?",
+                "target": [
+                    "\"All you have to do is compare the perplexities and the returns the accuracy (correct predictions / total predictions). \"I believe from 0-1, but either should be fine."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Good Range for Perplexity",
+        "statements": [
+            {
+                "source": "I'm currently getting around 60 for my perplexity on brown test with 84% accuracy for classification. Do these seem like acceptable values?",
+                "target": [
+                    "That sounds a bit low if you're training on \"brown_train\" and testing on \"brown_test\". Most students report something around 150 to 300: #59 "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW1 General Confirmations about Understanding",
+        "statements": [
+            {
+                "source": "Hi! I am currently on part 5 (calculating the probability of a whole sentence) and was getting domain errors for math. log2 because some of my smoothed probabilities were returning 0. This led me to re-analyze how I was calculating some of the raw n-gram probabilities because I saw from other Ed posts that the smoothed probability should always return a non-zero value. I'm not sure if this is giving away too much, which is why I'm posting privately, but I just wanted to confirm that I was interpreting some things correctly since it's kind of hard to tell from the probability values given. Sorry, I know this is super long, but the most important questions are 1, 4, 5, 7, 8, 9, 10 if those are the only ones you have time to answer! Raw unigram prob:1. raw unigram probability = count of the unigrams / total number of tokens (which is all words in the lexicon, including repeats). if unigram=UNK is this calculation still performed or is it just supposed to return 0. 0? 2. if the unigram given is 'START' we just return 0. 0Raw bigram prob:3. for the raw bigram probability, if the bigram begins with 'START' we return the count of the bigram divided by the total number of sentences. 4. if the unigram has been seen (whether the bigram has been seen or not), we just return bigram counts / unigram counts --&gt; this could give 0. 0 if the bigram has not been seen. 5. do we just return 0. 0 if the bigram and unigram have both not been seen? or are we supposed to do something similar to the 1/|V| like in raw trigram probability where both trigram and bigram have not been seen? Raw trigram prob:6. if trigram begins with 'START', 'START' we just return count(trigram)/sentence count. 7. if both trigram and bigram have not been seen, return 1/length of lexicon (which is all the words in the lexicon including repeats). 8. similar to bigram prob, but if the bigram has been seen but the trigram has not, it's okay to return 0. 0Smoothed Trigram Prob + Sentence Log Prob:9. using the formula from lecture and the raw probabilities, there is a case where the smoothed probability could be 0. 0 if the trigram, bigram, and unigrams have all not been seen, especially if the last word in the trigram is a word that does not exist in the lexicon. or is this not the case? 10. right now for the sentence log prob, I have a check to ensure the returned smoothed probability is not zero to avoid domain errors in math. log2(0. 0), but is this not necessary if the smoothed probability should be non zero? 11. for a test. txt file I made up and a sentence I gave it for testing purposes it gave a sentence_logprob of -8. 9, which I think seems reasonable given the size of my sample and the sentence, so it seems like this probability is calculated and working correctly, but I'm not sure.",
+                "target": [
+                    "1. UNK is treated like any other token, so you should still obtain a probability for it. The number of tokens is the number of individual occurrences of each word (i. e. of each type), including repetitions.  2. Yes, P(START) should be 0. Rather than treating this as a special case, the best way to achieve this is to not count the START unigram at all. 3 and 6. Yes, I recommend using the sentence count for the denominator if you encounter a bigram or trigram with a START (or START, START) context. 4 and 5. To compute P(v | u) you can assume that u has always be seen. All unseen tokens are replaced with UNK by the corpus reader. But if count (u, v)=0, then P(v | u) should be 0. 7. The size of the lexicon is the number of types (so without counting repetitions). You can just use len(self. lexicon). The idea here is that in the absence of any distribution for the bigram context, it's reasonable to assume that all tokens are reasonably likely. So if count(u, v)=0, then P(w | u, v) = 1 \\ |V| for each w in V. 8. Correct P(w | u, v) is 0 if count(u, v) &gt; 0 but count(u, v, w) = 0. 9. There are no unseen unigrams because these have been replaced by UNK.  The UNK symbol should be treated like any other token. 10. This check should not be necessary (see 9). 11. That looks like it's within range. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW1 Part3",
+        "statements": [
+            {
+                "source": "Just want to make sure, when we say raw probability of a N-gram, e. g. (u, v, w), does it refer to P(u, v, w)=P(w|u, v)*P(u, v) or just P(w|u, v)? Thanks.",
+                "target": [
+                    "Should be the latter."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Testing HW 1",
+        "statements": [
+            {
+                "source": "Just wanted to confirm that when the assignment is graded, each function will be tested individually? If so, is it okay to add our own testing code? ",
+                "target": [
+                    "Yes, we test each function individually when we grade. You can add whatever you like under the main function because we won't run that. When submitting, please keep the individual functions clean by only keeping the specified outputs."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW1 Runtime",
+        "statements": [
+            {
+                "source": "Hi, I saw in #32 that there will be deductions if the code takes too long to run while grading. How fast should the code run to avoid deductions? My code currently takes around 40 seconds to run.",
+                "target": [
+                    "40 seconds is fine."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW1 submission",
+        "statements": [
+            {
+                "source": "Hi, we should not print anything in the final py file right?",
+                "target": [
+                    "Correct, only return the appropriate values within each function."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW1 Part 7",
+        "statements": [
+            {
+                "source": "Hi, For Part 7 we know the arguments to the function will be such that the files in testdir1 should have the same category as training_file1 to be deemed correct and the files in testdir2 should have the same category as training_file2 to be deemed correct. When our code is tested, will this always be the case? If someone enters the arguments in a different order, or say the files in testdir1 don't match the category of training_file1, then our function will not work. So it okay if our code works under the specific assumptions provided in the assignment of argument order and file categorization?",
+                "target": [
+                    "You can assume that we will always test using the correct order. :)"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW 1 pt 3",
+        "statements": [
+            {
+                "source": "Hi. For part 3, I understood that if the unigram is not in unigramcounts, the raw probability is 0. In the raw_bigram_probability method, I am assuming I also return 0 if the bigram is not in bigramcounts. Is that correct?",
+                "target": [
+                    "Thats correct. Note that the case of unseen unigrams will never be encountered in your code because the corpus reader replaces unknown unigrams with UNK. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW1 raw probability",
+        "statements": [
+            {
+                "source": "I'm a bit confused how to calculate raw bigram and unigram probabilities if the bigram/unigram is not in the text file. Should it be 0 or 1/|V|, where V = len(lexicon)? Or is 1/|V| only used in trigram probabilities, when bigram is not in the text? Thanks",
+                "target": [
+                    "There are no unseen unigrams  the corpus reader replaces these automatically with UNK. So its correct to return just 0 if a unigram is not found, but this should never be encountered in your code. The raw probability for an unseen bigram should be 0. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW1 Part 6",
+        "statements": [
+            {
+                "source": "Hello staff, I am trying to figure out why my perplexity function returns an unreasonably low number.    def perplexity(self, corpus):\n        preplexity = 0\n        for sentence in corpus:\n            preplexity += self. sentence_logprob(sentence)\n\n        return 2 ** -(preplexity / self. total_word_count)\nI think I got the formula right based on #45 but from what I understand, the division should be by the number of word tokens in the test corpus rather than the total words in the training corpus. I also tried len(self. lexicon) instead of self. total_word_count but got a ridiculously high number as a result. my sentence_logprob function looks like this:    def sentence_logprob(self, sentence):\n        trigram = get_ngrams(sentence, 3)\n        log_prob = 0. 0\n        for word in trigram:\n            log_prob += math. log2(self. smoothed_trigram_probability(word))\n        \n        return log_prob\nWhere do you suspect my mistake is?",
+                "target": [
+                    "You are not using the correct value for M, as you point out. M is the number of tokens in the test corpus (that is, the number of ngrams used for the test data). You will have to calculate this yourself as you iterate through the test corpus. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments High Perplexity but Accurate Classification",
+        "statements": [
+            {
+                "source": "When I calculate the perplexity of the model trained on brown_train. txt on brown_test. txt I end up with a very high perplexity, around 1000. However, my model is able to classify the essays with pretty high accuracy (80%+) . Is there anything that could explain this? The perplexity is around 17 when I run the model on the text it was trained on. Also would it be acceptable to submit the homework in this state or should I try and lower the perplexity?",
+                "target": [
+                    "I suspect you are not using the correct value for M when computing perplexity. This should be the number of tokens in the test data. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Is it ok to leave comments in the final submission?",
+        "statements": [
+            {
+                "source": "Hi team, is it okay if I leave rubber duck comments in the test code area or should I clean it up before submitting? I wanted to leave it just for future reference. ",
+                "target": [
+                    "You can leave comments, but please delete or comment out any extraneous print statements."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Hw 1 Part 7",
+        "statements": [
+            {
+                "source": "For this part of the homework I am getting a really low score of: 0. 8067729083665338, which I know is more then 80% but not by much. I went office hours and was told that it was too low but even after looking through all my other code we couldn't pinpoint what might be causing it. Could I get some guidance on what to do?",
+                "target": [
+                    "What perplexity values are you getting on the train and test corpora?"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Problem Sets HW1 - a couple of errors, bugs and otherwise intriguing issues",
+        "statements": [
+            {
+                "source": "Dear team, I hope you are all well. I am having a few issues with my code, and wonder if any of you can help me with this. I went to two office hours sessions yesterday, but have been hitting my head on the wall for a long time. Below is the status of each part of my code:Part 1Seems to be working fine. Part 2. 1:In the terminal, when I run&gt;&gt;&gt; generator = corpus_reader(\"\")\n\n&gt;&gt;&gt; for sentence in generator:\n\n. ..  print(sentence)\nI get another line of . .. . It is stuck in that line, until I hit a key, when I get the error below: Traceback (most recent call last):\n\n File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n\n File \"/Users/renatorusso/Desktop/Ed. D. /Spring_2024/COMS_4705/trigram_model. py\", line 14, in corpus_reader\n\n with open(corpusfile, 'r') as corpus:\n\nFileNotFoundError: [Errno 2] No such file or directory: ''\nThe files are all in the same directory, and I manage to reproduce the code with successful output on Google Colab:Part 2. 2Runs as expected: it returns the numbers as shown in the homework descriptionPart 3This is how I test:&gt;&gt;&gt; trigram = [('START', 'START', 'the')]\n\n&gt;&gt;&gt; model. raw_trigram_probability(trigram)\nAnd I get this error:Traceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"/Users/renatorusso/Desktop/Ed. D. /Spring_2024/COMS_4705/trigram_model. py\", line 124, in raw_trigram_probability\n    if trigram in self. trigramcounts and (trigram[0], trigram[1]) in self. bigramcounts:\nTypeError: unhashable type: 'list'This is the code that I have for defining the raw_trigram_probability method:    def raw_trigram_probability(self, trigram):\n        # \"\"\"\n        # COMPLETE THIS METHOD (PART 3)\n        # Returns the raw (unsmoothed) trigram probability\n        # \"\"\"\n        # conditional probability ofsmoothed_trigram_probability(self, trigram)w3 given w1, w2\n        # print(f\"Type of trigram argument: {type(trigram)}\")\n        if trigram in self. trigramcounts and (trigram[0], trigram[1]) in self. bigramcounts:\n            \n            return self. trigramcounts[trigram]/self. bigramcounts[(trigram[0], trigram[1])]\n        else:\n            return 0. 0\nI tried adding a print() statement right before line 124 (print(f\"Type of trigram argument: {type(trigram)}). I reproduced that on Google Colab, and it shows that the type is tuple, but it returns an AttributeError after printing typeThe same problem with raw_trigram_probability probabilities also happens with raw_bigram_probability and raw_unigram_probabilityPart 4:Im not sure how I should proceed to test the code, but it looks coherent:    def smoothed_trigram_probability(self, trigram):\n        \"\"\"\n        COMPLETE THIS METHOD (PART 4)\n        Returns the smoothed trigram probability (using linear interpolation). \n        \"\"\"\n        lambda1 = 1/3. 0\n        lambda2 = 1/3. 0\n        lambda3 = 1/3. 0\n\n        #extract bigram and unigrams from the trigram\n        bigram = trigram[1:2]\n        unigram = trigram[:1]\n\n        # specific raw probabilities for the input trigram\n        raw_trigram_probability = self. raw_trigram_probability(trigram)\n        raw_bigram_probability = self. raw_bigram_probability(bigram)\n        raw_unigram_probability = self. raw_unigram_probability(unigram)\n\n        #calculate the smoothed trigram probability using the formulas with given lambdas1\n        smoothed_trigram_probability = (lambda1*raw_trigram_probability +\n                                        lambda2*raw_bigram_probability +\n                                        lambda3*raw_unigram_probability)\n\n        return smoothed_trigram_probability\n        #return 0. 0 - provided code\nPart 5:This is how I test:&gt;&gt;&gt; sentence = \"Joe waited for the train. \"\n&gt;&gt;&gt; sentence_logprob(sentence)\nAnd these are the errors I get:Traceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nNameError: name 'sentence_logprob' is not defined\n&gt;&gt;&gt; model. sentence_logprob(sentence)\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"/Users/renatorusso/Desktop/Ed. D. /Spring_2024/COMS_4705/trigram_model. py\", line 196, in sentence_logprob\n    trigrams = self. get_ngrams(sentence, 3)\nAttributeError: 'TrigramModel' object has no attribute 'get_ngrams'\nI get the AttributeError: 'TrigramModel' object has no attribute 'get_ngrams. Should I place the get_ngrams under TrigramModel? I tried that and the get the same error. Is that error connected to the error in Part 3? Part 6:This is what Im using to test perplexity:&gt;&gt;&gt; model. perplexity(\"brown_test. txt\")\nAnd Im getting:Traceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"/Users/renatorusso/Desktop/Ed. D. /Spring_2024/COMS_4705/trigram_model. py\", line 224, in perplexity\n    sentence_logprob = self. sentence_logprob(sentence)\n  File \"/Users/renatorusso/Desktop/Ed. D. /Spring_2024/COMS_4705/trigram_model. py\", line 196, in sentence_logprob\n    trigrams = self. get_ngrams(sentence, 3)\nAttributeError: 'TrigramModel' object has no attribute 'get_ngrams'\nNow, besides the get_ngrams AttributeError:in line 224, Im initializing one of the variables used in perplexity() (sum_logprob = 0)line 196 is a commented out instructionPart 7:This is how Im testing:&gt;&gt;&gt; essay_scoring_experiment('train_high. txt', 'train_low. txt', 'test_high', 'test_low')\nAnd the output:Traceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nTypeError: essay_scoring_experiment() missing 4 required positional arguments: 'training_file1', 'training_file2', 'testdir1', and 'testdir2'\n&gt;&gt;&gt; essay_scoring_experiment('train_high. txt', 'train_low. txt', 'test_high', 'test_low')\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"/Users/renatorusso/Desktop/Ed. D. /Spring_2024/COMS_4705/trigram_model. py\", line 243, in essay_scoring_experiment\n    pp = model1. perplexity(corpus_reader(os. path. join(testdir1, f), model1. lexicon))\n  File \"/Users/renatorusso/Desktop/Ed. D. /Spring_2024/COMS_4705/trigram_model. py\", line 224, in perplexity\n    sentence_logprob = self. sentence_logprob(sentence)\n  File \"/Users/renatorusso/Desktop/Ed. D. /Spring_2024/COMS_4705/trigram_model. py\", line 196, in sentence_logprob\n    trigrams = self. get_ngrams(sentence, 3)\nAttributeError: 'TrigramModel' object has no attribute 'get_ngrams'\nline 243 is within def essay_scoring_experiment. This is where I initialize correct (correct = 0)line 224 is within def perplexity(self, corpus):. It is where I initialize sum_logprob, a variable that I. use to obtain the cumulative logprob while iterating across sentencesline 196 is a commented out instructionI appreciate your patience and support. In case it helps, I'm attaching my . py file.",
+                "target": [
+                    "Part 2. 1 - Just as you did in Colab, you need to specify the file path when running this command from the terminal. In your terminal example, you passed in an empty string to the function, so Python can't find your file. Part 3 - Be careful with square brackets. When you used them to test part 2. 2, they were used to look up a key in the n-gram dictionaries. However, in this part, you're accidentally declaring your trigram to be of type list instead. Lists can't be used as dictionary keys because they're mutable, so that's why you're getting a type error. Part 4 - The trigram you're passing in is correct, but the bigram should be (trigram[1], trigram[2]). Similarly, the unigram should be (trigram[2], ). Remember the trailing comma at the end for the unigram to ensure that the correct type is passed in. Part 5 - get_ngrams is not a class function in your code. If you remove the reference to self when calling it, that should resolve the attribute error. Part 6 - You need to initialize the model and the corpus before you can directly call the perplexity function. Refer to the commented out code in the scaffolding code's main method for an example. That being said, the error logs you're currently seeing are related to your typo from part 5. Part 7 - You're missing a substantial amount of logic in this function to obtain the accuracy. The current errors are caused by the get_ngrams typo from before."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Grading criteria",
+        "statements": [
+            {
+                "source": "Will the grade be based on perplexity score? I'm able to get 19 and 318 perplexity but I see many other got much lower score.",
+                "target": [
+                    "We grade your submission by calling each of the functions separately and comparing the outputs. That being said, these results look good."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Perplexity Scores",
+        "statements": [
+            {
+                "source": "Does a 16 perplexity score for training and a 222 for test make sense? ",
+                "target": [
+                    "That sounds about right. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General OH via Zoom now",
+        "statements": [
+            {
+                "source": "Hi teaching team! Is there an office hours session via Zoom now (Fri, 4pm) as indicated in the calendar? I'm waiting outside the room at https://columbiauniversity. zoom. us/j/93696474305? pwd=STRsZ1NSQjFPNHVGbFpYM0JyZ05pdz09 and nothing happens. Thanks!",
+                "target": [
+                    "Yes, but there is a queue. I appreciate your patience!"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW 1 part 6",
+        "statements": [
+            {
+                "source": "M is the numbers of tokens. is each single word in the text document a token or is (''start'', ''start'', ''i'' ) a token?",
+                "target": [
+                    "Each word in the text document is a token. When counting the number of tokens, also keep mind whether to included START or END (#26)."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments word counts",
+        "statements": [
+            {
+                "source": "So, we should have two different total word counts, one for the training and one for the testing data. We use the training total word count to count the unigram probabilities but use the testing total word count for perplexity? ",
+                "target": [
+                    "That is correct! "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Homework 1 Perplexity Values Incorrect",
+        "statements": [
+            {
+                "source": "Hi, I went to an OH and the TA wasn't able to find anything wrong with my code. However, I am getting values for perplexity which do not seem correct even though my accuracy is above 80% as it should be. Specificially, the values are: Perplexity on Training data: 34. 96057236763446Perplexity on Test data: 70587. 93522043075Essay Scoring Accuracy: 0. 8127490039840638I've attached my code below and would appreciate any help you can provide. Thanks!",
+                "target": [
+                    "You have an issue with your smoothed_trigram_probability function. The trigram you're passing in is correct, but the bigram should be (trigram[1], trigram[2]). Similarly, the unigram should be (trigram[2], ). Also, remember the trailing comma at the end for the unigram to ensure that the correct type is passed in.",
+                    "Make sure you're using the trailing comma: (bigram[0], ) in your raw_bigram_probability function as well. Without this, a single-element tuple isn't recognized."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW-1 part 2, unigram count",
+        "statements": [
+            {
+                "source": "Hello, my unigram count returns zero&gt;&gt;model. unigramcounts[('the', )]\n0but when I change the code to&gt;&gt;model. unigramcounts[('the')]\n61428should I tweak my code so that &gt;&gt;model. unigramcounts[('the', )] returns 61428, or its fine to have unigramcounts without  ', '  ?",
+                "target": [
+                    "Hi Navin, I'm not a TA, but the homework specs indicate that \"unigrams are represented as one-element tuples (indicated by the , in the end). \" Here's the expected output they gave:&gt;&gt;&gt; model. unigramcounts[('the', )]\n61428 I think the staff will test your code assuming your unigrams are defined as they laid out in the specs! :) "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Andrew Zoom OH",
+        "statements": [
+            {
+                "source": "Hi, are these OH still happening 9-11? I'm in the Zoom room but don't see anyone else.",
+                "target": [
+                    "Yes, figuring out the zoom and coming. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Helper functions?",
+        "statements": [
+            {
+                "source": "Are we allowed to create additional helper functions to reduce repeated code?",
+                "target": [
+                    "Yes. As long as you don't change the signatures and return types for the functions provided in the scaffolding code, you can add whatever you'd like."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Hw 1 Part 7",
+        "statements": [
+            {
+                "source": "I'm getting back around 68% accuracy for the essay_scoring_experiment() function when I test it on the two training text files, and two testing directories. How could I increase my accuracy to reach above 80% as mentioned in the hw instructions?",
+                "target": [
+                    "What do the perplexity values look like for the earlier parts? "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Are the office hours at 3 pm happening?",
+        "statements": [
+            {
+                "source": "^^^",
+                "target": [
+                    "joining the question. ."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General sentence_logprob",
+        "statements": [
+            {
+                "source": "hello, I get -50. 9 when i do (model. sentence_logprob([\"natural\", \"language\", \"processing\"]))how is this ok? cant seem to understand the logic behind it. .. ",
+                "target": [
+                    "If you graph log2(x), you'll see that as x --&gt; 0 from the right, log2(x) goes to negative infinity. Normal probabilities (x) range from 0 to 1. Log2(1) = 0, so because we're dealing with small probabilities close to 0, all our log probabilities will be negative numbers. The log transformation is monotonic (meaning that the order of the original probabilities is preserved), so the lowest log probability (most negative) corresponds to the lowest original probability (closest to 0). We use log probabilities because the numbers are a lot more reasonable (logprob of -50. 9 corresponds to 4. 7596303e-16 in original probability). We can also add log probs instead of having to multiply original probabilities. Hope this helps!"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Andrew's OH this AM",
+        "statements": [
+            {
+                "source": "hello there are a few of us in the zoom, cant tell if Andrew is in a break out room or not. . been here for almost 30min so please let us know!",
+                "target": [
+                    "Checking with him on Slack . .. I'll let you know when I hear back. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW1 Part 6",
+        "statements": [
+            {
+                "source": "As M is explained in #45, are these \"tokens\" unique? Does M include either \"START\" or \"STOP\" tokens? \"M = is the total number of word tokens in the test corpus\". Thank you!",
+                "target": [
+                    "the term tokens suggests that you count duplicates. Tokens are the specific instances of the unique types as they appear in a corpus. For example to be or not to be contains 6 tokens, but only 4 types. M in this case contains the STOP token, but not START. A better way to think about M, is that this is the number of ngrams the model needs to predict the test data. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General solution for ungraded exercise",
+        "statements": [
+            {
+                "source": "Hi, The solutions for the 3rd ungraded exercise (HMM) are just the problems themselves again. Could someone be so kind as to repost the actual solutions? Thank you!",
+                "target": [
+                    "My mistake, I accidentally linked the assignment itself, not the solutions Page. It's fixed now, and here is a direct link: https://courseworks2. columbia. edu/courses/191061/pages/ungraded-exercise-solution-hmm-viterbi-and-forward-algorithm"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW1 Part 5 - Question about sentence_logprob()",
+        "statements": [
+            {
+                "source": "Any time I pass a sentence to sentence_logprob() that is not in the corpus, I get an error because math. log2() is passed a 0. Taking #39 into account, does sentence_logprob() only take in sentences that are already in the corpus? I don't see how the unigram would be non-0 if the is not in the corpus.",
+                "target": [
+                    "A word not seen is substituted with \"UNK\" so the unigram probability should not be zero."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments t in the optional part",
+        "statements": [
+            {
+                "source": "Hello, In the optional part, t represents the maximum sequence length. Does it include START and STOP tokens? Include both; only have STOP or exclude them. Thank you very much.",
+                "target": [
+                    "Since its optional, you can define it either way. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General CS Building 5th Floor",
+        "statements": [
+            {
+                "source": "Hello, I could not find the CS building 5th Floor for Tony's OH. I first went to the Mudd 5th floor and then got to this place via CS rooms. But it seems this is not the correct place. Does anyone know how to get to the correct place? Thank you very much.",
+                "target": [
+                    "I don't know the exact location of Tony's OH but - if I remember correctly - you can go to the hallway where the CS Lounge entrance is and keep walking to the end to find stairs that can lead you to the 5th floor. That might have been what you were looking for. I hope that helps!",
+                    "This is funny: Ive been at Columbia since 2010 and I have never been in that specific hallway "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW1 Part 3: unigram probability is 0, dealing with 'START' unigram",
+        "statements": [
+            {
+                "source": "Hi, in #39 Prof. Bauer said \"For the interpolated probabilities, the result will never be 0 because the unigram will be non-0. \" How should we ensure the unigram probability is non-0? If the unigram v has never appeared in the corpus, should we use P(v)=1/(num_tokens)? Or should we use P(v)=1/count(UNK)? Also, in another post #26 , Prof. Bauer said not to count 'START' in our total tokens. How should we handle the unigram probability for 'START'?",
+                "target": [
+                    "So the corpus reader takes care of replacing unseen unigrams (that is, words not in the lexicon) with UNK. So no unseen tokens remain. The unigram probability of START should be 0. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Total words",
+        "statements": [
+            {
+                "source": "What does it mean when we compute the total number of words in part 3? Is it the size of the lexicon or the actual total number of tokens encountered in the corpus when we iterate through it excluding the start tokens?",
+                "target": [
+                    "total number of words/tokens encountered per #26 "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Start and Stop",
+        "statements": [
+            {
+                "source": "When do we include start and stop tokens? Like when we are counting total word count when calculating the raw unigram probabilities do we count start and stop or just count the words in the lexicon? And then I saw somewhere that for perplexity we include stop and not start? That confused me. Is there a general rule for what to include? ",
+                "target": [
+                    "we dont ever include start because the model cant predict it  therefore it shouldnt be in any counts"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Gurnoor Virdi's OH",
+        "statements": [
+            {
+                "source": "I am waiting in the CS TA room in Mudd and no one here do I have the wrong place? Or have the OH been rescheduled?",
+                "target": [
+                    "Hi sorry I am running behind just got out of a meeting will start at 10:30 today! "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW1 Part 3 - How to deal with ('START') or ('START', 'START') context grams",
+        "statements": [
+            {
+                "source": "What should we do for raw trigram probability P(v|u, w)=count(u, v, w)/count(u, w) if (u, v, w) has been seen but (u, w) hasn't been seen? For example if the trigram is ('START', 'START', 'the') then the trigram may appear but the context bigram ('START', 'START') has 0 appearances. How should we calculate the trigram probability in this case? Similarly, what should we do to handle the case of a bigram of the form ('START', 'word')? Should we use the unigram probability of v in these cases? ",
+                "target": [
+                    "This is an edge case that you need to take special care of. One solution is to add a class variable that counts the total number of sentences. You can then set count(START, START) to be equal to the total number of sentences."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW1 Part 7",
+        "statements": [
+            {
+                "source": "Hi thereI'm confused that what should be sys. argv[1] and sys. argv[2]? In other words, what should be implement in [corpus_file]? Brown_train. text or train_high and train_low. I think I finish all function parts and want to check the accuracy. Thanks",
+                "target": [
+                    "You should use brown_train. txt to train your model and brown_test. txt to evaluate perplexity for parts 1-6. A reasonable command might be:python -i trigram_model. py &lt;path_to_brown_train&gt; &lt;path_to_brown_test&gt;For part 7, you don't actually need to use any of the brown corpus files. Instead train separate models using the ETS TOEFL files input to essay_scorring_experiment. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW1 Part 3",
+        "statements": [
+            {
+                "source": "I'm struggling to understand how the raw trigram probability would not be 0 if count(u, w, v) = 0? In addition, if count(u, w) is also 0 then I don't understand where to fit 1 / |V| in my equation in a way where my answer will not be 0 every time. Any tips for testing my work here for Part 3 would also be greatly appreciated!",
+                "target": [
+                    "For trigrams, if count(u, v, w)=0, which might happen, but also count(u, w)=0, it's not quite clear what the answer should be. It's expected that we might not know anything about the distribution of v in the context of u, w so we assume uniform distribution, i. e. , we divide by |V|. Essentially, what you want to focus on is when the denominator is 0, use uniform distribution. Regarding testing it's probably best to create an example manually, calculate some probabilities and check if the results match by using print statements."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Problem Sets Hw1 Part 5",
+        "statements": [
+            {
+                "source": "Is the point of this part that we split the sentence into trigrams ie: [('START', 'START', 'natural'), ('START', 'natural', 'language'), ('natural', 'language', 'processing'), ('language', 'processing', 'STOP')]\nthen calculate the probability of each trigram in the sentence ie:{('START', 'START', 'natural'): . 032, ('START', 'natural', 'language'): . 05, ('natural', 'language', 'processing'): . 043, ('language', 'processing', 'STOP'): . 062} and then finding the log probability of each of these and adding them together?",
+                "target": [
+                    "The idea is to calculate the log probability of an entire sequence, given a corpus. Please refer also to #45!"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW1 P6 do words tokens for M include punctions?",
+        "statements": [
+            {
+                "source": "HW1 P6 says: \"Here M is the total number of word tokens, while m is the number of sentences in the test corpus\". Does a \"word token\" include punctuation like \", \"?",
+                "target": [
+                    "Anything returned by the corpus iterator should count as a token. Another way to think about M is that it is the number of ngram predictions used to generate all sentence in the test data. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Hw1 Part4",
+        "statements": [
+            {
+                "source": "Is the expectation for part 4 that the method returns a dictionary with the overall linear interpolation probability of all the words in the text file? ",
+                "target": [
+                    "No. You should not return an entire dictionary. You should just be returning the smoothed probability of the trigram provided as an argument to the function call."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Avighna's Office Hours",
+        "statements": [
+            {
+                "source": "Hi, I am just wondering if Avighna's office hours are happening/if I will be able to meet with her. I've been in the \"Host has joined. We've let them know you're here\" for a bit now. Thanks!",
+                "target": [
+                    "Hi! I am taking people one by one out of the waiting room as fast as I can but it is packed right now and ends in 2 mins :(, so I don't think I will be able to get to everyone. There are a lot of other OH today though so please go to one of those if I haven't been able to get to you! !"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW1 submission main method",
+        "statements": [
+            {
+                "source": "Hi, Regarding the submission of HW1, should we keep the main method's contents unchanged as provided, with most lines commented out, or does it not make a difference? Thank you!",
+                "target": [
+                    "It doesn't really make a difference -- we will test the individual methods, not the main code. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Homework 1",
+        "statements": [
+            {
+                "source": "According to #8 , why should get_ngrams(['n', 'l', 'p'], 1) also add a START even though n doesn't exceed len(sequence)? Is it that there should be at least one START? If it is, what should the output be for get_ngrams(['natural', 'language'], 2)? &gt;&gt; get_ngrams(['natural', 'language'], 2)[('START', 'natural'), ('natural', 'language'), ('language', 'STOP')]Is it like this? That is we have at least one START and STOP and (n-1)*'START' should be added.",
+                "target": [
+                    "&gt;&gt; get_ngrams(['natural', 'language'], 2)[('START', 'natural'), ('natural', 'language'), ('language', 'STOP')]Is it like this? Yes, that's correct. You need to add n-1 START symbols and one STOP symbol. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Waiting to be accepted into zoom link for todays OH",
+        "statements": [
+            {
+                "source": "titlewondering if there was a limit or time schedule or something i missed out on! Or if I joined the wrong link like last time I attended OH on zoom? Thanks!",
+                "target": [
+                    "Hi! I am letting people in one by one from the waiting room as I get to them!"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW1 - Part 5 Values of Sentence Probs",
+        "statements": [
+            {
+                "source": "I'm getting very strange values for perplexity in part 6, so I wanted to check to see if my log sentence probabilities were reasonable. For most sentences, I am getting somewhere between -10 to -60 when calling model. sentence_logprob(sentence) on some sentence from the training corpus. Is this reasonable? I think this is correct as sentences should have a very low probability, but I could be wrong about just how low the probabilities are supposed to be. A negative log prob of &lt; -10 means an extremely low probability. ",
+                "target": [
+                    "The range should be more like -10 to -100s (-200, -300, -400, etc. ). This may not be the only correct answer though. I was incorrectly calculating raw_unigram_probs to be higher than they should have been. With this fixed, I am getting good perplexity values and accuracy values. Updating incase someone else runs into this"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Perplexity score",
+        "statements": [
+            {
+                "source": "I'm getting around ~8 for a perplexity score when running python trigram_model. py brown_test. txt brown_test. txt. I don't really understand why it would be so low, I don't see any big problems with my functions. Am I running this correctly (the above)? Or is it then something in a function of mine? In my perplexity function, I'm using M = number of word tokens (total word count), is that what is meant by tokens? EDIT: running python trigram_model. py brown_test. txt brown_train. txt: 6e^19running python trigram_model. py brown_test. txt brown_test. txt: 8. 8running python trigram_model. py brown_train. txt brown_train. txt: 11. 3running python trigram_model. py brown_train. txt brown_test. txt: 1. 6",
+                "target": [
+                    "I had a similar problem, according to the HW description we should \"compute the perplexity of the model on an entire corpus. \" In other words, M should be calculated based on the test corpus, not the one used to build the model I believe",
+                    "Possibly you are not using the correct value for M when computing the perplexity (see student answer above). M is the total number of tokens (word occurrences, including duplicates) in the corpus you are testing. But also, you would expect the perplexity of the model trained on \"brown_test\" to have a very low perplexity on \"brown_test\" itself. What's more concerning is your last result:running python trigram_model. py brown_train. txt brown_test. txt: 1. 6This should be much higher -- most people report something around 150 to 300. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW1 - Part5",
+        "statements": [
+            {
+                "source": "How should we handle the log probability calculation when the smoothed probability of a trigram is zero? Thank you!",
+                "target": [
+                    "It was mentioned in #39 that the interpolated probability would not be 0"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW 1 part 6",
+        "statements": [
+            {
+                "source": "Hi! Firstly, when I run : dev_corpus = corpus_reader(sys. argv[2], model. lexicon)\npp = model. perplexity(dev_corpus)\r\nprint(pp)\nI get File \"C:\\Users\\HP\\Downloads\\trigram_model. py\", line 208, in  dev_corpus = corpus_reader(sys. argv[2], model. lexicon) IndexError: list index out of rangeAlso, it seems my code is going into an infinite loop after I added the code for perplexity function. Any help would be really really appreciated! Thanks! Below is my code (attaching everything to increase clarity):def get_ngrams(sequence, n):\r\n   \r\n    if n == 1:\r\n        padded_seq = ['START'] + sequence + ['STOP']  \r\n    else:\r\n        padded_seq = (['START'] * (n-1)) + sequence + ['STOP']\r\n\r\n    res = []\r\n    for i in range(0, len(padded_seq)-n+1):\r\n        res. append(tuple(padded_seq[i: i+n]))\r\n\r\n    return res\r\n\r\n\r\nclass TrigramModel(object):\r\n    \r\n    def __init__(self, corpusfile):\r\n    \r\n        # Iterate through the corpus once to build a lexicon \r\n        generator = corpus_reader(corpusfile)\r\n        self. lexicon = get_lexicon(generator)\r\n        self. lexicon. add(\"UNK\")\r\n        self. lexicon. add(\"START\")\r\n        self. lexicon. add(\"STOP\")\r\n    \r\n        # Now iterate through the corpus again and count ngrams\r\n        generator = corpus_reader(corpusfile, self. lexicon)\r\n        self. count_ngrams(generator)\r\n\r\n\r\n    def count_ngrams(self, corpus):\r\n        self. unigramcounts = Counter() # might want to use defaultdict or Counter instead\r\n        self. bigramcounts = Counter() \r\n        self. trigramcounts = Counter() \r\n\r\n        for s in corpus:\r\n            # print(s)\r\n            unigrams = get_ngrams(s, 1)\r\n            bigrams = get_ngrams(s, 2)\r\n            trigrams = get_ngrams(s, 3)\r\n\r\n            # ref on how to update counter objects https://docs. python. org/3/library/collections. html#counter-objects\r\n            # print(trigrams)\r\n            self. unigramcounts. update(unigrams)\r\n            self. bigramcounts. update(bigrams)\r\n            self. trigramcounts. update(trigrams)\r\n\r\n    def raw_trigram_probability(self, trigram):\r\n        u, v, w = trigram\r\n        tri_count = self. trigramcounts[trigram]\r\n        if u == 'START' and v == 'START':\r\n            bi_count = self. bigramcounts[(v, w)]\r\n        else:\r\n            bi_count = self. bigramcounts[(u, v)]\r\n        \r\n        lexi_size = len(self. unigramcounts) - 1\r\n\r\n        if lexi_size == 0:\r\n            return 0. 0\r\n\r\n        if bi_count == 0:\r\n            ans = 1 / lexi_size\r\n        else:\r\n            ans = tri_count / bi_count\r\n        return ans\r\n\r\n    def raw_bigram_probability(self, bigram):        \r\n        u, v = bigram\r\n        bi_count = self. bigramcounts[bigram]\r\n        uni_count = self. unigramcounts[(u, )]\r\n        lexi_size = len(self. unigramcounts) - 1\r\n\r\n        if lexi_size == 0:\r\n            return 0. 0\r\n        \r\n        if uni_count == 0:\r\n            ans = 1/lexi_size\r\n        else:\r\n            ans = bi_count/uni_count\r\n        return ans\r\n    \r\n    def raw_unigram_probability(self, unigram):\r\n        total_words = sum(self. unigramcounts. values()) - self. unigramcounts[('START', )]\r\n        uni_count = self. unigramcounts[unigram]\r\n        if total_words == 0:\r\n            return 0. 0\r\n        else:\r\n            return uni_count / total_words \r\n\r\n    def generate_sentence(self, t=20): \r\n        \"\"\"\r\n        COMPLETE THIS METHOD (OPTIONAL)\r\n        Generate a random sentence from the trigram model. t specifies the\r\n        max length, but the sentence may be shorter if STOP is reached.\r\n        \"\"\"\r\n        return result            \r\n\r\n    def smoothed_trigram_probability(self, trigram):\r\n        lambda1 = 1/3. 0\r\n        lambda2 = 1/3. 0\r\n        lambda3 = 1/3. 0\r\n        u, v, w = trigram\r\n        p_tri = self. raw_trigram_probability(trigram)\r\n        p_bi = self. raw_bigram_probability((v, w))\r\n        p_uni = self. raw_unigram_probability((w, ))\r\n        return (lambda1 * p_uni) + (lambda2 * p_bi) + (lambda3 * p_tri)\r\n        \r\n    def sentence_logprob(self, sentence):\r\n        \r\n        trigrams = get_ngrams(sentence, 3)\r\n        ans = 0. 0\r\n\r\n        for t in trigrams:\r\n            # print('hi1')\r\n            p = self. smoothed_trigram_probability(t)\r\n\r\n            if p == 0:\r\n                return float(\"-inf\")\r\n            ans += math. log2(p)\r\n\r\n        return ans\r\n\r\n    def perplexity(self, corpus):\r\n\r\n        sum = 0. 0\r\n        \r\n        for s in corpus:\r\n            log_prob = self. sentence_logprob(s)\r\n            \r\n            if log_prob == float(\"-inf\"):\r\n                return float(\"-inf\")\r\n            \r\n            sum += log_prob\r\n\r\n        l = -1 * (sum / (len(self. unigramcounts) - 1))\r\n        print(2**l)\r\n        return  2**l\n",
+                "target": [
+                    "Make sure to pass the train and test files to check perplexity: python trigram_model. py brown_train. txt brown_test. txt",
+                    "I don't think you implementing M for perplexity in the correct way. Follow #45 and feel free to visit OHs",
+                    "corpus_reader() deals with tokenization and you have to get the total number of tokens from the testing dataset. Follow an example below: ",
+                    "Attended OH and got it fixed, thank you!"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Lectures Class today?",
+        "statements": [
+            {
+                "source": "Is todays class still going to be remote? ",
+                "target": [
+                    "+1 ",
+                    "Sorry I just read this. In case you missed it, the recording of today's class should be up in the Video Library in a bit. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW 1 - Part 6",
+        "statements": [
+            {
+                "source": "For the perplexity calc and the corpus, the instructions say the following:Write the method perplexity(corpus), which should compute the perplexity of the model on an entire corpus. \nCorpus is a corpus iterator (as returned by the corpus_reader method). \nRecall that the perplexity is defined as 2-l, where l is defined as: \nIt's not clear to me how exactly the corpus should be passed into this method as there's an existing method that reads in the corpus. Should it be read in again somehow, local to this function? Also, is it possible to get examples of what the log prob of sample sentences would be to help check work along the way?",
+                "target": [
+                    "You should first call corpus_reader to obtain a corpus iterator object. Then pass this object to the perplexity method. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW 1 - Part 3",
+        "statements": [
+            {
+                "source": "When we calculate raw_unigram_probability(unigram), it's the count(unigram) / (total tokens). In this case should \"total tokens\" include counts of 'START' and 'STOP' or only \"real tokens\"?",
+                "target": [
+                    "#26"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW1 - Part 2",
+        "statements": [
+            {
+                "source": "For HW1 - Part 2, when we read in line by line, should each line have a number of 'START's inserted in the front, and one 'STOP' at the end? Or, should there only be one 'STOP' and one set of 'START's for the whole corpus? I'm assuming the former, but wanted to be sure.",
+                "target": [
+                    "Each entry you iterate over in the corpus corresponds to a sentence (see excerpt from the HW1 Description:)&gt;&gt;&gt; generator = corpus_reader(\"\")\n&gt;&gt;&gt; for sentence in generator:\n             print(sentence)START and STOP are applied on this sentence level rather than on the level of the whole corpus"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Problem Sets HW 1 Reasonable Perplexity + Accuracy",
+        "statements": [
+            {
+                "source": "Hi, I am getting 293 perplexity for the Brown test set and 84. 66% accuracy for the essay classification, do these numbers seem reasonable or do they seem indicative of an underlying error? I get 18 perplexity when I run the Brown train set on the Brown train set",
+                "target": [
+                    "These look good."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Ungraded exercise: Naive Bayes",
+        "statements": [
+            {
+                "source": "Hi! Thanks for posting the solution for the Ungraded exercise: Naive Bayes. I am a little confused about the difference between that solution and the worked example on page 7 of chapter 4 in Jurafsky and Martin's book. To me, it seems that both b) in the ungraded exercise and the worked example (screenshot attached) present a very similar structure, but different approaches to solving, leading to different solutions. I would appreciate your help figuring out the what the differences are between the problems. Thanks!",
+                "target": [
+                    "Its the same approach, but in the textbook example they are additionally using add-one smoothing for the conditional probabilities. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW1 Part 7",
+        "statements": [
+            {
+                "source": "Hi, I got a trigram key error from my code and was wondering how to account for trigrams that occurred in the test file but not in the training file?   Thank you!",
+                "target": [
+                    "Because you are using smoothed_trigram_probability, there will never be a trigram with probability 0.  "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General OH on zoom from 9. 30 am",
+        "statements": [
+            {
+                "source": "Hi! Is there still going to be an OH today on zoom as indicated by the calendar? Thanks!",
+                "target": [
+                    "It's on! Feel free to join with the Zoom link in the calendar."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Problem Sets How do I test my functions?",
+        "statements": [
+            {
+                "source": "Hi! This might be a silly question, but is there a way to test each part of my hw? Or is it only possible to test it once the entire hw is done? Thanks!",
+                "target": [
+                    "One way is to instantiate a new TrigramModel using your own txt file. For example, you could create a txt file based on the corpus from the ungraded n-gram exercise, instantiate a TrigramModel with that file, and then verify that the probability outputs match up with the solutions."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Problem Viewing OH Calendar",
+        "statements": [
+            {
+                "source": "Is anyone else having problems seeing the calendar for office hours? Could this be because I have a Barnard email and not a Columbia one? If so, could those would a Barnard email be added to it? Thank you!",
+                "target": [
+                    "I added all the students that responded on #20, but I'll make sure now to add all of the Barnard students from this course manually."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Final Exam Timing",
+        "statements": [
+            {
+                "source": "Hi, I know it's about 3 months away, but due to unplanned circumstances, I might not able to take the exam with my current group on 4/26. I was wondering if there's an option to take the final exam with the second group on 4/29 or any other alternative. Thank you in advance, Orr",
+                "target": [
+                    "Please directly email the professor."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Problem Sets Naive Bayes Warm Up Clarification",
+        "statements": [
+            {
+                "source": "Super quick question for calculating the class of a document given a word. I know the solutions state that we can disregard the denominator because \"It's sufficient to compute the joint probabilities, because the denominator for the conditional probability is constant between classes. \" Can someone explain a little bit more what is meant by \"constant between classes\"? Are we saying that bc there are only ten possible words in the \"universe\" for these documents we don't need to calculate the probability that one word occurs because they're all equally likely to occur (1/10 chance of occurring)? Or is it something else.",
+                "target": [
+                    "Yes, so the goal of the Naive Bayes classifier is to make a classification decision: based on the observed words in the given document, which class is the \"best\". The way you do that is by comparing the probabilities that the model assigns, under the assumption class = Spam vs. the assumption class = Ham. It doesn't matter if you compare the conditional probabilities P(spam | crown-prince) vs. P(ham | crown-prince) or the conditional probabilities P(spam, crown-prince) or P(ham, crown-prince). The reason is that P(crown-prince) is the same under both assumptions. Even though the conditional and joint probability are of course not identical, since your goal here is only to classify, you can use either. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Where is cs ta room?",
+        "statements": [
+            {
+                "source": "As title.",
+                "target": [
+                    "It's on the first floor of Mudd, room 122A. If you're coming for my OH: I'm sitting on the first floor, right next to the street level doors since it's fully occupied right now. Reach out to me at am6203@columbia. edu for any other questions as I figure out the OH location. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Problem Sets Hw1 Part 6",
+        "statements": [
+            {
+                "source": "Hi, For the value of M in Part 6, should we count the number of 'START' and 'STOP' token too ? I believe we do but we get a value closer to 400 for the perplexity if we don't.",
+                "target": [
+                    "Include STOP, but exclude START."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW1 part 7",
+        "statements": [
+            {
+                "source": "For part 7, I am a bit confused on what should I do. We need the accuracy of each model, but how do we determine if a perplexity is correct? The two for loops given seems to iterate the high model through the high data set, and iterate the low model through the low data set separately. Are we supposed to loop the high model through both high and low, and loop the low model through both high and low, and compare their results for each test data to see if their perplexity difference is correct?",
+                "target": [
+                    "Hi, I have a similar question as a sanity check- I am assuming we have to compare the perplexity of the same file calculated from one model (trained on high scores) compared to the other model (trained on low scores), i. e. for a given sample file, both models should compute it's perplexity? (and then we label it based on the lower perplexity score, and identify if that labelling is correct based on the directory it originated from? )",
+                    "Yes, I think your understanding is correct. The example code is misleading. The idea is that you iterate through all \"low\" essays and apply both the \"low\" and \"high\" models to each. If the \"low\" model has a lower perplexity than the \"high\" model, you would count that essay as classified correctly. Then you repeat with all the \"high\" quality essays. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW1 Part3 n-gram probabilities are 0",
+        "statements": [
+            {
+                "source": "For the case the prob for n-gram is 0, do we need to consider similar case for bigram? And what if the count(u, w, v) is 0, while count(u, w) is not 0?",
+                "target": [
+                    "For the raw probabilities, just return 0 for those cases. For the interpolated probabilities, the result will never be 0 because the unigram will be non-0. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Hw1 Part1",
+        "statements": [
+            {
+                "source": "Is this the correct logic of how i should be using the START and STOP padding for the ngram? ",
+                "target": [
+                    "That looks good to me. (Side note: I recommend that you work on this in a regular IDE or a text editor, rather than Jupyter notebook. You may encounter some issues with being able to test the code as intended because not all methods may be defined correctly  its also difficult to pass command line parameters). "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Hw1 Part 2",
+        "statements": [
+            {
+                "source": "I just have a question about this part of the homework. What exactly does the content in the corpus looklike? Are we counting the instances of specific trigram, bigram and unigrams or are we counting trigram, bigrams and unigrams in general (hence looking at whats in the corpus and looking at the size and counting it occordingly)? Lastly what would be the best way to test this part of the code specifically? Thank you!",
+                "target": [
+                    "I had a similar question! What would sys. argv[1] be reading in to generate the corpus? ",
+                    "Hm Im not sure I fully understand your question. The corpus reader iterates through the corpus and produces one sentence at a time. You should count all unigrams, bigrams, and trigrams that appear in the corpus. To test, I would recommend running the code on a small sample corpus (one or two sentences)  just put them in a text file. Then you can directly compare the obtained counts to your manual counts. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Hw1 part 3 |V|",
+        "statements": [
+            {
+                "source": "We need to do P(v | u, w) = 1 / |V| (where |V| is the size of the lexicon), if count(u, w) is 0. But I am confused what |V| represent. Does it mean number of types of bigrams or number of types of single words or frequency of word \"v\"?",
+                "target": [
+                    "|V| is the magnitude (size) of the set V, which contains unigram types. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW1 Part 4",
+        "statements": [
+            {
+                "source": "Should we just use the given values (1/3 each) for lambda?",
+                "target": [
+                    "Yes."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW1 - Interlude",
+        "statements": [
+            {
+                "source": "Is the optional portion of the homework extra credit? Or is it strictly for fun?",
+                "target": [
+                    "There's no extra credit in this course, so it's just for fun! :)"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW1 Part 5",
+        "statements": [
+            {
+                "source": "Are we using bigrams or trigrams to calculate the log probability?",
+                "target": [
+                    "Use trigrams."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW1 Part 3",
+        "statements": [
+            {
+                "source": "Can we compute the total words each time we run this function or will we be docked points for doing this?",
+                "target": [
+                    "Not necessarily; we'll only make deductions if your code takes too long to run when grading. If you want to err on the side of caution, we highly recommend creating a variable to store the total number of words, and reusing that for later computations."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Possible need for an extension for HW1",
+        "statements": [
+            {
+                "source": "Hello, I am a medic in the Army National Guard, and I will have to go away for training for a week starting this Friday. I will try very hard to finish the HW as soon as I can and on time, but how could I obtain an extension given the circumstances? I can submit paperwork that showcases my responsibilities.  Thank you",
+                "target": [
+                    "Please email me directly. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW1 Part 6",
+        "statements": [
+            {
+                "source": "Hi, Is M total number of unique word tokens or number of word tokens which might be repeated in the corpus? When we sum log probability for each sentence to calculate perplexity, do we include START and END tokens to calculate log probablity of a sentence? Do we include START and STOP tokens in M? ThanksAbhinav",
+                "target": [
+                    "For the log probability, you should include the probability of STOP/END, but not START. Think about the model as predicting one token at a time, given the left context. The last predicted token is STOP. START is never predicted, it just provides the context for the first token. M is the number of word tokens (i. e. including duplicate counts), not types. It should include STOP but not START (since the STOP token is predicted, but the START token is not). "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW1 part 6",
+        "statements": [
+            {
+                "source": "For part 6, is the \"perplexity\" function supposed to return perplexity for a sentence or the entire corpus? The comments in the function is different from in the assignment on courseworks. Also for part 6, when we use the log2 probabilities for calculating perplexity, do we need to log the output of the function sentence_logprob again? or is the output already log2 prob?",
+                "target": [
+                    "The perplexity function is supposed to return the complexity of the model on the entire corpus. The sentence log probabilities should already use log2 (see part 5). "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Hw1 part 7 accuracy file path",
+        "statements": [
+            {
+                "source": "The starter code (acc = essay_scoring_experiment('train_high. txt', \"train_low. txt\", \"test_high\", \"test_low\") ) does not work for me and it keeps saying No such file or directory: 'train_high. txt' And my python file is in the same directory with them. I am not sure why it says no such file. So I used my exact file path which worked. I wonder if I should submit with my exact file path or change it back, or should I comment out the testing part?",
+                "target": [
+                    "Your working directory is probably different from the directory where the files are located. I recommend just switching it back after you are done testing for your final submission, but it's not a big deal to leave the absolute pathnames. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW1 part3 total # of words",
+        "statements": [
+            {
+                "source": "HiIf I understand correctly, total number of words is not including the (START, ) and (STOP, ) token? Why do we not count those tokens in unigrams? (My guess is the start and stop token are meaningless here. )Best,",
+                "target": [
+                    "This is for the unigram probabilities? START should definitely not be included, because the model would never predict it. I recommend including STOP. You will need the unigram probability of STOP when you compute linear interpolation in part 4. ",
+                    "What's the harm in including Start as a normal token?"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW1 perplexity question",
+        "statements": [
+            {
+                "source": "Hi. I am perplexed by a perplexity score . Specifically, I ran perplexity on the brown_train which gave me 14. 6, a low value as expected. However, when running on brown_test I  get 9. 07 a low score, but importantly, it's lower than the training perplexity. This seemed odd since I expected the test perplexity to be higher than that of the training data. Can I assume there is a bug in my code, or is it possible for test perplexity be lower than train perplexity? ",
+                "target": [
+                    "The test perplexity should never be lower than the one on the training set. I would double check whether you're using the number of tokens in the training set when computing your test perplexity."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW! part 3",
+        "statements": [
+            {
+                "source": "For HW1 part 3 where we need to compute the total words for unigram, can we edit __init__ directly to add object variables? Or can we only edit the functions specifically for each part?",
+                "target": [
+                    "That's fine. As long as you keep the function signatures and return types the same, you're free to make any other modifications."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Lectures Add-one smoothing",
+        "statements": [
+            {
+                "source": "Does V (the size of the vocab) in the denominator include all the START and END tokens? ",
+                "target": [
+                    "We never count START as part of the vocabulary because it never appears on the left side of any conditional probability calculation we do in training. We count END because we will always see something like (END|word)."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Exam format",
+        "statements": [
+            {
+                "source": "For the exams will there be coding? How are they formatted? Sorry I know this is super in advance just curious! ",
+                "target": [
+                    "The exams will consist of short answer and free response questions that are similar to the ungraded exercises. You may have to adjust a couple lines of pseudocode for a specific algorithm, but we will not ask you to directly code anything from scratch."
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments hw1 part2 about Punctuations",
+        "statements": [
+            {
+                "source": "Do we need to regard the punctuations as a \"word\" or we need to remove all of them? Eg. For bigram, \"Hi, Bob. \", do we use [. .. ('Hi', ', '), (', ', 'Bob'). .. ] or [. .. ('Hi', 'Bob'), . .. ]",
+                "target": [
+                    "The corpus reader is performing any text normalization for you. You dont have to worry about tokenization or removing symbols. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW 1 Part 5",
+        "statements": [
+            {
+                "source": "What is the datatype of \"sentence\" in sentence_logprob(sentence)? Can we assume it will be given as an array? Or is it a string?",
+                "target": [
+                    "Its a sequence (either a list or tuple) of tokens. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Problem Sets HW1 Part 1",
+        "statements": [
+            {
+                "source": "Should the case for n = 3 have only one start at the beginning, or is that correct? IE:[('START', 'START', 'natural'), ('START', 'natural', 'language'), ('natural', 'language', 'processing'), ('language', 'processing', 'STOP')]Should be[('START', 'natural', 'language'), ('natural', 'language', 'processing'), ('language', 'processing', 'STOP')]",
+                "target": [
+                    "Not at TA but I think #8 answers this!"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General HW 1 Part 3",
+        "statements": [
+            {
+                "source": "What are the unigram, trigram, bigram arguments for the functions? Are they particular n-gram queries or are they the dictionaries populated in part 2?",
+                "target": [
+                    "The arguments will be individual ngrams (formatted as a tuple). "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Request for OH Google Calendar",
+        "statements": [
+            {
+                "source": "Hi! Would it be possible to create a Google calendar of scheduled office hours so we can import them into our own calendar? No worries if not, but it would be really helpful! Thank you so much!",
+                "target": [
+                    "Here! I'll add it to Courseworks as well:https://calendar. google. com/calendar/u/0? cid=Y180ZWMwOWFjZDM0YWU4Yzc1ZWI2ZmY1NTgxYjg1MzY5ZGU3ZjRlNWEwNDg2YTViMzU5ZjI1ZWMzOGM3OTMyNmZhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments HW 1 Part 4",
+        "statements": [
+            {
+                "source": "For this part, can we use this equation to implement it?",
+                "target": [
+                    "Yes, that's the correct formula. See below for the slide of the lectures that refers to linear interpolation:"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Problem Sets HW 1 Part 2",
+        "statements": [
+            {
+                "source": "Just to clarify, nothing is returned in count_ngrams, right?",
+                "target": [
+                    "I think that's correct. That function should just populate the associated dictionaries. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Where to code",
+        "statements": [
+            {
+                "source": "Are we recommended to work in a specific python environment?  ",
+                "target": [
+                    "Ill leave that up to you. We wont be using any libraries for homework 1 and 2, but make sure you have Python 3. 7 or higher. A lot of people really like vscode, but any editor or IDE will do. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Problem Sets HW1 submission",
+        "statements": [
+            {
+                "source": "Hi, just wonder how we should submit HW1 since canvas only accepts zip/tgz while we are asked to submit . py only",
+                "target": [
+                    "Thanks. Ill change it to . py. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Bigram Probability, First Word Not in Lexicon",
+        "statements": [
+            {
+                "source": "From the homework \"\"\"One issue you will encounter is the case if which you have a trigram u, w, v where count(u, w, v) = 0 but count(u, w) is also 0. In that case, it is not immediately clear what P(v | u, w) should be. My recommendation is to make P(v | u, w) = 1 / |V| (where |V| is the size of the lexicon), if count(u, w) is 0\"\"\"Doesn't this same behavior happen for bigrams if u is not in the lexicon? Would the approach be the same?",
+                "target": [
+                    "That wont happen because all unigrams that are not in the lexicon are replaced with the UNK token by the corpus reader. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Assignments Question regarding get_ngrams function.",
+        "statements": [
+            {
+                "source": "Hi! I had a quick question about the get_ngrams() function for HW1. I'm assuming this function should pad out our inputs even if n is greater than the number of words in the input sequence? Ex: sequence = [\"Hi\", \"there\"]n = 4Output: [('START', 'START', 'START', 'Hi'),    ('START', 'START', 'Hi', 'there'),    ('START', 'Hi', 'there', 'STOP')]",
+                "target": [
+                    "That's correct!"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Ungraded Exercise Submission",
+        "statements": [
+            {
+                "source": "Hello, Do we need to submit the ungraded exercise? Thank you very much.",
+                "target": [
+                    "No, they won't be submitted. If you'd like feedback on your solutions though, you're always welcome to stop by any of our office hours!"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General What is the term \"Class\" referring to?",
+        "statements": [
+            {
+                "source": "I am wondering what the term \"class\" refers to in relation to a document-- is class related to a word? ",
+                "target": [
+                    "The class/label is the type of the document, for example spam or not spam. Each document has exactly one class. So this is a property of the entire document, not a single word. "
+                ]
+            }
+        ]
+    },
+    {
+        "context": "General Question about Participation Points",
+        "statements": [
+            {
+                "source": "Hi Professor and TAs, I hope you are well! I was wondering about how to earn participation points (the 10% of our overall grade) as someone who works 9-5 and needs to watch the recordings asynchronously. If I do not participate during class time, can I still earn the full participation points by participating on Ed instead? If it is mandatory that I attend class in-person, I can try and work something out with my boss. For the next few weeks, however, I will need to watch the recordings afterward. And I'm just worried I will miss out on those participation points! :) I appreciate your help in advance! Best regards, Mia",
+                "target": [
+                    "Participation on Ed will count for that score! I highly recommend responding to the professor's ungraded exercises and discussion questions to show evidence of your participation. In addition, you could also try to answer other students' questions when we start releasing the graded homework assignments.",
+                    "If I recall correctly, you are a CVN student. Participating in Ed is sufficient in your situation, as Shivansh describes. CVN students are explicitly allowed to participate asynchronously. "
+                ]
+            }
+        ]
+    }
+]

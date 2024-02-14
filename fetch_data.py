@@ -12,7 +12,7 @@ user_info = ed.get_user_info()
 NLP_courses = {}
 for course in user_info.get('courses', []):
     if course['course']['name'] == 'Natural Language Processing':
-        course_info = (f"{course['course']['session'].lower()}_"
+        course_info = (f"{course['course']['session'].lower()}"
                        f"{course['course']['year']}")
         NLP_courses[course['course']['id']] = course_info
 
@@ -34,13 +34,15 @@ async def retrieve_thread_info(thread_id):
 async def process_thread(thread):
     thread_info = await retrieve_thread_info(thread['id'])
 
-    if thread_info['comments'] or thread_info['answers']:
+    if thread_info['answers']: # Fetch only threads with answers
         return {
-            "title": thread_info['title'],
-            "category": thread_info['category'],
-            "question": thread_info['content'],
-            "comments": [content['content'] for content in thread_info['comments']],
-            "answers": [answer['content'] for answer in thread_info['answers']],
+                "context": thread_info['category'] + ' ' + thread_info['title'],
+                "statements": [
+                    {
+                        "source": thread_info['content'],
+                        "target": [answer['content'] for answer in thread_info['answers']]
+                    }
+                ]
         }
     return None # If threads doesn't contain, comments/answers return None
 
@@ -90,7 +92,7 @@ async def main():
     num_questions = 0
 
     # Create 'Edstem Data' directory if it doesn't exist
-    directory = 'Edstem_Data'
+    directory = 'edstem_data'
     if not os.path.exists(directory):
         os.makedirs(directory)
 

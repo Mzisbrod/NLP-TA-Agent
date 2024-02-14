@@ -17,29 +17,34 @@ def clean(text):
 
     return text
 
+def clean_text_or_list(input):
+    if isinstance(input, list):
+        return [clean(item) for item in input]
+    return clean(input)
+
 # Given a file path with json files, clean the file and create a cleaned version of it
 def clean_json_file(file_path):
     cleaned_file_path = file_path.replace('.json', '_cleaned.json')
-    with open(file_path, 'r', encoding='utf-8') as input_file, \
-         open(cleaned_file_path, 'w', encoding='utf-8') as output_file:
+    cleaned_data = []
+    with open(file_path, 'r', encoding='utf-8') as input_file:
         data = json.load(input_file)
-        cleaned_data = []
         for entry in data:
-            cleaned_entry = {}
-            for key, value in entry.items():
-                if isinstance(value, str):
-                    cleaned_entry[key] = clean(value)
-                elif isinstance(value, list):
-                    cleaned_entry[key] = [clean(item) for item in value]
-                else:
-                    cleaned_entry[key] = value
-            cleaned_data.append(cleaned_entry)
+            cleaned_context = clean(entry["context"])
+            cleaned_statements = []
+            for statement in entry["statements"]:
+                cleaned_source = clean_text_or_list(statement["source"])
+                cleaned_target = clean_text_or_list(statement["target"])
+                cleaned_statements.append({"source": cleaned_source,
+                                           "target": cleaned_target})
+            cleaned_data.append({"context": cleaned_context, "statements": cleaned_statements})
+
+    with open(cleaned_file_path, 'w', encoding='utf-8') as output_file:
         json.dump(cleaned_data, output_file, indent=4)
 
     print(f"Processed and cleaned {file_path}")
 
 # List all JSON files in Edstem Data directory
-json_files = glob.glob(os.path.join('Edstem_Data', '*.json'))
+json_files = glob.glob(os.path.join('edstem_data', '*.json'))
 
 for json_file in json_files:
     clean_json_file(json_file)
