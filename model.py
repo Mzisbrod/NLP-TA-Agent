@@ -5,16 +5,18 @@ import os
 
 data = []
 
-# for i in range(1, 5):
-#     with open(f"Course_data/hw{i}.json", encoding="utf-8") as file:
-#         data += json.load(file)
+# Loading HW Q&A files
+for i in range(1, 5):
+    with open(f"Course_data/hw{i}.json", encoding="utf-8") as file:
+        data += json.load(file)
 
-files = (glob.glob(os.path.join('edstem_data', '*.json')) +
-              glob.glob(os.path.join('course_data', '*.json')))
-
-for file in files:
-    with open(file, encoding="utf-8") as f:
-        data += json.load(f)
+# Loading all data: EdStem and HWs
+# files = glob.glob(os.path.join('edstem_data', '*.json')
+#                    + glob.glob(os.path.join('course_data', '*.json')))
+#
+# for file in files:
+#     with open(file, encoding="utf-8") as f:
+#         data += json.load(f)
 
 # Initialize the Instructor
 instructor = Instructor()
@@ -28,7 +30,7 @@ model, tokenizer = instructor(
     # prompt=
     learning_rate=1e-3,
     per_device_train_batch_size=8,
-    gradient_accumulation_steps=128//8,
+    gradient_accumulation_steps=128 // 8,
     num_train_epochs=3,
     logging_steps=100,
 )
