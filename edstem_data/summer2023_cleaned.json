@@ -1,6 +1,6 @@
 [
     {
-        "context": "Exam Final Exam Solution",
+        "context": "Final Exam Solution",
         "statements": [
             {
                 "source": "Will the final exam solution be provided so that we can check our deduction? Thanks",
@@ -11,7 +11,7 @@
         ]
     },
     {
-        "context": "General Will our participation grade also be added to Canvas?",
+        "context": "Will our participation grade also be added to Canvas?",
         "statements": [
             {
                 "source": "I was wondering whether our participation grade would also be added to Canvas, or if the grade we currently see with the exam taken into account already includes that",
@@ -22,7 +22,7 @@
         ]
     },
     {
-        "context": "Exam Final Exam Grade",
+        "context": "Final Exam Grade",
         "statements": [
             {
                 "source": "When can we expect to get our final exam grades back?",
@@ -33,7 +33,7 @@
         ]
     },
     {
-        "context": "Homework 5 HW5 Part 3, count punctuation in input/output pairs?",
+        "context": "HW5 Part 3, count punctuation in input/output pairs?",
         "statements": [
             {
                 "source": "In the example input/output sequence resulting from the sequence:['&lt;START&gt;', 'a', 'black', 'dog', '. ', '&lt;END&gt;'] It seems the period token ('. ') is skipped as the last input/output pair shown consists of:input = [START, a, black, dog]output = ENDIs this a typo? Should this input/output pair be:input = [START, a, black, dog]output = . and then an additional input/output pair would be the following? input = [START, a, black, dog, . ]output = ENDThanks!",
@@ -44,7 +44,7 @@
         ]
     },
     {
-        "context": "Homework 5 HW5 Part1: Creating Encodings",
+        "context": "HW5 Part1: Creating Encodings",
         "statements": [
             {
                 "source": "In HW5 Part 1, it says \"We will need to create encodings for all images and store them in one big matrix\". Does this mean we should be encoding an image with img_encoder. predict() , and then resizing it to 1x299x299x3, since it returns a 2048 size vector? Or does \"create encodings\" mean just resizing the image to be 299x299x3, and then returning that \"encoding\" of the image in required shape? ",
@@ -55,7 +55,7 @@
         ]
     },
     {
-        "context": "Homework 5 Model Accuracy",
+        "context": "Model Accuracy",
         "statements": [
             {
                 "source": "Should we decrease/increase the number of epochs so that the model should finish training around 40%?",
@@ -66,7 +66,7 @@
         ]
     },
     {
-        "context": "Homework 5 HW5 Submission",
+        "context": "HW5 Submission",
         "statements": [
             {
                 "source": "My machine does not process the pdf downloading command on anaconda jupyter, so I printed the html to get pdf instead. And HW5 asks for pdf submission, but coursework only allows compressed files. Shall we submit a link containing the pdf, or will a compressed pdf file be fine? Thank you!",
@@ -77,7 +77,7 @@
         ]
     },
     {
-        "context": "General Ungraded Exercise:IBM model",
+        "context": "Ungraded Exercise:IBM model",
         "statements": [
             {
                 "source": "regarding the second part of the question, why are all q=1, is it always the case? q(3 | 1, 3, 3) = 1q(2 | 2, 3, 3) = 1q(1 | 3, 3, 3) = 1q(5 | 1, 5, 5) = 1q(4 | 2, 5, 5) = 1q(3 | 3, 5, 5) = 1q(2 | 4, 5, 5) = 1q(1 | 5, 5, 5) = 1",
@@ -88,7 +88,7 @@
         ]
     },
     {
-        "context": "Exam Secure Exam Proctor",
+        "context": "Secure Exam Proctor",
         "statements": [
             {
                 "source": "Do people who take exam via Zoom today also have to set this up?  I cant find an announcement regarding this.",
@@ -99,7 +99,7 @@
         ]
     },
     {
-        "context": "Exam Semantic Parsing",
+        "context": "Semantic Parsing",
         "statements": [
             {
                 "source": "I just want to make sure, I see that there's a (*) next to the Semantic Parsing topic on the exam topic overview. Would all of the concepts under it not be tested in the exam?",
@@ -110,7 +110,7 @@
         ]
     },
     {
-        "context": "General Constraints in RNN based SRL",
+        "context": "Constraints in RNN based SRL",
         "statements": [
             {
                 "source": "How are these constraint penalty scores c(w, y_1:t) computed? They need to be differentiable",
@@ -121,7 +121,7 @@
         ]
     },
     {
-        "context": "General How is a Parse Tree Path be encoded into a log-linear model as a feature?",
+        "context": "How is a Parse Tree Path be encoded into a log-linear model as a feature?",
         "statements": [
             {
                 "source": "One way is to one-hot encode over all possible paths upto some reasonable length, say 10. Is there another way such paths are encoded to form a feature in practice?",
@@ -132,7 +132,7 @@
         ]
     },
     {
-        "context": "General Cheat sheet",
+        "context": "Cheat sheet",
         "statements": [
             {
                 "source": "Hi! I was wondering whether the cheat sheet needs to be handwritten? Or can it be printed? Thanks",
@@ -143,7 +143,7 @@
         ]
     },
     {
-        "context": "Exam Feature functions",
+        "context": "Feature functions",
         "statements": [
             {
                 "source": "Hi , In this solution there is a Start symbol and so can we assume that there is an end symbol as well?",
@@ -154,7 +154,7 @@
         ]
     },
     {
-        "context": "Exam Bonus Ungraded Exercise: Viterbi Algorithm",
+        "context": "Bonus Ungraded Exercise: Viterbi Algorithm",
         "statements": [
             {
                 "source": "Hi, For this exercise I was wondering if I am interpreting the solution correctly. So is the reason that we are returning the sum over states (sum_s) rather than the max (max_s) so that we can consider multiple paths rather than the most likely path? In what use case would quantifying the possible tag sequences be relevant?",
@@ -165,7 +165,7 @@
         ]
     },
     {
-        "context": "Exam Dummy Exam",
+        "context": "Dummy Exam",
         "statements": [
             {
                 "source": "Hello -- has the gradescope dummy exam been posted yet?",
@@ -177,7 +177,7 @@
         ]
     },
     {
-        "context": "General Gradescope Dummy Exam",
+        "context": "Gradescope Dummy Exam",
         "statements": [
             {
                 "source": "HI Professor Bauer/TAs, I was wondering when the dummy exam will be posted? When I clicked on Gradescope via coursework, this course was not added yet. THanks! ",
@@ -189,7 +189,7 @@
         ]
     },
     {
-        "context": "General Ungraded exercise - CKY Does order of nonterminals matter?",
+        "context": "Ungraded exercise - CKY Does order of nonterminals matter?",
         "statements": [
             {
                 "source": "Hi, If we have grammar:S -&gt; NP VVP -&gt; V NPWanted to confirm: does the order matter? If we have a \"NP V\" can it only be S, or will it be S and VP? Thanks, Vidur",
@@ -200,7 +200,7 @@
         ]
     },
     {
-        "context": "General Ungraded exercise - bigram",
+        "context": "Ungraded exercise - bigram",
         "statements": [
             {
                 "source": "Why does END symbol gets added to the 6 words but not the START symbol even though they are both given in the corpus of sentences? ",
@@ -211,7 +211,7 @@
         ]
     },
     {
-        "context": "General Bigram Lang Model",
+        "context": "Bigram Lang Model",
         "statements": [
             {
                 "source": "Would it be possible to just explain in words why this base case works? I am just trying to get the big picture. Also what does the p and r represent? ",
@@ -222,7 +222,7 @@
         ]
     },
     {
-        "context": "Exam CVN asynchronous format",
+        "context": "CVN asynchronous format",
         "statements": [
             {
                 "source": "For CVN students taking the exam asynchronously, will we be filling out our answers on Courseworks, or do we need to print out and scan answers? Additionally, do we need to print out the \"cheat sheet\" or can we keep it alongside Proctorio when taking the exam? ",
@@ -233,7 +233,7 @@
         ]
     },
     {
-        "context": "General N-Gram exercise",
+        "context": "N-Gram exercise",
         "statements": [
             {
                 "source": "In the solutions, P(eats | dog)= (1+1)/(3+7) = 1/5 is it (1+1) for 'eats' because 'dog' is only followed by 'eats' 1 time? I was under the impression that it was the number of occurrences of the word + 1 for smoothing. For n-grams, are we looking for the number of occurrences of the n-gram phrase? Such as \"Dog eats\" only appears once hence the (1+1)? dog bites humandog bites duckdog eats duckduck bites humanhuman eats duckhuman eats salada) dog eats saladP(dog | START)= (3+1)/(6+7) = 4/13\nP(eats | dog)= (1+1)/(3+7) = 1/5\nP(salad | eats)= (1+1)/(3+7) = 1/5\nP(END | salad)= (1+1)/(1+7) = 1/4\nP(dog eats salad) =\nP(dog | START) P(eats | dog) P(salad | eats) P(END | salad) =\n4/13 x 1/5 x 1/5 x 1/4 = 1/325 = 0. 0031",
@@ -244,7 +244,7 @@
         ]
     },
     {
-        "context": "General Parameters of a trigram model (ungraded Viterbi exercise)",
+        "context": "Parameters of a trigram model (ungraded Viterbi exercise)",
         "statements": [
             {
                 "source": "Hi! For the ungraded exercise on the Viterbi &amp; forward algorithms, I was confused by  c): \". .. write out the parameters of a trigram model that assigns the same probability distribution to a set of surface sequences. .. \". Are the parameters in question the probabilities for any one transition (i. e. N-&gt;N, N-&gt;V, etc. ). If so, would a trigram model require more nodes (since the transition probability depends on the bigram context, so N-&gt;V would need to be a single node, and so on)?  Hope this makes sense! ",
@@ -255,7 +255,7 @@
         ]
     },
     {
-        "context": "Exam will topics from the last lecture be on the final exam?",
+        "context": "will topics from the last lecture be on the final exam?",
         "statements": [
             {
                 "source": "^^ since I do not see them on the review sheet. .. Thanks!",
@@ -266,7 +266,7 @@
         ]
     },
     {
-        "context": "Exam Question regarding soltuion of ungraded exercise: PCFGs and trigram models",
+        "context": "Question regarding soltuion of ungraded exercise: PCFGs and trigram models",
         "statements": [
             {
                 "source": "Hi, I don't quite understand the calculations for:P(Alex | Alex saw) = 3/4P(Kim | Alex saw) = 1/4P(Alex | Kim saw) = 3/4P(Kim | Kim saw) = 1/4Could you please show how it was calculated? Thanks.",
@@ -277,7 +277,7 @@
         ]
     },
     {
-        "context": "General TA led review",
+        "context": "TA led review",
         "statements": [
             {
                 "source": "Hi, Was just wondering if the TA led review was posted on Courseworks yet. Thanks! !",
@@ -288,7 +288,7 @@
         ]
     },
     {
-        "context": "Exam Questions from old exams which are not used",
+        "context": "Questions from old exams which are not used",
         "statements": [
             {
                 "source": "Hi, I think in a previous lecture, professor had mentioned he may post some questions from old exams which are not going to be used anymore. I was wondering if there was a way to get them, as was not able to find it. Thanks! Vidur",
@@ -299,7 +299,7 @@
         ]
     },
     {
-        "context": "Exam Final Exam CVN Synchronous Zoom Link",
+        "context": "Final Exam CVN Synchronous Zoom Link",
         "statements": [
             {
                 "source": "Hello, Maybe I missed this but could anyone please inform which link are CVN students using for the synchronous final exam? Thank you in advance!",
@@ -310,7 +310,7 @@
         ]
     },
     {
-        "context": "General ungraded exercise- IBM model 2",
+        "context": "ungraded exercise- IBM model 2",
         "statements": [
             {
                 "source": "for the IBM model 2 question part 3, why is it q(5 | 1, 5, 5) * t(skwk | fly) not q(1 | 5, 5, 5) * t(skwk | fly)?",
@@ -321,7 +321,7 @@
         ]
     },
     {
-        "context": "Exam Knowledge of Databases like WordNet, VerbNet, etc",
+        "context": "Knowledge of Databases like WordNet, VerbNet, etc",
         "statements": [
             {
                 "source": "For the exam, will we need to have memorized some of the internal structures of these large databases mentioned in class? Or just generally know what they are used for and what information they hold?",
@@ -332,7 +332,7 @@
         ]
     },
     {
-        "context": "General IBM Model 2 Parameter",
+        "context": "IBM Model 2 Parameter",
         "statements": [
             {
                 "source": "In part 3 of the last ungraded exercise, why is the last q(a_i | i) term q(5|1, 5, 5) and not q(1|5, 5, 5)?  For reference the solution has:q(5 | 1, 5, 5) * t(skwk | fly) *q(4 | 2, 5, 5) * t(e| a) *q(3 | 3, 5, 5) * t(qta | ate) *q(2 | 4, 5, 5) * t(skwk | bird) *q(5 | 1, 5, 5) * t(et | the) = 2/3",
@@ -343,7 +343,7 @@
         ]
     },
     {
-        "context": "Exam How to show arc standard sequences are not unique?",
+        "context": "How to show arc standard sequences are not unique?",
         "statements": [
             {
                 "source": "Could you please provide some hints on how to answer part b? Thank you",
@@ -354,7 +354,7 @@
         ]
     },
     {
-        "context": "General Spurious ambiguity?",
+        "context": "Spurious ambiguity?",
         "statements": [
             {
                 "source": "I just wasn't quite certain what this term meant as I'm going through the lecture notes. Is it referrig to a case where a sentence seems to be ambiguous but it is not? Or am I off base here",
@@ -367,7 +367,7 @@
         ]
     },
     {
-        "context": "General Ungraded exercise b) Transition-based dependency parsing",
+        "context": "Ungraded exercise b) Transition-based dependency parsing",
         "statements": [
             {
                 "source": "For the part b) of transition-based parsing ungraded exercise, does this require that we show another sequence for the same sentence, or use another sentence? Thank you!",
@@ -378,7 +378,7 @@
         ]
     },
     {
-        "context": "General condition on l, m in the estimate for q",
+        "context": "condition on l, m in the estimate for q",
         "statements": [
             {
                 "source": "(1) Is l, length of the source sentence? and m, of the target sentence? We condition on l, m when estimating \"how often does position i align with position j\" . I see why if one sentence is much longer than the other the indices that are aligned are different. But in general, for sentences of close-enough length which seems a reasonable assumption fot translations, is there still a need to condition on the sentence lengths being exactly the same?  (2)The denominator in this expression: Isn't this simply \"count of occurrences of position i such that source language sentence length is l and target language sentence length is m\"Which (for any i &lt;=m) would simply be the number of sentences in the corpus such that source language sentence length is l and target language sentence length is m?",
@@ -389,7 +389,7 @@
         ]
     },
     {
-        "context": "General LSTM loss: Softmax or Binary Classification with Negative Sampling?",
+        "context": "LSTM loss: Softmax or Binary Classification with Negative Sampling?",
         "statements": [
             {
                 "source": "In practice, is Negative Sampling with Binary Classification loss (with Sigmoid) commonly used instead of softmax for training LSTMs efficiently ?",
@@ -400,7 +400,7 @@
         ]
     },
     {
-        "context": "Exam Are we allowed to get some blank sheets for calculations/rough work",
+        "context": "Are we allowed to get some blank sheets for calculations/rough work",
         "statements": [
             {
                 "source": "Hi, Are we allowed to bring some blank sheets or will they be provided at the exam for rough work/calculations/drawing Viterbi calculation graph /transition graphs etc. It would be very helpful during the exam. Thank you",
@@ -411,7 +411,7 @@
         ]
     },
     {
-        "context": "General Ungraded Exercise",
+        "context": "Ungraded Exercise",
         "statements": [
             {
                 "source": "Hi Professor Bauer, I was wondering if you are going to post more ungraded exercises (e. g. AMR) on the later half of the semester? Thanks! ",
@@ -422,7 +422,7 @@
         ]
     },
     {
-        "context": "General Ungraded Exercise: HMM - Viterbi & Forward Algorithm Confusion",
+        "context": "Ungraded Exercise: HMM - Viterbi & Forward Algorithm Confusion",
         "statements": [
             {
                 "source": "For the forward algorithm, this is one of the equations in the solution:[2, V] = [1, N]  P(V|N)  P(flies |V) + [1, V]  P(N|V)  P(flies|N)) = (1/4 2/4  2/6) + (1/12  0  2/6)) = 1/24 = 0. 04166I am confused as to where the numbers for the second part of this equation ([1, V]  P(N|V)  P(flies|N)) are coming from. I thought the equation would be [2, V] = [1, N]  P(V|N)  P(flies |V) + [1, V]  P(V|V)  P(flies|V)), but perhaps I am understanding the forward algorithm wrong? Thanks in advance",
@@ -433,7 +433,7 @@
         ]
     },
     {
-        "context": "Exam Smoothing and Back-off",
+        "context": "Smoothing and Back-off",
         "statements": [
             {
                 "source": "Regarding the n-gram an data sparsity issues, do we have to master at applying the smoothing and back-off approaches (like discounting, Katz' Backoff) to refine the probability for the final exam? Thank you~",
@@ -444,7 +444,7 @@
         ]
     },
     {
-        "context": "Exam Ungraded exercise - viterbi algorithm",
+        "context": "Ungraded exercise - viterbi algorithm",
         "statements": [
             {
                 "source": "Hi, Q1) What do the red arrows signify in this solution? Q2) Can we draw the diagram as above for exam instead of drawing the alternative table representation? Can you also provide the solution for part c please. Thank you",
@@ -455,7 +455,7 @@
         ]
     },
     {
-        "context": "General CVN Student - Async Exam",
+        "context": "CVN Student - Async Exam",
         "statements": [
             {
                 "source": "In the past, I have gotten emails with instructions for taking the exam with Proctorio with notes from the instructor (timing, cheatsheet, etc. .). Will this be sent out?",
@@ -466,7 +466,7 @@
         ]
     },
     {
-        "context": "Exam What is this topic?",
+        "context": "What is this topic?",
         "statements": [
             {
                 "source": "In the Exam topics post on courseworks, there is an incomplete topic heading \"Struc\" and I was wondering what this overarching topic might be? Thanks so much!",
@@ -477,7 +477,7 @@
         ]
     },
     {
-        "context": "Exam Ungraded Exercise : Linear Models and Feature Functions",
+        "context": "Ungraded Exercise : Linear Models and Feature Functions",
         "statements": [
             {
                 "source": "Hi, I was going over the solution for the feature functions exercise, I am not sure I understand how to solve the problem. Could you please help me with the same since I am really confused? 1) How is the order in which you select the word wi decided? Since there are 3 sentences and the solution doesn't necessarily select words in any of the sentence order. 2) Why is there no ti-1 for below feature function. 3) Why do we have one wi with time, when time appears thrice in the three sentences with different parts of speech (N and V)Part b) The weight vector has all 1s because we want all the features to be true for correct POS tagging? Part c) Can you please release the solutionThank you.",
@@ -490,7 +490,7 @@
         ]
     },
     {
-        "context": "General Final Exam - Calculator",
+        "context": "Final Exam - Calculator",
         "statements": [
             {
                 "source": "I believe this was covered in class already but just want to confirm whether or not we need a calculator for the exam? Is it required or just encouraged (to make our lives easier)?",
@@ -501,7 +501,7 @@
         ]
     },
     {
-        "context": "General Will we be able to see HW4 results before next week?",
+        "context": "Will we be able to see HW4 results before next week?",
         "statements": [
             {
                 "source": "Hi! Would it be possible to know HW4 results a little before the middle of next week, so that we know if we should try to submit HW5? ",
@@ -512,7 +512,7 @@
         ]
     },
     {
-        "context": "General Part 4 left and right context",
+        "context": "Part 4 left and right context",
         "statements": [
             {
                 "source": "Do we need to consider left and right context for part 4 like we do in part 5, or is this something we can do for part 6? ",
@@ -523,7 +523,7 @@
         ]
     },
     {
-        "context": "Homework 4 best_words in part 5",
+        "context": "best_words in part 5",
         "statements": [
             {
                 "source": "Are we allowed to change the number of best words (from 10) returned from the bert predictor? And if the resulting list doesnt contain any candidate words, should we be returning nothing?",
@@ -534,7 +534,7 @@
         ]
     },
     {
-        "context": "Homework 4 NLTK Library",
+        "context": "NLTK Library",
         "statements": [
             {
                 "source": "Are we allowed to use word_tokenize from the NLTK library?",
@@ -545,7 +545,7 @@
         ]
     },
     {
-        "context": "General Illegal division by 0 in score. pl",
+        "context": "Illegal division by 0 in score. pl",
         "statements": [
             {
                 "source": "There are some final tweaks I'd like to make to improve my precision and recall, but there are times where I will make an edit, re-write the output to the predict file, and run perl, but then will get the error I have illegal division. Even when I revert the code back to its original form, it will from thereon return an error. Is this happening for others and are there any ways to resolve this? ",
@@ -556,7 +556,7 @@
         ]
     },
     {
-        "context": "Homework 5 HW5 Data - Page Doesn't Exist",
+        "context": "HW5 Data - Page Doesn't Exist",
         "statements": [
             {
                 "source": "Hi everyone! I'm trying to download the data for HW5, but get the following error. I've tried downloading both through the requests package (I'm on Windows) and by visiting the site directly. Any help would be greatly appreciated!",
@@ -568,7 +568,7 @@
         ]
     },
     {
-        "context": "Homework 4 Bert vs Word2Vec Scores",
+        "context": "Bert vs Word2Vec Scores",
         "statements": [
             {
                 "source": "Hi, I am getting interesting results where my Word2Vec score is higher than Bert. Wondering if this could be possible or anyone has thoughts on what could be the issue:Word2Vec: Bert:Thanks!",
@@ -580,7 +580,7 @@
         ]
     },
     {
-        "context": "General Part 5 Error No module named 'keras. saving. hdf5_format'",
+        "context": "Part 5 Error No module named 'keras. saving. hdf5_format'",
         "statements": [
             {
                 "source": "If anyone comes across this error, you can comment in modeling_tf_utils. py in the transformers package in Lib/site-packages/transformers to fix it",
@@ -591,7 +591,7 @@
         ]
     },
     {
-        "context": "Homework 4 Part2",
+        "context": "Part2",
         "statements": [
             {
                 "source": "Hi, Part 2 says : Note that you have to sum up the occurence counts for all senses of the word if the word and the target appear together in multiple synsets. So if a lemma appears in 2 different synsets, do I have to count this lemma twice or do I have to consider them as 2 distinct lemma? Also, What can cause a variability in the accuracy in part 2? I ran the same code twice and I got 2 different results: ",
@@ -602,7 +602,7 @@
         ]
     },
     {
-        "context": "Homework 4 Part 6 Computational Time",
+        "context": "Part 6 Computational Time",
         "statements": [
             {
                 "source": "Are there any computation restrictions for this assignment? My solution for Part 6 takes about ~3. 5 hours of computational time to complete. I have not been using GPU. Given that I also submit the actual part6. predict file, is this acceptable?",
@@ -613,7 +613,7 @@
         ]
     },
     {
-        "context": "Lectures Difference and connection between lemma, lexeme, and word form",
+        "context": "Difference and connection between lemma, lexeme, and word form",
         "statements": [
             {
                 "source": "Hi, I just wanted to make sure that I understand the following terms correctly. Lemma: is the base form of a word. (e. g. run)Word form: is any modified or inflected version of the lemma ( e. g. runner, running, runs, etc. )Lexeme: represents the core meaning and all related word forms of a word. This means it covers the lemma and its inflected forms (e. g. run ( base form) + runner, running, runs (inflected forms)) . Is that true ? ",
@@ -624,7 +624,7 @@
         ]
     },
     {
-        "context": "Homework 4 part4 synonym not in word2vec model",
+        "context": "part4 synonym not in word2vec model",
         "statements": [
             {
                 "source": "Hi, Would like to ask what to do the synonym when the word2vec model doesn' t have its embeddings. There are some synonym use multiple words and '-' to make a new word and those the gensim model could not find embeddings for them. Thanks",
@@ -635,7 +635,7 @@
         ]
     },
     {
-        "context": "Homework 4 hw4 pt 3 - repeating words in context/definition",
+        "context": "hw4 pt 3 - repeating words in context/definition",
         "statements": [
             {
                 "source": "Just wondering having repeated overlapping words in context/def would mean for the overlap count. So for example:Context: bank bankDefinition: bank notWould the overlap here be one or two? Context: bank notDefinition: bank bankHow about here?",
@@ -646,7 +646,7 @@
         ]
     },
     {
-        "context": "Homework 4 Part 1 check",
+        "context": "Part 1 check",
         "statements": [
             {
                 "source": "In part 1, do the order of the lemmas need to match the output in the assignment description? ",
@@ -657,7 +657,7 @@
         ]
     },
     {
-        "context": "Lectures Why is dependency parsing considered discriminative model?",
+        "context": "Why is dependency parsing considered discriminative model?",
         "statements": [
             {
                 "source": "Hi, I remember professor mentioning that dependency parsing models are considered discriminative models and not generative. Could you please elaborate more on why this is the case? Thankyou.",
@@ -668,7 +668,7 @@
         ]
     },
     {
-        "context": "Homework 4 part 5 errors",
+        "context": "part 5 errors",
         "statements": [
             {
                 "source": "Hi! For part 5, I keep getting errors like this, even when I try the verbose trick that was mentioned. Should I worry about it / will I get points off if I leave it like this? My part5. predict file looks like this:Thank you",
@@ -679,7 +679,7 @@
         ]
     },
     {
-        "context": "Lectures Question about CFGs being context free",
+        "context": "Question about CFGs being context free",
         "statements": [
             {
                 "source": "From the lecture slides - \"CFGs are context free: applicability of a rule depends only on the nonterminal symbol, not on its context. Therefore, the order in which multiple non-terminals in a partially derived string are replaced does not matter. We can represent identical derivations in a derivation tree. \"However for HW3 and according to post #81, not considering the correct order for terminals would result in incorrect results. So does this mean, NP  D N cannot be written as NP -&gt; N Dbut NP  NP PP - (1)  does it mean just that it is okay to either substitute NP or PP first . Or does it mean (1) can be written as NP -&gt; PP NP ? (which doesn't seem to be correct)Please let me know if I am understanding this correctly. Thank you in advance!",
@@ -690,7 +690,7 @@
         ]
     },
     {
-        "context": "Homework 4 Has anyone been able to get a VM w/ GPU in GCP recently?",
+        "context": "Has anyone been able to get a VM w/ GPU in GCP recently?",
         "statements": [
             {
                 "source": "If so, could you please share the zone that worked? I've tried several zones with no luck",
@@ -701,7 +701,7 @@
         ]
     },
     {
-        "context": "Homework 4 part 3, part 6",
+        "context": "part 3, part 6",
         "statements": [
             {
                 "source": "Hello teaching staff, for part 6 I just want to confirm: in the previous post, it said that any interesting or creative solution will get full credit. Does this mean even without being the best predictor(in terms of the highest precision and recall) is fine? And for part 3, I tried two ways to write the code, and seems like the result scores are different. For both ways, the simple lesk algorithm did not outperform the WordNet frequency baseline. I'm wondering if there is a standard answer to predictions in predict file for this part. Thank you!",
@@ -712,7 +712,7 @@
         ]
     },
     {
-        "context": "Homework 4 Identical results for Word2Vec and Bert predictors",
+        "context": "Identical results for Word2Vec and Bert predictors",
         "statements": [
             {
                 "source": "Both my Word2Vec and Bert predictors produce the exact same precision and recall results, but I'm not sure if this means that there's something wrong with my Bert predictor since the assignment handout states that it performed slightly better than the Word2Vec predictor in experiments?  I can't seem to find any bugs in the Bert predictor and I'm following the encoding method directly from the handout, but I'm not sure if some kind of optimization needs to be added for the Bert predictor to perform better to achieve full credit?  I've included the results output for both parts below for reference:Total = 298, attempted = 298\nprecision = 0. 115, recall = 0. 115\nTotal with mode 206 attempted 206\nprecision = 0. 170, recall = 0. 170\n",
@@ -724,7 +724,7 @@
         ]
     },
     {
-        "context": "Homework 4 get_candidates()  input word includes underscore?",
+        "context": "get_candidates()  input word includes underscore?",
         "statements": [
             {
                 "source": "Just wondering what should happen if an input to this function is a word that contains an underscore. So something like hot_dog for instance. What I'm doing right now includes \"hot dog\" as a candidate, but I realize that may not be totally correct. Should we account for this?",
@@ -735,7 +735,7 @@
         ]
     },
     {
-        "context": "Homework 4 HW4: Part 6 - Refinements",
+        "context": "HW4: Part 6 - Refinements",
         "statements": [
             {
                 "source": "\"In this part, you should implement your own refinements to the approaches proposed above, or even a completely different approach. \"Does this mean that we can implement a refinement for any (i. e. , at least one) of the four approaches from parts 2-5? Or we must implement a refinement for each of the approaches? Thanks!",
@@ -746,7 +746,7 @@
         ]
     },
     {
-        "context": "Homework 4 Any test cases for Part 2?",
+        "context": "Any test cases for Part 2?",
         "statements": [
             {
                 "source": "Can we get some test cases for part 2 wn_frequency_predictor ?",
@@ -757,7 +757,7 @@
         ]
     },
     {
-        "context": "Homework 4 GPU setup in google cloud",
+        "context": "GPU setup in google cloud",
         "statements": [
             {
                 "source": "I was trying to follow the video tutorial to set up my GPU in google cloud. However, there is \"tensorflow has resource level errors\" when setting up the deep learning VM. Anyone having any idea on how to deal with this?",
@@ -768,7 +768,7 @@
         ]
     },
     {
-        "context": "Exam Gradescope Course ID for Final",
+        "context": "Gradescope Course ID for Final",
         "statements": [
             {
                 "source": "Since the Final is being administered on gradescope for Zoom participants, can we get the gradescope course ID to get setup there in preparation? Thanks",
@@ -779,7 +779,7 @@
         ]
     },
     {
-        "context": "General Homework Solutions",
+        "context": "Homework Solutions",
         "statements": [
             {
                 "source": "Hi all, Are the solutions for any of the homeworks after Homework 1 going to be posted?",
@@ -790,7 +790,7 @@
         ]
     },
     {
-        "context": "Homework 4 Part 5 predict file",
+        "context": "Part 5 predict file",
         "statements": [
             {
                 "source": "I ran part 5 in CPU, and it turns out results like :Does anyone know how to get rid of the two-bar line? Thank you!",
@@ -801,7 +801,7 @@
         ]
     },
     {
-        "context": "Homework 4 Lemma",
+        "context": "Lemma",
         "statements": [
             {
                 "source": "Do we need to consider the lower or upper case of the synonyms/lemma/word? Thank you!",
@@ -812,7 +812,7 @@
         ]
     },
     {
-        "context": "General HW4 Part 3 - Tie Breaking Logic Clarification",
+        "context": "HW4 Part 3 - Tie Breaking Logic Clarification",
         "statements": [
             {
                 "source": "You would break the tie, so return one of the tied lexemes. There is actually a clever way to deal with this:First assign three values to each candidate lexeme &lt;synset s, lemma w&gt;a) the overlap score for the s. b) the . count() (frequency) for &lt;s, t&gt; where t is the target lemma. c) the . count() (frequency) for &lt;s, w&gt; Then, compute an aggregate score like this 1000*a + 100*b + c Sort all candidates by this score and select the highest (excluding lemmas that are identical to the target). This will automatically break ties. 1. Is the target lemma t = context. lemma? 2. Is lemma w in &lt;synset s, lemma w&gt; any of the possible lemmas in s? Thank you in advance!",
@@ -823,7 +823,7 @@
         ]
     },
     {
-        "context": "Homework 4 GCP VM",
+        "context": "GCP VM",
         "statements": [
             {
                 "source": "Hi all, Has anyone had any issues deploying a VM instance on GCP? I get this resource error:\"ResourceErrorMessage\":\"The zone 'projects/nlp-hw-394518/zones/us-west1-b' does not have enough resources available to fulfill the request. Try a different zone, or try again later. \"\nI have tried a few different regions and also waited a day but still no luck. Any advice would be appreciated. Many Thanks!",
@@ -836,7 +836,7 @@
         ]
     },
     {
-        "context": "Exam Content for Final Reference/Cheat Sheet",
+        "context": "Content for Final Reference/Cheat Sheet",
         "statements": [
             {
                 "source": "Hello, I know we are allowed to bring a double-sided reference sheet in for the final. Is there some restriction in terms of what can be on it? For example: only formulas, etc. Thanks",
@@ -847,7 +847,7 @@
         ]
     },
     {
-        "context": "Homework 4 Usage of tokenize(s) in part 3",
+        "context": "Usage of tokenize(s) in part 3",
         "statements": [
             {
                 "source": "Hi, Not sure if anyone else had this, but when I used the tokenize(s) function in part 3, I got an error as the compiler didn't recognize the \"string\" in \"string. punctuation\". When I added \"import string\" at the top of the file it seems to solve it. Hope a TA can confirm it's valid to add. Thanks!",
@@ -858,7 +858,7 @@
         ]
     },
     {
-        "context": "Homework 4 Part 1 return type",
+        "context": "Part 1 return type",
         "statements": [
             {
                 "source": "Hi, for part 1 the description in Courseworks indicates we need to return a set of strings but the code indicates a list of strings; what is the expected return type? Thank you ",
@@ -869,7 +869,7 @@
         ]
     },
     {
-        "context": "Homework 4 HW4 part6  Extra pre-trained models or packages",
+        "context": "HW4 part6  Extra pre-trained models or packages",
         "statements": [
             {
                 "source": "Dear Prof. and TAs, For the part 6, if we want to try some ensemble learning methods or other improvement which would involve other packages or pre-trained models. Is this allowed? Thank you~",
@@ -880,7 +880,7 @@
         ]
     },
     {
-        "context": "Lectures Difference between semantic and lexical ambiguity",
+        "context": "Difference between semantic and lexical ambiguity",
         "statements": [
             {
                 "source": "Hi, I was a little confused about the difference between semantic and lexical ambiguity. I understand from the lectures that ambiguity can be broadly classified into structural and lexical ambiguity. Is semantic ambiguity a part of lexical ambiguity (and not structural), since there is confusion about the meaning interpretation? Thank you!",
@@ -891,7 +891,7 @@
         ]
     },
     {
-        "context": "Homework 4 HW4 part2 performance same as smurf",
+        "context": "HW4 part2 performance same as smurf",
         "statements": [
             {
                 "source": "Dear Prof. and TAs, Here is my screenshot of prediction for part 2However, when I try to get the scores, it turns out the same as what for smuf. Would you mind helping me to check whether my prediction is problematic, or the command to call for the scoring is wrong? Thank you!",
@@ -902,7 +902,7 @@
         ]
     },
     {
-        "context": "Lectures Multiple Parallel Corpora Question",
+        "context": "Multiple Parallel Corpora Question",
         "statements": [
             {
                 "source": "Hi folks, In terms of multiple parallel corpora, would using something like a multilingual Reuters dataset be sufficiently rigorous for the purposes of creating a corpus? I recognize that creative license may mean that the translations aren't necessarily perfect across different language versions of the same article, but would the faithfulness and fluency criteria likely be met? Thank you!",
@@ -913,7 +913,7 @@
         ]
     },
     {
-        "context": "Homework 4 HW 4 Part 5 sanity check",
+        "context": "HW 4 Part 5 sanity check",
         "statements": [
             {
                 "source": "If my BERT model performs somewhere between the WN frequency model and W2V, is that a definitive sign that my model has an issue? I am using BERT with the [MASK] token in the input.",
@@ -924,7 +924,7 @@
         ]
     },
     {
-        "context": "Homework 4 Question regarding DistilBERT tokenizer implementation",
+        "context": "Question regarding DistilBERT tokenizer implementation",
         "statements": [
             {
                 "source": "Question regarding DistilBERT tokenizer implementation - \"The encode method tokenizes a string, then adds special symbols [CLS] and [SEP], and then encodes the input into a sequence of integers. \"Can we assume that the input string has only alphabets? If they already consist of numbers, how should that be handled? Thank you!",
@@ -935,7 +935,7 @@
         ]
     },
     {
-        "context": "Homework 4 Part 3 clarification",
+        "context": "Part 3 clarification",
         "statements": [
             {
                 "source": "If this is the case (or if there is a tie), you should select the most frequent synset (i. e. the Synset with which the target word forms the most frequent lexeme, according to WordNet). So if there is a tie, do we pick the higher frequency one between the tie, or it's still the highest frequency from the entire set? Also, it is possible for the most frequent synset or the synset with most overlap to contain only one lemma that is the target word itself. In this situation, what are we suppose to do? Find the next possible synset or just return nothing?",
@@ -946,7 +946,7 @@
         ]
     },
     {
-        "context": "Homework 4 Part 6: Custom Predictor",
+        "context": "Part 6: Custom Predictor",
         "statements": [
             {
                 "source": "I'm wondering if the expectation for Part 6 for Homework 4 is for us to create a new function in the existing Predictor class or to create a new custom predictor class itself. And I am curious what type of innovative refinements are expected? Thanks in advance!",
@@ -957,7 +957,7 @@
         ]
     },
     {
-        "context": "Homework 4 HW 4 submissions",
+        "context": "HW 4 submissions",
         "statements": [
             {
                 "source": "Hi, will submissions for HW 4 be opened soon? Thanks",
@@ -968,7 +968,7 @@
         ]
     },
     {
-        "context": "Homework 4 HW 4: Sharing solutions to installation issues I encountered",
+        "context": "HW 4: Sharing solutions to installation issues I encountered",
         "statements": [
             {
                 "source": "My dev setup is ancient, so I ran into a number of issues when going through the installation steps for HW 4. Posting the solutions that worked for me here in case anyone else runs into the same issues. When trying to install gensim: error: Microsoft Visual C++ 14. 0 is required. Get it with \"Microsoft Visual C++ Build Tools\"Solution if you don't want to install all of VSCode: First answer in https://stackoverflow. com/questions/40018405/cannot-open-include-file-io-h-no-such-file-or-directory, though I chose the most recent compatible version of the packages instead. When trying to import gensim: ModuleNotFoundError: No module named 'dataclasses'Solution: pip install dataclassesWhen trying to install tokenizers: ERROR: Could not build wheels for tokenizers, which is required to install pyproject. toml-based projectsSolution: Upgraded to Python 3. 11. Maybe this would have solved some of the earlier problems too. The scoring script is written in Perl. You can install Perl at https://strawberryperl. com/ and restart your terminal for it take effect.",
@@ -979,7 +979,7 @@
         ]
     },
     {
-        "context": "Homework 4 Testing gensim installation",
+        "context": "Testing gensim installation",
         "statements": [
             {
                 "source": "Hello, Just quickly mentioning that the homework describes that we should use the following command to view the vector representation for an individual word:&gt;&gt;&gt; v1 = model. wv['computer']\nI found that this command was throwing an error, but according to this stackoverflow post: https://stackoverflow. com/a/71550086, the . wv access field should not be necessary (also mentioned in the assignment)This is the command that worked for me:&gt;&gt;&gt; v1 = model['computer']\nIs my understanding correct or is it preferred to use v1 = model. get_vector('computer')? Thanks in advance",
@@ -991,7 +991,7 @@
         ]
     },
     {
-        "context": "General Converting a Constituency Parse to Dependency Pares",
+        "context": "Converting a Constituency Parse to Dependency Pares",
         "statements": [
             {
                 "source": "From HW 3: \"There are also the following data files, corresponding to a standard split of the WSJ part of the Penn Treebank. The original Penn Treebank contains constituency parses, but these were converted automatically to dependencies. \"This made me curious- what is the standard way to convert constituency parses to dependency parses? Can a completely rules based approach suffice?",
@@ -1002,7 +1002,7 @@
         ]
     },
     {
-        "context": "Homework 4 Part 2 Wordnet Frequency Baseline Count",
+        "context": "Part 2 Wordnet Frequency Baseline Count",
         "statements": [
             {
                 "source": "Hi, Just to clarify on how we should count the occurrence of the synonyms. So we can iterate all the synsets of a given context's lemma and pos, then for each lemma in the each synset, we accumulate the counts for that specific lemma's name? In the end we should just return the lemma name with the highest count and that lemma name can't be the input lemma name, is that the idea?",
@@ -1013,7 +1013,7 @@
         ]
     },
     {
-        "context": "General Arc Standard Transition based Dependency Parsing: All Arc-Lefts before Arc-Rights",
+        "context": "Arc Standard Transition based Dependency Parsing: All Arc-Lefts before Arc-Rights",
         "statements": [
             {
                 "source": "Is it correct to say it is always possible to reach a final dependency tree A_d by following a sequence of transitions wherein all Left-Arcs are done before Right-Arcs ? Is it necessary?",
@@ -1024,7 +1024,7 @@
         ]
     },
     {
-        "context": "Homework 4 Part 6 imports",
+        "context": "Part 6 imports",
         "statements": [
             {
                 "source": "Are we allowed to import anything we want to solve part 6, or should we stick to the libraries given?",
@@ -1035,7 +1035,7 @@
         ]
     },
     {
-        "context": "Homework 4 Error in smurf. predict on line 299",
+        "context": "Error in smurf. predict on line 299",
         "statements": [
             {
                 "source": "When I run perl score. pl smurf. predict gold. trial I get this error. Is the perl script correct or I am doing something wrong? And this is my smurf. predict",
@@ -1047,7 +1047,7 @@
         ]
     },
     {
-        "context": "General Homework 5 & exam",
+        "context": "Homework 5 & exam",
         "statements": [
             {
                 "source": "Apologies if this was already addressed in class: just to clarify, will Homework 5 and the Exam be due/administered in the same week? ",
@@ -1058,7 +1058,7 @@
         ]
     },
     {
-        "context": "Homweork 3 Final submission",
+        "context": "Final submission",
         "statements": [
             {
                 "source": "Do the . vocab and . h5 files need to be in a separate \"data\" folder in our final submission, similar to how hw3 has the . py files and then a \"data\" folder with all . vocab and . h5 within them? ",
@@ -1069,7 +1069,7 @@
         ]
     },
     {
-        "context": "Homweork 3 How does re-training the model affect final submission files?",
+        "context": "How does re-training the model affect final submission files?",
         "statements": [
             {
                 "source": "Since we need to submit 9 files in all, will semi-constantly re-training the models affect any of our submission files? ",
@@ -1080,7 +1080,7 @@
         ]
     },
     {
-        "context": "Homweork 3 HW3 Evaluation Results",
+        "context": "HW3 Evaluation Results",
         "statements": [
             {
                 "source": "My results seem to be coming out a little lower than expected. Is this indicative of a training error, or is it just necessary to tune parameters in the network topology? I've tried to re-run everything and retrain the model but the LAS scores are consistent.",
@@ -1091,7 +1091,7 @@
         ]
     },
     {
-        "context": "Homweork 3 Training taking around 5 mins per epoch on a windows gpu setup?",
+        "context": "Training taking around 5 mins per epoch on a windows gpu setup?",
         "statements": [
             {
                 "source": "I'm training on an nvidia 3070 and it's taking about 5 mins per epoch. I'm using conda and wsl on windows. I'm just wondering if anybody else gets a similar result? It seems suspiciously longer than a 2016 macbook but maybe it's just the way I set up tensorflow?",
@@ -1102,7 +1102,7 @@
         ]
     },
     {
-        "context": "Homweork 3 How should we use keras. utils. to_categorical in Part 2?",
+        "context": "How should we use keras. utils. to_categorical in Part 2?",
         "statements": [
             {
                 "source": "For get_output_representation, I think we can manually code the one-hot key vector relatively easily using self. output_labels without using keras. utils. to_categorical? Is there a reason that we should use keras. utils. to_categorical in this case? ",
@@ -1113,7 +1113,7 @@
         ]
     },
     {
-        "context": "General Colab",
+        "context": "Colab",
         "statements": [
             {
                 "source": "Are we able to upload files to colab? or do we have to copy our python code out? How does this work with the data files?",
@@ -1124,7 +1124,7 @@
         ]
     },
     {
-        "context": "General Estimated time for testing?",
+        "context": "Estimated time for testing?",
         "statements": [
             {
                 "source": "How long should it take to return LAS after running evaluate. py data/model. h5 data/dev. conll? ",
@@ -1135,7 +1135,7 @@
         ]
     },
     {
-        "context": "General WSL & Nvidia GPU Opinion",
+        "context": "WSL & Nvidia GPU Opinion",
         "statements": [
             {
                 "source": "Is anyone else using windows subsystem for Linux to use their GPU for training?  I set it up, and it looks like it is sort of working. I get 0% utilization when i look at nvidia-smi while training is running, but it does show my v-ram on my 3080ti is being used. So it looks like it is sort of working, but my mac from 2019 is also running just as fast, if not faster lol. Wanted to see if anyone else out there attempted to use their own gpu and had similar results.",
@@ -1147,7 +1147,7 @@
         ]
     },
     {
-        "context": "Homweork 3 HW3-part3",
+        "context": "HW3-part3",
         "statements": [
             {
                 "source": "What is the expected loss after 5 epoch? Thank youHamidSeyedhamidreza Alaie",
@@ -1158,7 +1158,7 @@
         ]
     },
     {
-        "context": "Homweork 3 Results of part 4",
+        "context": "Results of part 4",
         "statements": [
             {
                 "source": "Hi, I saw previous posts about this but when I run my code on Mac M2 and an older Mac the results are very different again, not matter what I try:M2:Older Mac:Any ideas what I can do to fix it? Thanks!",
@@ -1169,7 +1169,7 @@
         ]
     },
     {
-        "context": "General Hw3 get_output_representation",
+        "context": "Hw3 get_output_representation",
         "statements": [
             {
                 "source": "I know in the description it suggests we use keras. utils. to_categorical functionCan we use the output_labels attribute of the FeatureExtractor class as another approach?",
@@ -1180,7 +1180,7 @@
         ]
     },
     {
-        "context": "General Hw3 Part 2",
+        "context": "Hw3 Part 2",
         "statements": [
             {
                 "source": "This may be a silly question but I am a bit confused for get_input_representationIf the result is the next 3 words on the stack followed by the next three words on the buffer, then where do the parameters \"words\" and \"pos\" come into play? ",
@@ -1191,7 +1191,7 @@
         ]
     },
     {
-        "context": "Homweork 3 Usage of GPU on Mac M2",
+        "context": "Usage of GPU on Mac M2",
         "statements": [
             {
                 "source": "Hi, I tried many solutions but I wasn't able to run part 3 with low losses. Once I added the following line as the first one under the main function of train_model. py: tensorflow. config. experimental. set_visible_devices([], 'GPU')\nMy output was:Epoch 1/5\n18996/18996 [==============================] - 52s 3ms/step - loss: 0. 5516\nEpoch 2/5\n18996/18996 [==============================] - 70s 4ms/step - loss: 0. 4543\nEpoch 3/5\n18996/18996 [==============================] - 92s 5ms/step - loss: 0. 4323\nEpoch 4/5\n18996/18996 [==============================] - 98s 5ms/step - loss: 0. 4243\nEpoch 5/5\n18996/18996 [==============================] - 99s 5ms/step - loss: 0. 4133\nShould I leave it in my code when submitting? Thanks!",
@@ -1202,7 +1202,7 @@
         ]
     },
     {
-        "context": "Homweork 3 keras. optimizers. Adam for M1/M2 Macs",
+        "context": "keras. optimizers. Adam for M1/M2 Macs",
         "statements": [
             {
                 "source": "Hi, I have an M2 Mac and when I run part 3 I get the following warning:WARNING:absl:At this time, the v2. 11+ optimizer tf. keras. optimizers. Adam \nruns slowly on M1/M2 Macs, please use the legacy Keras optimizer instead,\nlocated at tf. keras. optimizers. legacy. Adam.\nAm I allowed to modify the train_model. py function accordingly? i. e. add:model. compile(keras. optimizers. legacy. Adam(lr=0. 01), loss=\"categorical_crossentropy\")Thanks! ",
@@ -1213,7 +1213,7 @@
         ]
     },
     {
-        "context": "General HW3 P3 Network Topology",
+        "context": "HW3 P3 Network Topology",
         "statements": [
             {
                 "source": "Should the softmax activation layer for the output be a Dense layer with the number of outputs as the number of units? Or, should it be a keras. layers. Softmax layer? In this case I don't know how to specify the correct size. ",
@@ -1224,7 +1224,7 @@
         ]
     },
     {
-        "context": "Homweork 3 Issue with Importing 'keras'",
+        "context": "Issue with Importing 'keras'",
         "statements": [
             {
                 "source": "Hi Professor/TAs, I have been experiencing a persistent issue when executing the scripts 'train_model. py' and 'extract_training_data. py'. The error message I received is 'No module names 'keras'. I have attempted to resolve this issue by installing keras directly through pip (pip install keras) as well as through the Anaconda environment. .. but still getting the same error. Thanks! ! ",
@@ -1235,7 +1235,7 @@
         ]
     },
     {
-        "context": "Homweork 3 Part 3 Increased Loss?",
+        "context": "Part 3 Increased Loss?",
         "statements": [
             {
                 "source": "I am getting an increased loss for each epoch. I assume this is not expected? Any ideas why this might be? These are the commands I am running:python get_vocab. py data/train. conll data/words. vocab data/pos. vocab\npython extract_training_data. py data/train. conll data/input_train. npy data/target_train. npy\npython train_model. py data/input_train. npy data/target_train. npy data/model. h5\nDone loading data.\nEpoch 1/5\n2023-07-25 20:25:33. 550726: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry. cc:114] Plugin optimizer for device_type GPU is enabled.\n18996/18996 [==============================] - 158s 8ms/step - loss: 2. 3834\nEpoch 2/5\n18996/18996 [==============================] - 153s 8ms/step - loss: 19. 8371\nEpoch 3/5\n18996/18996 [==============================] - 154s 8ms/step - loss: 100. 4172\nEpoch 4/5\n18996/18996 [==============================] - 158s 8ms/step - loss: 233. 7903\nEpoch 5/5\n18996/18996 [==============================] - 158s 8ms/step - loss: 443. 5440\n",
@@ -1246,7 +1246,7 @@
         ]
     },
     {
-        "context": "Homweork 3 Hw3P2:",
+        "context": "Hw3P2:",
         "statements": [
             {
                 "source": "Hello, Assuming a token: \"GORBACHEV\" does not appear in the words. vocab file, should we consider it as \"&lt;UNK&gt;\" and store \"the index of &lt;UNK&gt; \" from words. vocab file to a one-dimensional vector? Thank you in advance!",
@@ -1257,7 +1257,7 @@
         ]
     },
     {
-        "context": "Homweork 3 HW3 P2: get_input_representation",
+        "context": "HW3 P2: get_input_representation",
         "statements": [
             {
                 "source": "I am having some confusion regarding the implementation of the method get_input_representation. The inputs to this method include the words and the pos tags. However, I am confused on when to use the pos tags. Should the index always be pulled from the words. vocab file, or is there a case where the index should be from the pos. vocab file?",
@@ -1268,7 +1268,7 @@
         ]
     },
     {
-        "context": "Homweork 3 Testing part 2",
+        "context": "Testing part 2",
         "statements": [
             {
                 "source": "Hi, How can I test my part 2 of HW3? I tried printing the numpy array from the get_input_representation function but it doesn't help much with understanding if the mapping is correct (except from NULLs and the ROOT)Thanks!",
@@ -1279,7 +1279,7 @@
         ]
     },
     {
-        "context": "Homweork 3 HW3 part 2- get_output_representation",
+        "context": "HW3 part 2- get_output_representation",
         "statements": [
             {
                 "source": "For the get_output_representation(self, output_pair) method should we return a vector containing 90 zeroes and a single one (representing the output_pair)? If this is the case, do the indexes in the vector need to follow a specific order? For example, having the first 45 indexes reserved for \"left_arc\" transition pairs, the following 45 indexes for \"right_arc\" transition pairs and  ('shift', None) be at index 91? Thanks in advance! ",
@@ -1291,7 +1291,7 @@
         ]
     },
     {
-        "context": "Homweork 3 Use of test. conll file",
+        "context": "Use of test. conll file",
         "statements": [
             {
                 "source": "Good evening, I was trying to understand when/where to use the test. conll file? Thank you",
@@ -1302,7 +1302,7 @@
         ]
     },
     {
-        "context": "General Ungraded Exercise: Linear Models and Feature Functions solutions",
+        "context": "Ungraded Exercise: Linear Models and Feature Functions solutions",
         "statements": [
             {
                 "source": "Hi everyone, If you have a chance, do you mind releasing the solutions to the Linear Models and Feature Functions ungraded exercise? Thank you in advance!",
@@ -1313,7 +1313,7 @@
         ]
     },
     {
-        "context": "Homweork 3 Setup",
+        "context": "Setup",
         "statements": [
             {
                 "source": "Hi All, I have a windows 11 laptop with an nvidia 1060 card. I followed the instructions on tensorflows website as well as the README and I can't get tensorflow to print my gpu statistics. import tensorflow as tf \r\nfrom tensorflow import keras \r\n\r\nprint(\"GPU: \", tf. config. list_physical_devices('GPU'))The code above runs fine, it just prints an empty list for the array. A quick google tells me I need to install CUDA and cuDNN in order for get tf to work with my nvidia card. Does this sound right? ",
@@ -1326,7 +1326,7 @@
         ]
     },
     {
-        "context": "Homweork 3 Mac & Linux difference",
+        "context": "Mac & Linux difference",
         "statements": [
             {
                 "source": "I did the entire homework on Mac and regardless what I try and debug, the result always turned out horrible. Then I saw  #132, so following this thread, using my GCP instance, here is the comparison:Training:GCP with T4:Mac with M1:Evaluation:T4M1It's the same code. Didn't change anything.   TLDR: Don't use Mac.",
@@ -1337,7 +1337,7 @@
         ]
     },
     {
-        "context": "Homweork 3 HW3 part 4 results drastically different on two device",
+        "context": "HW3 part 4 results drastically different on two device",
         "statements": [
             {
                 "source": "Dear Prof. and TAs, I have a question regarding the results of my evaluation. I tried to run the evaluate. py on both windows (tensorflow/keras 2. 10. 0) and MAC M1 (tensorflow 2. 13. 0/keras 2. 13. 1 ). Then I got the results for win is similar to that on the coursework hints (upper). Then I tried the same command (with the model trained on Win) in MAC, however, the results turned to be quite different (below). Would you mind telling me which one is more reasonable, so that I can try to identify the problems in another program? Also, will the version causes such a big difference or there might be other reasons, and do we need to set the random seed?",
@@ -1348,7 +1348,7 @@
         ]
     },
     {
-        "context": "General Ungraded exercise solution: Transition-based dependency parsing",
+        "context": "Ungraded exercise solution: Transition-based dependency parsing",
         "statements": [
             {
                 "source": "Hi Professor Bauer/TAs. For the Ungraded Dependency Parsing problem, I am confused on we do not perform all the left-arc transitions first? Based on the example given in class, all the left-arc transitions were performed before the right-arc transitions. I thought the standard arc transition performs all the left before the right to maintain projectivity. Also could you please provide the solution to part b of the problem? Thanks! ! ",
@@ -1359,7 +1359,7 @@
         ]
     },
     {
-        "context": "Homweork 3 Tensorflow-gpu is now part of regular tensorflow installation",
+        "context": "Tensorflow-gpu is now part of regular tensorflow installation",
         "statements": [
             {
                 "source": "Just wanted to note that tensor-flow-gpu is now part of the regular tensorflow installation. The regular installation (pip install tensorflow) should have GPU support. ",
@@ -1371,7 +1371,7 @@
         ]
     },
     {
-        "context": "Exam Question about Exam format for CVN student",
+        "context": "Question about Exam format for CVN student",
         "statements": [
             {
                 "source": "Hi, Wondering what will be the exam format for CVN students?  Do we have to attend the exam at the same time slot as the on-campus students? Thanks!",
@@ -1383,7 +1383,7 @@
         ]
     },
     {
-        "context": "Lectures Typo in Lecture 7?",
+        "context": "Typo in Lecture 7?",
         "statements": [
             {
                 "source": "Is the first cell on the right wrong? (VP -&gt; V NP)? Shouldnt the cell to the right be PP (or at least match the parent's right value)?",
@@ -1394,7 +1394,7 @@
         ]
     },
     {
-        "context": "Lectures Simulation Based Bias Avoidance Model?",
+        "context": "Simulation Based Bias Avoidance Model?",
         "statements": [
             {
                 "source": "Hi Professor, Towards the end of Thursday's lecture you discussed the presence of bias in some of the contemporary language models. I've seen simulations used to train models in robotics and was wondering if simulating a desirable lexicon (let's say neutral and inclusive) would offset some of the less desirable cultural associations? Thank you in advance! ",
@@ -1405,7 +1405,7 @@
         ]
     },
     {
-        "context": "General HW 3 part 4 sanity check",
+        "context": "HW 3 part 4 sanity check",
         "statements": [
             {
                 "source": "In part 4, I had to convert my features into a 2d array (via np. array([features])) before passing them to predict; otherwise, I get a dimension mismatch. Is this expected, or have I done something wrong? The documentation seems to imply a 1d array would be accepted for a singular prediction, so I'm not sure why I had to do this. https://www. tensorflow. org/api_docs/python/tf/keras/Model#predict",
@@ -1416,7 +1416,7 @@
         ]
     },
     {
-        "context": "Homweork 3 HW 3 part 3 sanity check",
+        "context": "HW 3 part 3 sanity check",
         "statements": [
             {
                 "source": "In part 3, is it expected not to use all method params?",
@@ -1428,7 +1428,7 @@
         ]
     },
     {
-        "context": "Lectures Typo in lecture11 p. 41?",
+        "context": "Typo in lecture11 p. 41?",
         "statements": [
             {
                 "source": "Hi isn't itvector(apple) - vector(tree) + vector(vine) = vector(grape)instead of vector(apple) - vector(tree) + vector(grape) = vector(vine)? ",
@@ -1439,7 +1439,7 @@
         ]
     },
     {
-        "context": "Homweork 3 HW3 part 2 model optimization metrics",
+        "context": "HW3 part 2 model optimization metrics",
         "statements": [
             {
                 "source": "Dear Prof. and TAs, I have a question about the part 3 model. compile. Apart from the parameters 1) optimizer and 2) loss function, we also have a \"metrics\". What specific metrics do you suggest for our task, like accuracy, auc, etc? Thank you!",
@@ -1450,7 +1450,7 @@
         ]
     },
     {
-        "context": "General Dutch Context-Free Example from Lecture",
+        "context": "Dutch Context-Free Example from Lecture",
         "statements": [
             {
                 "source": "To clarify, the English version of this sentence is not context-free and can be expressed using a CFG? ",
@@ -1461,7 +1461,7 @@
         ]
     },
     {
-        "context": "Homework 2 HW2 Python Libraries",
+        "context": "HW2 Python Libraries",
         "statements": [
             {
                 "source": "Are we allowed to use/import numpy?",
@@ -1472,7 +1472,7 @@
         ]
     },
     {
-        "context": "General Probs table accuracy?",
+        "context": "Probs table accuracy?",
         "statements": [
             {
                 "source": "Are there any values or range of values we should be getting for values in our probability table? ",
@@ -1483,7 +1483,7 @@
         ]
     },
     {
-        "context": "Homework 2 Part 3 lexical rules probabilities",
+        "context": "Part 3 lexical rules probabilities",
         "statements": [
             {
                 "source": "Hello, Given: tokens = ['flights', 'from', 'miami', 'to', 'cleveland', '. '], I got the following lexical rules probabilities:Should parse_with_backpointers  method choose the production rule 'FLIGHTS' ==&gt; 'flights' over the rule 'NP' ==&gt; 'flights' , as it has higher probability ? If the answer is yes, the example in part 4 is using  'NP' ==&gt; 'flights' rule (which is  less probable than 'FLIGHTS' ==&gt; 'flights'  based on what I got above.  Is the given example correct ? Am I missing something?",
@@ -1494,7 +1494,7 @@
         ]
     },
     {
-        "context": "Homweork 3 One Hot Vector Length of 91",
+        "context": "One Hot Vector Length of 91",
         "statements": [
             {
                 "source": "I'm not quite sure I understand why there are only 91 combinations for the one-hot-vector. I thought for each valid POS (48 - 3 = 45) there would be 3 possible transitions (left, right, shift), resulting in 45*3. Then there is one extra transition for the &lt;ROOT&gt; word for a total of 45*3 + 1 = 136. What am I missing in my understanding? Why do we only need a vector of length 91? ",
@@ -1505,7 +1505,7 @@
         ]
     },
     {
-        "context": "Homweork 3 Encoding Case Sensitive Words in HW3",
+        "context": "Encoding Case Sensitive Words in HW3",
         "statements": [
             {
                 "source": "Should words be case sensitive when encoding our words in Part 2? For example, the first case in the train. CONLL is: BUSH AND GORBACHEV WILL HOLD two days of informal talks next month. The training data recognizes that \"AND\" is a conjunction (CC), so pos. vocab easily recognizes it as \"CC\". However, word. vocab only has \"and\" listed. Given that Python dictionary keys are case sensitive, should \"AND\" be encoded as the index for \"and\" or \"&lt;UNK&gt;\"?",
@@ -1516,7 +1516,7 @@
         ]
     },
     {
-        "context": "Homework 2 Examples in HW2",
+        "context": "Examples in HW2",
         "statements": [
             {
                 "source": "Are all examples in HW2 examples with no particular meaning to the \"correctness\" of our implementation? For example #99  was an example on a difference sentence. ",
@@ -1527,7 +1527,7 @@
         ]
     },
     {
-        "context": "Homework 2 HW2 part1 length of rhs",
+        "context": "HW2 part1 length of rhs",
         "statements": [
             {
                 "source": "Dear Prof. and TAs, I have a question regarding verify_grammar. Apart from checking the sum of probability and (non)terminal is in lhs, do we have to ensure the length of rhs within {1, 2}?",
@@ -1538,7 +1538,7 @@
         ]
     },
     {
-        "context": "Homework 2 Different Start Symbols",
+        "context": "Different Start Symbols",
         "statements": [
             {
                 "source": "For Part 2, how do we make sure that the function works for different start symbols? Given a grammar, how would a user know what the start symbol is without looking at the grammar?",
@@ -1549,7 +1549,7 @@
         ]
     },
     {
-        "context": "Homework 2 submission requirements",
+        "context": "submission requirements",
         "statements": [
             {
                 "source": "Hi teaching team, I noticed that the assignment requirements sayPack these files together in a zip or tgz file as described on top of this page. Please follow the submission instructions precisely!  but it seems that I can't find any specific requirements on the top. So, is there any formatting or naming convention for our submissions?",
@@ -1560,7 +1560,7 @@
         ]
     },
     {
-        "context": "Homework 2 question on referencing codes",
+        "context": "question on referencing codes",
         "statements": [
             {
                 "source": "Hello, I wonder how to make a reference for the codes that I gained some insights?",
@@ -1571,7 +1571,7 @@
         ]
     },
     {
-        "context": "Homework 2 HW2 Part 2 runtime",
+        "context": "HW2 Part 2 runtime",
         "statements": [
             {
                 "source": "What is considered too long of a runtime when testing is_in_language on atis3. pcfg? I made a small test grammar and it returns immediately but using atis3. pcfg takes well over a minute to return the result. Are points deducted for runtime? ",
@@ -1583,7 +1583,7 @@
         ]
     },
     {
-        "context": "Homework 2 HW3 - Part 4 Return Type",
+        "context": "HW3 - Part 4 Return Type",
         "statements": [
             {
                 "source": "Making a post in case this will help othersUpon investigating the evaluate_parser code, it seems that unparsed lines are only counted upon a KeyError, as seen here:try:\n res = get_tree(chart, 0, len(tokens), parser. grammar. startsymbol)\nexcept KeyError:\n unparsed += 1\n res = tuple()\nThis caused issues for me as originally in part 4, I was returning None in the cases when NT was not within the parse table. Therefore, unparsed was not being incremented and the final evaluation scores were drastically different than what is expected (based on the professor's outputs). tldr : try raising a KeyError instead of returning None",
@@ -1594,7 +1594,7 @@
         ]
     },
     {
-        "context": "Homework 2 Hw3 Part 3",
+        "context": "Hw3 Part 3",
         "statements": [
             {
                 "source": "For example the value of probs[(0, 3)]['NP'] might be -12. 1324. What this the value for ['flights', 'from', 'miami', 'to', 'cleveland', '. '] , or a different sentence?",
@@ -1605,7 +1605,7 @@
         ]
     },
     {
-        "context": "Homework 2 HW2 Part 1",
+        "context": "HW2 Part 1",
         "statements": [
             {
                 "source": "For part 1, do we also need to verify if a symbol only contains letters or an apostrophe? Or is it simply check the probability sum and format?",
@@ -1616,7 +1616,7 @@
         ]
     },
     {
-        "context": "General Thursday OH online?",
+        "context": "Thursday OH online?",
         "statements": [
             {
                 "source": "Hi, would it be possible to offer Thursday's OH over zoom to allow CVN students to join? That would be very helpful because currently there are no OH opportunities between Tuesday and Friday. Thank you",
@@ -1627,7 +1627,7 @@
         ]
     },
     {
-        "context": "Homework 2 hw2 part 2",
+        "context": "hw2 part 2",
         "statements": [
             {
                 "source": "Could you please clarify what S is in the below? I understood this from the ungraded exercise, however, for hw2 there is no 'S' in the lhs rules. .. ",
@@ -1639,7 +1639,7 @@
         ]
     },
     {
-        "context": "Exam Possible Mock Exam?",
+        "context": "Possible Mock Exam?",
         "statements": [
             {
                 "source": "Hello, Just wondering when we prepare for the final exam at the end of the course, is there any mock exam that can be used as a template for practice/preparation?",
@@ -1650,7 +1650,7 @@
         ]
     },
     {
-        "context": "Homework 2 Typo in Homework 2 Part 3?",
+        "context": "Typo in Homework 2 Part 3?",
         "statements": [
             {
                 "source": "\"For example: table[(0, 3)]['NP'] returns the backpointers to the table entries that were used to create the NP phrase over the span 0 and 3. For example, the value of table[(0, 3)]['NP'] could be ((\"NP\", 0, 2), (\"FLIGHTS\", 2, 3)). This means that the parser has recognized an NP covering the span 0 to 3, consisting of another NP from 0 to 2 and FLIGHTS from 2 to 3. The split recorded in the table at table[(0, 3)]['NP'] is the one that results in the most probable parse for the span [0, 3] that is rooted in NP. \"I don't see how \"FLIGHTS from 2 to 3\" is possible. \"FLIGHTS\" is only available in the span from 0 to 1?  This is how I view the terminal symbols. 0            1          2            3           4                    5           6|---------|---------|---------|---------|----------------|---------|  Flights   from    Miami      to       Cleveland       . With the arrangement above how is this possible (as per the directions)? |-------------------|----------|          NP            FLIGHTS",
@@ -1661,7 +1661,7 @@
         ]
     },
     {
-        "context": "Homework 2 Part 5",
+        "context": "Part 5",
         "statements": [
             {
                 "source": "Hi, For part 4 I added the following lines at the top to check for validity of nt:    # if (not any(nt in inner_dict for inner_dict in chart. values()) or len(chart[(i, j)][nt]) == 0):\n    #     return None\nEverything seems to run smoothly, however when I ran part 5 I got the following result:Coverage: 86. 21%, Average F-score (parsed sentences): 0. 7413490818718977, Average F-score (all sentences): 0. 6390940360964636\nHowever, when I deleted the 2 lines from get_tree, I get the following result for part 5:Coverage: 67. 24%, Average F-score (parsed sentences): 0. 9504475408614075, Average F-score (all sentences): 0. 6390940360964636\nDid I do something wrong for part 4? Would appreciate any help. Thanks!",
@@ -1672,7 +1672,7 @@
         ]
     },
     {
-        "context": "Homework 2 Part 4 terminal input",
+        "context": "Part 4 terminal input",
         "statements": [
             {
                 "source": "For get_tree(chart, i, j, nt), can we assume the nt is always valid?",
@@ -1683,7 +1683,7 @@
         ]
     },
     {
-        "context": "Homework 2 Hw2 Pt. 1",
+        "context": "Hw2 Pt. 1",
         "statements": [
             {
                 "source": "I just wanted to check to make sure that I got all the conditions for a grammar in CNF - in the slides it just says that each rule needs to be in the form A  B C, where A  N, B  N, C  Nor A  b, where A  N, b  In the assignment description, it gives the further requirement that all probabilities for the same lhs symbol must sum to 1. 0. I did have a few other questions for some edge cases though, I would really appreciate it if these could be verified/any gaps filled in (if that's allowed):Must every valid CNF grammar contain a valid startsymbol? Should we ensure that rhs and lhs rules are the same? Should we make sure that some rules exist for a certain set of symbols?",
@@ -1694,7 +1694,7 @@
         ]
     },
     {
-        "context": "Homework 2 Part 3 log probability table",
+        "context": "Part 3 log probability table",
         "statements": [
             {
                 "source": "The second object is similar, but records log probabilities instead of backpointers. For example the value of probs[(0, 3)]['NP'] might be -12. 1324. This value represents the log probability of the best parse tree (according to the grammar) for the span 0, 3 that results in an NP. Like, does the probability include 'NP' itself? Say NP -&gt; NP PP, does the  -12. 1324 come from the sum of log probability on NP and PP on the right, or is the -12. 1324 from the whole thing, i. e. log probability of NP and PP AND the probability of rule 'NP -&gt; NP PP' itself? ",
@@ -1705,7 +1705,7 @@
         ]
     },
     {
-        "context": "Homework 2 Format in Part 3",
+        "context": "Format in Part 3",
         "statements": [
             {
                 "source": "The assignment outline in courseworks says the the table should have the structure: ((A, i, k), (B, k, j))But the check table structure function in the python file cky. py suggests: ((i, k, A), (k, j, B))It seems like either structure pass the check function, I'm just wondering which structure is preferred?",
@@ -1717,7 +1717,7 @@
         ]
     },
     {
-        "context": "Homework 2 part 3 log summation",
+        "context": "part 3 log summation",
         "statements": [
             {
                 "source": "Because we are using summation of math. log2() when comparing probabilities, a lower probability sum is better?",
@@ -1728,7 +1728,7 @@
         ]
     },
     {
-        "context": "Homework 2 part 3 clarification",
+        "context": "part 3 clarification",
         "statements": [
             {
                 "source": "I am a bit confused by part 3 and am hoping to get some clarification on the example provided: For example: table[(0, 3)]['NP'] returns the backpointers to the table entries that were used to create the NP phrase over the span 0 and 3. For example, the value of table[(0, 3)]['NP'] could be ((\"NP\", 0, 2), (\"FLIGHTS\", 2, 3)). This means that the parser has recognized an NP covering the span 0 to 3, consisting of another NP from 0 to 2 and FLIGHTS from 2 to 3. The split recorded in the table at table[(0, 3)]['NP'] is the one that results in the most probable parse for the span [0, 3] that is rooted in NP. Is the most probable parse for the span [0, 3] the split with the highest probability sum (using log2)? ",
@@ -1739,7 +1739,7 @@
         ]
     },
     {
-        "context": "Homework 2 hw 2 part 1 -",
+        "context": "hw 2 part 1 -",
         "statements": [
             {
                 "source": "Part 1 of HW2 states the following:Then change the main section of grammar. py to read in the grammar, print out a confirmation if the grammar is a valid PCFG in CNF or print an error message if it is not. You should now be able to run grammar. py on grammars and verify that they are well formed for the CKY parser. If I add logic in the actual verify_grammar() function (instead of main) to print the errors / success, is that sufficient? I know it states to modify it in main, but adding it in the function gave me a more tailored/detailed explanation of the error. I want to make sure this is okay for grading purposes. TYIA!",
@@ -1751,7 +1751,7 @@
         ]
     },
     {
-        "context": "Homework 2 Part 3 - Data Structure",
+        "context": "Part 3 - Data Structure",
         "statements": [
             {
                 "source": "The first object is parse table containing backpointers, represented as a dictionary (this is more convenient in Python than a 2D array). Can we use a default dict here instead of a regular dict?",
@@ -1763,7 +1763,7 @@
         ]
     },
     {
-        "context": "Homework 2 Part 2 and Part 3",
+        "context": "Part 2 and Part 3",
         "statements": [
             {
                 "source": "Part 3 and Part 2 are basically identical, instead of repeating the code, is it ok to just call self. is_in_language(tokens) in parse_with_backpointers(), if I am already creating and saving the table in part2?",
@@ -1774,7 +1774,7 @@
         ]
     },
     {
-        "context": "Homework 2 Part 2",
+        "context": "Part 2",
         "statements": [
             {
                 "source": "Hi, If I did part 3 before part 2, can I just use the following code for part 2?    def is_in_language(self, tokens):\n        \"\"\"\n        Membership checking. Parse the input tokens and return True if \n        the sentence is in the language described by the grammar. Otherwise\n        return False\n        \"\"\"\n        # TODO, part 2\n        table, probs = self. parse_with_backpointers(tokens)\n\n        if (0, len(tokens)) not in table or self. grammar. startsymbol not in table[0, len(tokens)]:\n            return False\n        return True\nThanks in advance.",
@@ -1785,7 +1785,7 @@
         ]
     },
     {
-        "context": "Homework 2 Is it in the range of expectation for my CKY algorithm to have a . 82 F1 score",
+        "context": "Is it in the range of expectation for my CKY algorithm to have a . 82 F1 score",
         "statements": [
             {
                 "source": "I am trying to determine whether I have to debug anything in my code. So far, each of the parts that I have implemented have shown expected behavior based on the examples given in the assignment page. The issue is when I run the evaluate_parser script I get lower than expected scores:Are these reasonable values should I spend some time debugging?",
@@ -1796,7 +1796,7 @@
         ]
     },
     {
-        "context": "General CKY Algorithm",
+        "context": "CKY Algorithm",
         "statements": [
             {
                 "source": "Hi Professor/TAs, When we are doing the CKY table, does the order of two terminals matter? For example, for the ungraded assignment, if we are looking to see if there is a production rule for (0, 2) from (0, 1) and (1, 1), does the ordering of D (0, 1) and N (1, 1) matters? In the production rule, we have NP -&gt; D N. Is that equivalent to  NP -&gt; N D? Not sure if my question is clear. .. but If (0, 1) was N and (1, 1) was D, can we still put NP in (0, 2)? Thanks! ! ",
@@ -1807,7 +1807,7 @@
         ]
     },
     {
-        "context": "General Additional Office Hours",
+        "context": "Additional Office Hours",
         "statements": [
             {
                 "source": "Hi, is it possible to get some office hours during the week via Zoom for CVN students?",
@@ -1818,7 +1818,7 @@
         ]
     },
     {
-        "context": "Homework 2 Part 1 usage of isclose",
+        "context": "Part 1 usage of isclose",
         "statements": [
             {
                 "source": "Hi, I just wanted to confirm if we can import isclose from the math library (since without it we can't use the method), as we're told that:You may want to take a look at the isclose method in Python's math package. Links to an external site. Thanks.",
@@ -1829,7 +1829,7 @@
         ]
     },
     {
-        "context": "Homework 2 Part 3 - Initialization of table",
+        "context": "Part 3 - Initialization of table",
         "statements": [
             {
                 "source": "Terminal symbols in the table could just be represented as strings. For example the table entry for table[(2, 3)][\"FLIGHTS\"] should be \"flights\". What about the other rules for the token \"flights\"? Specially, ('flights', ) also makes \"NP\" but the table format requires a tuple of length 2 so I am not sure what table[(0, 1)]['NP'] should be.",
@@ -1840,7 +1840,7 @@
         ]
     },
     {
-        "context": "Homework 2 Can we use Numpy in Part 2: is_in_language?",
+        "context": "Can we use Numpy in Part 2: is_in_language?",
         "statements": [
             {
                 "source": "In the initialization section of is_in_language, would it be allowed to use numpy to define the 2-D array for dynamic programming?",
@@ -1851,7 +1851,7 @@
         ]
     },
     {
-        "context": "General Ungraded Assignment - Viterbi Algorithm Implementation",
+        "context": "Ungraded Assignment - Viterbi Algorithm Implementation",
         "statements": [
             {
                 "source": "I was wondering if this implementation of the Viterbi algorithm is correct, and whether it can be optimized in any way. The output is correct \"Most likely sequence of states: ['N', 'V', 'Prep', 'N']\", but I'm wondering if anything can be done more efficiently:Thank you in advance! here is the pseudocode:and this is my (slightly different) implementation:# Define the hidden states\r\nhidden_states = ['N', 'V', 'Prep']\r\n\r\n# Define the observed states\r\nobs_states = ['time', 'flies', 'like', 'leaves']\r\n\r\n# Transition probabilities\r\ntransition_prob = {\r\n    'Start': {'N': 1/2, 'V': 1/2, 'Prep': 0},\r\n    'N': {'N': 1/4, 'V': 1/2, 'Prep': 1/4},\r\n    'V': {'N': 2/3, 'V': 0, 'Prep': 1/3},\r\n    'Prep': {'N': 1, 'V': 0, 'Prep': 0},\r\n}\r\n\r\n# Emission probabilities\r\nemission_prob = {\r\n    'N': {'time': 2/4, 'flies': 1/4, 'like': 0, 'leaves': 1/4},\r\n    'V': {'time': 1/6, 'flies': 2/6, 'like': 2/6, 'leaves': 1/6},\r\n    'Prep': {'time': 0, 'flies': 0, 'like': 1, 'leaves': 0}\r\n}\r\n\r\n# Initialize dictionaries\r\nviterbi_prob = {state: [0] * len(obs_states) for state in hidden_states}\r\nbackpointer = {state: [None] * len(obs_states) for state in hidden_states}\r\n\r\n# Initialization\r\nstart_state = 'Start'\r\nfor state in hidden_states:\r\n    viterbi_prob[state][0] = transition_prob[start_state][state] * emission_prob[state][obs_states[0]]\r\n    backpointer[state][0] = start_state\r\n\r\n# Recursive step of the Viterbi algorithm\r\nfor t in range(1, len(obs_states)):\r\n    for state in hidden_states:\r\n        max_prob = 0\r\n        max_state = None\r\n        for prev_state in hidden_states:\r\n            prob = viterbi_prob[prev_state][t-1] * transition_prob[prev_state][state] * emission_prob[state][obs_states[t]]\r\n            if prob &gt; max_prob:\r\n                max_prob = prob\r\n                max_state = prev_state\r\n        viterbi_prob[state][t] = max_prob\r\n        backpointer[state][t] = max_state\r\n\r\n# Termination step\r\nmax_final_prob = 0\r\nmax_final_state = None\r\nfor state in hidden_states:\r\n    if viterbi_prob[state][-1] &gt; max_final_prob:\r\n        max_final_prob = viterbi_prob[state][-1]\r\n        max_final_state = state\r\n\r\n# Backtrace to find the most likely sequence of states\r\npath = [max_final_state]\r\nfor t in range(len(obs_states)-1, 0, -1):\r\n    path. insert(0, backpointer[path[0]][t])\r\n\r\nprint('Most likely sequence of states:', path)\r\n\n\n",
@@ -1862,7 +1862,7 @@
         ]
     },
     {
-        "context": "General CKY Algorithm Bounds Clarification",
+        "context": "CKY Algorithm Bounds Clarification",
         "statements": [
             {
                 "source": "For sake of example, lets say our tokens are: ['These', 'are', 'the', 'tokens']Clearly, the length of the sentence would be 4 (n = 4)Within the CKY algo using the psuedo code above, are the bounds on the loops inclusive? In other words, for the initialization step, would i take on values of 0, 1, 2, 3 or 0, 1, 2? Furthermore, in the main loop, would length take on values of 2, 3, 4 or 2, 3? Same with for k = i+1. .. j-1. Does k take on values i+1, i+2, . .. , j-2, j-1 or i+1, i+2, . .. , j-2?",
@@ -1873,7 +1873,7 @@
         ]
     },
     {
-        "context": "Homework 2 Part 1 - CNF format",
+        "context": "Part 1 - CNF format",
         "statements": [
             {
                 "source": "For this instruction in part 1:Specifically you need to verify that each rule corresponds to one of the formats permitted in CNF. I just want to confirm I am understanding this correctly. We are only verifying that the format of the rule is in CNF but not verifying if the rhs correctly corresponds with the correct nonterminal on the lhs? In general, is formatting the only thing we need to check for in verifying if a PCFG is in CNF? Isn't it possible that the PCFG contains an incorrect rule but is in the proper format? ",
@@ -1885,7 +1885,7 @@
         ]
     },
     {
-        "context": "General Ungraded assignment for CKY",
+        "context": "Ungraded assignment for CKY",
         "statements": [
             {
                 "source": "Hi Professor/TAs - Could you please upload the solution for the Ungraded Exercise: CKY algorithm? Thanks! Jess ",
@@ -1896,7 +1896,7 @@
         ]
     },
     {
-        "context": "Homework 2 Performance metrics for Part 5 (Evaluating the Parser)",
+        "context": "Performance metrics for Part 5 (Evaluating the Parser)",
         "statements": [
             {
                 "source": "Hi Professor/TAs:In the assignment it is mentioned the performance metrics after implementation was-\"Coverage: 67%, Average F-score (parsed sentences): 0. 95, Average F-score (all sentences): 0. 64\"Is this the expected value for full credit? Might be a trivial question, but I got very slightly lower value for  Average F-score (all sentences) (~0. 639, rounding to same metric value 0. 64).  Just wanted to confirm if this was okay. Thank you in advance!",
@@ -1907,7 +1907,7 @@
         ]
     },
     {
-        "context": "Homework 2 Part 3 - Parsing with backpointers: \"math. log2\"",
+        "context": "Part 3 - Parsing with backpointers: \"math. log2\"",
         "statements": [
             {
                 "source": "Hi, The algorithm for PCFG parsing seems to be multiplying log probabilities for the parents rule with the probabilities of children at each step. Is it recommended to use math. log2 with summation for this assignment ( similar to assignment 1) when dealing with probabilities? Thank you",
@@ -1918,7 +1918,7 @@
         ]
     },
     {
-        "context": "Homework 2 Part 4 get_tree function base case",
+        "context": "Part 4 get_tree function base case",
         "statements": [
             {
                 "source": "Hello, While implementing homework 2's part 4 (get_tree), i initially included a base case where if (i, j) is not in the \"chart\", I return None which I found to be problematic with evaluate_parser. py's method of counting parsed trees (it uses try except KeyError to count the parsed trees)Therefore, should we jut leave this base case (key error) unhandled in part 4? Thank you for all the help in advance!",
@@ -1929,7 +1929,7 @@
         ]
     },
     {
-        "context": "General Additional Coding Challenges",
+        "context": "Additional Coding Challenges",
         "statements": [
             {
                 "source": "Hi everyone, Would it be possible to release additional coding/implementation problems for any algorithms we're not exploring in the homework assignments? Thank you in advance!",
@@ -1940,7 +1940,7 @@
         ]
     },
     {
-        "context": "General Solution for ungraded exercise on CKY algorithm and backpointers.",
+        "context": "Solution for ungraded exercise on CKY algorithm and backpointers.",
         "statements": [
             {
                 "source": "Good afternoon, Is it possible to upload the solution for the CKY ungraded exercise? It would be useful to test if our understanding is right while working on the next homework. Thank you.",
@@ -1951,7 +1951,7 @@
         ]
     },
     {
-        "context": "General Ungraded Exercise Solution: n-Gram Language Models - Part 2",
+        "context": "Ungraded Exercise Solution: n-Gram Language Models - Part 2",
         "statements": [
             {
                 "source": "I am trying to wrap my head around the proof by induction in the solution and am confused by the beginning of the inductive step:I thought the inductive hypothesis only tells us for sequences of length n-1 that:\\sum_{w_{1:n-1}}^{ }P\\left(w_1. .. w_{n-1}\\right)\\ =\\sum_{w_{1:n-1}}^{ }P\\left(w_1 \\vert START\\right)\\prod_{i=2}^{n-1}P\\left(w_i\\vert w_{i-1}\\right) = 1. Is there a formula being used to make the jump that the left-hand-side is equivalent to \\sum_q^{ }P\\left(w_{n-1}=q\\right)? Thanks for posting a solution in the first place! Thank you, Nick",
@@ -1962,7 +1962,7 @@
         ]
     },
     {
-        "context": "General Friday Office Hours",
+        "context": "Friday Office Hours",
         "statements": [
             {
                 "source": "Hi! Will there still be office hours this Friday afternoon? Thanks!",
@@ -1973,7 +1973,7 @@
         ]
     },
     {
-        "context": "General Homework assignment",
+        "context": "Homework assignment",
         "statements": [
             {
                 "source": "Going forward, would it be possible to have two weekends to complete the HW rather than the one we currently get (have the assignment due Monday instead of Friday? ), even if this means more overlap of assignments. I feel it's not uncommon to attend/watch lectures during the week and review/ingest the material on the weekends, especially for those of us working full time. Having only the last weekend makes it a bit difficult time-wise to fully grasp everything from the week that follows and makes incorporating this material into the assignments more challenging. If there is an administrative/logistical reason that makes this impracticable that is totally understandable. Thank you!",
@@ -1984,7 +1984,7 @@
         ]
     },
     {
-        "context": "Homework 1 Raw Trigram and Bigram Prob",
+        "context": "Raw Trigram and Bigram Prob",
         "statements": [
             {
                 "source": "It is my understanding that for trigrams like ('START', 'START', 'the'), we should use count ('START', 'START', 'the') / # of sentences. Should we do this with bigrams like ('START', 'the') as well? In other words, should the raw probability of ('START', 'START', 'the') be the same as ('START', 'the')?",
@@ -1995,7 +1995,7 @@
         ]
     },
     {
-        "context": "Homework 1 Perplexity testing",
+        "context": "Perplexity testing",
         "statements": [
             {
                 "source": "In the perplexity texts, when we provide the files in order of \"brown_train. txt brown_test. txt\" versus \"brown_test. txt brown_train. txt, \" why do the values differ? How exactly do they relate to each other? ",
@@ -2006,7 +2006,7 @@
         ]
     },
     {
-        "context": "Homework 1 Part 7 Function Signature",
+        "context": "Part 7 Function Signature",
         "statements": [
             {
                 "source": "For part 7, the main function in the skeleton code calls the essay_scoring_experiment asacc = essay_scoring_experiment('train_high. txt', 'train_low. txt\", \"test_high\", \"test_low\")However, when I run this function as is, I am getting a file not found error, so I had to change the parameters to their relative paths, as shown below:acc = essay_scoring_experiment(\"hw1_data/ets_toefl_data/train_high. txt\", \"hw1_data/ets_toefl_data/train_low. txt\", \"hw1_data/ets_toefl_data/test_high\", \"hw1_data/ets_toefl_data/test_low\")Is this acceptable, or are we expected to handle the first case with just the txt file names or directory names inside the essay_scoring_experiment function?",
@@ -2017,7 +2017,7 @@
         ]
     },
     {
-        "context": "General raw_bigram_probability and sentence_logprob questions",
+        "context": "raw_bigram_probability and sentence_logprob questions",
         "statements": [
             {
                 "source": "a) In the case where the bigram and trigram has not been seen in the train. txt, should raw_bigram_probability and raw_trigram_probability return 0 ? b) In sentence_logprob, when the smoothed trigram probability returned is 0, there is a math domain error as 0 is out of domain for log_2. What is the expected fix here? c) For trigrams like ('START', 'START', 'the'), is the idea that when we use smoothed_trigram_probability, the probability of this trigram should be count('the')/ Total Words in test set?",
@@ -2028,7 +2028,7 @@
         ]
     },
     {
-        "context": "Homework 1 Error: TypeError: 'collections. defaultdict' object is not callable",
+        "context": "Error: TypeError: 'collections. defaultdict' object is not callable",
         "statements": [
             {
                 "source": "For Part 3, the following line seems to be producing several errors: bigram_count = self. bigramcounts(tuple(trigram[:2]))These errors include \"TypeError: 'collections. defaultdict' object is not callable\" or (when I remove the tuple from the above line of code) \"TypeError: unhashable type: 'list'\". Is there a reason that this is producing this particular error, even though I assigning it as a tuple in order to make a slicing call? ",
@@ -2040,7 +2040,7 @@
         ]
     },
     {
-        "context": "Homework 1 sentence_logprob",
+        "context": "sentence_logprob",
         "statements": [
             {
                 "source": "To confirm, sentence_logprob is to be computed using smoothed_trigram_probability, right?",
@@ -2052,7 +2052,7 @@
         ]
     },
     {
-        "context": "General Lemmatization of amusing",
+        "context": "Lemmatization of amusing",
         "statements": [
             {
                 "source": "Should the lemmatized sentence have 'amuse'  for the word amusing?",
@@ -2063,7 +2063,7 @@
         ]
     },
     {
-        "context": "General What is the instructor-provided entry code for Gradescope?",
+        "context": "What is the instructor-provided entry code for Gradescope?",
         "statements": [
             {
                 "source": "Hello, I'm sorry if I missed this, but what is the code to add this course on Gradescope? Thanks",
@@ -2074,7 +2074,7 @@
         ]
     },
     {
-        "context": "Homework 1 Perplexity",
+        "context": "Perplexity",
         "statements": [
             {
                 "source": "When calculating the perplexity using the following equation:Should the total number of words tokens (M) also exclude the START token? I would guess that the START and STOP tokens should be excluded since the sum of the log probabilities does not include the probability of sentences with START or STOP tokens.",
@@ -2086,7 +2086,7 @@
         ]
     },
     {
-        "context": "Homework 1 Very High Perplexity Values",
+        "context": "Very High Perplexity Values",
         "statements": [
             {
                 "source": "I am getting extremely high perplexity values and having trouble pinpointing the reason why. I'm trying to figure out if there is an error with how I am calculating the log probabilities of a sentence, or if there is an issue with how I am calculating the perplexity value itself.  Some information about the log probabilities of the Brown test data when using the training model is pasted below:Range of Sentence Log Probabilities: (-1020. 8787566532884 -12. 231044294648944)Mode of Sentence Log Probabilities: (-15. 291353424804461) Mean of Sentence Log Probabilities: (-128. 44629381836992)Are these reasonable numbers for sentence log probabilities? As for the perplexity, 2^{-l}where, l=\\frac{1}{M}\\sum_{i=1}^m\\log_2P\\left(s_i\\right)Does M = total number of word tokens (including duplicates) or unique word tokens (lexicon)?",
@@ -2097,7 +2097,7 @@
         ]
     },
     {
-        "context": "Homework 1 Iterating through generator sometimes gets strings instead of lists?",
+        "context": "Iterating through generator sometimes gets strings instead of lists?",
         "statements": [
             {
                 "source": "During pt 2 I noticed that iterating through the generator corpus passed in sometimes yields a string instead of a list (the example I found was the single character \"d\"). I ended up using a type conversion to make sure the sentence being passed into get_ngrams() was a list. I'm just wondering if this is expected behavior + if what I'm doing is acceptable",
@@ -2108,7 +2108,7 @@
         ]
     },
     {
-        "context": "Homework 1 Bigram START, START",
+        "context": "Bigram START, START",
         "statements": [
             {
                 "source": "Hello, The professor mentioned that we could store START, START in the bigram dictionary to help calculate probability for trigrams like (START, START, the), but my understanding was that the only reason we were storing multiple STARTs was out of necessity in (3+n)-gram where we need the first word in the sentence, in this case \"the\", without any other tokens, so that we can reduce the likelihood that the sequence was not seen in the corpus. For example, should get_ngrams([\"natural\", \"language\", \"processing\"], 4) contain:[('START', 'START', 'START', 'START'), ('START', 'START', 'START', 'natural'), ('START', 'START', 'natural', 'language'), ('START', 'natural', 'language', 'processing'), ('natural', 'language', 'processing', 'STOP')]Is this understanding correct, and storing the START, START bigram is out of necessity, or is this generally best practice? Thank you",
@@ -2119,7 +2119,7 @@
         ]
     },
     {
-        "context": "General Lexicon size",
+        "context": "Lexicon size",
         "statements": [
             {
                 "source": "generator = corpus_reader(corpusfile)\nself. lexicon = get_lexicon(generator)\nself. lexicon_size = float(len(self. lexicon)+1)\nself. lexicon. add(\"UNK\")\nself. lexicon. add(\"START\")\nself. lexicon. add(\"STOP\")\nShould we be counting UNK, START and STOP as part of the lexicon size or only STOP?",
@@ -2130,7 +2130,7 @@
         ]
     },
     {
-        "context": "Homework 1 Part 3 - Raw probability and handling unknown tokens",
+        "context": "Part 3 - Raw probability and handling unknown tokens",
         "statements": [
             {
                 "source": "For the unigram probability isn't the total number of words simply the total number of words in the model's lexicon? If so, I assume we can simply take the len of the lexicon as |V|? And in general, in the raw probabilities functions: when the count of specific trigram/bigram/unigram is 0, should we try first to estimate the count again by replacing some words in the tuple with unknown toten? Thanks in advance!",
@@ -2141,7 +2141,7 @@
         ]
     },
     {
-        "context": "Homework 1 Are we allowed to add new functions to make the code more readable",
+        "context": "Are we allowed to add new functions to make the code more readable",
         "statements": [
             {
                 "source": "Good afternoon, I wanted to check if we are allowed to add new functions for the HW, without changing the function definitions/signatures of the existing ones? Thank you",
@@ -2152,7 +2152,7 @@
         ]
     },
     {
-        "context": "Homework 1 Part 3 [start, start, ] in tri-probability",
+        "context": "Part 3 [start, start, ] in tri-probability",
         "statements": [
             {
                 "source": "Hi, I am wondering if we need to deal with the situation when there is [START, START, . .. ] in the raw_trigram_probability function. As the double start bigramcounts =0 in this case, should I use 1/lexion or the same probability of [START, . .. ] in bi-probability?",
@@ -2163,7 +2163,7 @@
         ]
     },
     {
-        "context": "General Professor Bauer office hours",
+        "context": "Professor Bauer office hours",
         "statements": [
             {
                 "source": "Hi! How can we access Prof. Bauer's OH? Do we use the class Zoom link or do we need to make an appointment? ",
@@ -2175,7 +2175,7 @@
         ]
     },
     {
-        "context": "General TA Office Hours During Week",
+        "context": "TA Office Hours During Week",
         "statements": [
             {
                 "source": "Is it possible to get some TA office hours during the week via Zoom? For the office hours to be helpful (as it currently sits) we would need to know our questions nearly a week before the homework will be due.",
@@ -2186,7 +2186,7 @@
         ]
     },
     {
-        "context": "Homework 1 Effects of using log2 and log on perplexity",
+        "context": "Effects of using log2 and log on perplexity",
         "statements": [
             {
                 "source": "Hi everyone! I'm working on optimizing the perplexity, and had a question about using log vs log2. When using math. log within the sentence_logprob and perplexity functions, this is the output:However, when using math. log2, this is the output (which is a considerable increase):If I understood it correctly, using the logarithm allows us to check the trends, so are log and log2  interchangeable? Also, are these generally acceptable values?",
@@ -2197,7 +2197,7 @@
         ]
     },
     {
-        "context": "Homework 1 STOP or END?",
+        "context": "STOP or END?",
         "statements": [
             {
                 "source": "Hi all, In the lecture, I remember discussing START and END. However in the HW1, it seems to be START and STOP. Should we use END or STOP in that case for this homework, and/or they the same thing? Thanks, Vidur",
@@ -2208,7 +2208,7 @@
         ]
     },
     {
-        "context": "Homework 1 Parameter Clarification Part 5",
+        "context": "Parameter Clarification Part 5",
         "statements": [
             {
                 "source": "def sentence_logprob(self, sentence):\nIs sentence a list of strings? Or is it a single string that we need to split? There is no specification about the format of this paramter",
@@ -2219,7 +2219,7 @@
         ]
     },
     {
-        "context": "Homework 1 ngrams to probability notation",
+        "context": "ngrams to probability notation",
         "statements": [
             {
                 "source": "Given the following trigram: ('natural', 'language', 'processing')If we were calculating the raw probability for this trigram, how would this convert to probability notation? Would it be: P('processing' | 'natural', 'language') = count(('natural', 'language', 'processing')) / count(('natural', 'language'))or something different?",
@@ -2230,7 +2230,7 @@
         ]
     },
     {
-        "context": "Homework 1 Part 3 - Undefined cases",
+        "context": "Part 3 - Undefined cases",
         "statements": [
             {
                 "source": "My recommendation is to make P(v | u, w) = 1 / |V| (where |V| is the size of the lexicon)Another option would be to use the unigram probability for v, so P(v | u, w) = P(v). These are the recommendations given in part 3 for calculating raw probabilities when either the numerator and denominator or the denominator are 0Is there a difference in accuracy / performance? Is one typically favored in real-world scenarios over the other? Or does it depend on a case-to-case basis?",
@@ -2241,7 +2241,7 @@
         ]
     },
     {
-        "context": "Homework 1 Part 7",
+        "context": "Part 7",
         "statements": [
             {
                 "source": "I am a bit confused about how to make predictions. We have two trigram models, and we can calculate the perplexities of each essay with these two models. Do we compare these two perplexities of each essay and choose the smaller one as the prediction? Also, do we need to include anything in the main code for the homework? I was able to use it for testing. Do we need to keep those testing codes?",
@@ -2252,7 +2252,7 @@
         ]
     },
     {
-        "context": "Homework 1 Testing part 2",
+        "context": "Testing part 2",
         "statements": [
             {
                 "source": "Hi, I'm confused as to how can I test my part 2. Would appreciate any hints. Thank you!",
@@ -2263,7 +2263,7 @@
         ]
     },
     {
-        "context": "Lectures Additive smoothing inaccurate because of Zipf's law",
+        "context": "Additive smoothing inaccurate because of Zipf's law",
         "statements": [
             {
                 "source": "Hi Professor/TAs, I was rewatching the recording where professor mentions about additive smoothing not always being accurate because of Zipf's distribution. Professor mentions that it would overestimate the probability for unseen words (2hr 34min) , but doesn't the probability depend on count of words, so shouldn't the probability of seen words be higher. It would be helpful if you could correct me here and how this relates to Zipf's distribution. Thank you.",
@@ -2276,7 +2276,7 @@
         ]
     },
     {
-        "context": "Homework 1 Part 3 raw probability",
+        "context": "Part 3 raw probability",
         "statements": [
             {
                 "source": "Does \"START\" and \"STOP\" count towards the total number of words?",
@@ -2287,7 +2287,7 @@
         ]
     },
     {
-        "context": "Homework 1 Part 3",
+        "context": "Part 3",
         "statements": [
             {
                 "source": "Does this imply that in situations where count(u, w, v) is 0 but count(u, w) is greater than 0, or count(u, w) is 0 but count(u) is greater than 0, we still assume a uniform distribution? Otherwise, in these two cases, the raw probability is 0. And we just leave it as zero?",
@@ -2298,7 +2298,7 @@
         ]
     },
     {
-        "context": "Homework 1 Part 5 Handle Unknown Tokens in Sentence?",
+        "context": "Part 5 Handle Unknown Tokens in Sentence?",
         "statements": [
             {
                 "source": "Hello, I have a question about part 5 of homework 1. Specifically, we created a lexicon with UNK tokens within the trigram model class. Then when we run sentence_logprob, do we need to process the passed sentence to replace unseen tokens as \"UNK\"? It seems if we do not do this, we would encounter log(0) math domain issue? Thank you for all the help in advance!",
@@ -2309,7 +2309,7 @@
         ]
     },
     {
-        "context": "Homework 1 Optional part",
+        "context": "Optional part",
         "statements": [
             {
                 "source": "For the optional part, will there be extra credits if we do it? And is it okay to leave it blank if we choose not to do it? Thank you!",
@@ -2320,7 +2320,7 @@
         ]
     },
     {
-        "context": "Homework 1 Part6",
+        "context": "Part6",
         "statements": [
             {
                 "source": "Hello, I'm wondering if we need to consider and count \"START\" and \"STOP\" as tokens, or only the tokens existing in the corpus itself. Thank you!",
@@ -2331,7 +2331,7 @@
         ]
     },
     {
-        "context": "General Part 3 - Raw n-gram probabilities",
+        "context": "Part 3 - Raw n-gram probabilities",
         "statements": [
             {
                 "source": "I am a bit confused as to what the inputs are representing for these three functions we have to implement. What are trigram, bigram, and unigram respectively? Are they a specific instance of a trigram/bigram/unigram? (i. e. something like ('START', 'I', 'want') Or are they lists of trigrams/bigrams/unigrams? (i. e. something [('START', 'I'), ('I, 'want'), . .. ])",
@@ -2342,7 +2342,7 @@
         ]
     },
     {
-        "context": "Homework 1 End of N-Gram Generation",
+        "context": "End of N-Gram Generation",
         "statements": [
             {
                 "source": "In the example given for a trigram: &gt;&gt;&gt; get_ngrams([\"natural\", \"language\", \"processing\"], 3)\n[('START', 'START', 'natural'), ('START', 'natural', 'language'), ('natural', 'language', 'processing'), ('language', 'processing', 'STOP')]Why does the list of tuples returned end with ('language', 'processing', 'STOP') instead of ('processing', 'STOP', 'STOP')? Would that be redundant? i. e. once an n-gram is generated with STOP, there would be no need to include anything else afterwards?",
@@ -2353,7 +2353,7 @@
         ]
     },
     {
-        "context": "Homework 1 can we add instance variables in init",
+        "context": "can we add instance variables in init",
         "statements": [
             {
                 "source": "Hello, part three says that we may use an instance variable to track the total words. Can we compute this in any earlier method or should we compute that variable in that step? thanks",
@@ -2364,7 +2364,7 @@
         ]
     },
     {
-        "context": "Homework 1 Use of libraries",
+        "context": "Use of libraries",
         "statements": [
             {
                 "source": "Hello, Question for homework in general: are we allowed to import libraries beyond what is given to solve the questions? Thanks!",
@@ -2375,7 +2375,7 @@
         ]
     },
     {
-        "context": "General Zoom Link for Today",
+        "context": "Zoom Link for Today",
         "statements": [
             {
                 "source": "I'm unable to find the Zoom link for today's lecture in the ZOom Class Sessions Tab. The next one shown is for tomorrow. Instead, I'm watching live in the Video Recordings",

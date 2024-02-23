@@ -1,6 +1,261 @@
 [
     {
-        "context": "General CVN Student and Exams",
+        "context": "HW2 part 5",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>Hello, </paragraph><paragraph>Should our coverage and average F-scores match/be pretty close to your reported scores? I am getting coverage as 82.76% (as opposed to 67%), average f-score for parsed sentences as .77 (as opposed to .95), and average f-score for all sentences as .64 (this matches)- just wanted to check before going crazy with the debugging.</paragraph><paragraph>Thanks!</paragraph><paragraph/></document>",
+                "target": [
+                    "<document version=\"2.0\"><paragraph>Yes, they should match up fairly well with the scores we've provided.</paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "n-gram lm ungraded exercise pt 2",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>how likely is it that a question like this (as opposed to part 1) would be asked on the exam? tia!</paragraph><paragraph/></document>",
+                "target": [
+                    "<document version=\"2.0\"><paragraph>A proof like this is very unlikely to show up on the exam. With the exception of this proof, you would still be expected to solve all the other ungraded exercises in an exam setting.</paragraph><paragraph/></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Hw2 Part3 (a)",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>Would this be an accurate representation of how my table would need to look given the above CKY table for part 2 constructed with the rules from the slides during lecture?</paragraph><figure><image src=\"https://static.us.edusercontent.com/files/iJ1NiaAVULyafqqOByGdHOmy\" width=\"640\" height=\"212.33444816053512\"/></figure><figure><image src=\"https://static.us.edusercontent.com/files/DhqDXqlKZkq7WbU4UhNdjBCy\" width=\"640\" height=\"363.2587287376902\"/></figure><paragraph/></document>",
+                "target": [
+                    "<document version=\"2.0\"><paragraph>That looks good!</paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "ungraded exercise",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>Greetings teaching staff,</paragraph><paragraph>For the Transition-based Dependency Parsing, there doesn't seem to be the solution for part (b), am I missing something?</paragraph><paragraph>Thank you!</paragraph></document>",
+                "target": [
+                    "<document version=\"2.0\"><paragraph>Thanks, good catch. We will work on getting that one up today. </paragraph><paragraph/></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "hw2 part2 lhs vs rhs",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>I am a little confused on when to use lhs and when to use rhs for this problem. My thought process was to use rhs when \"matching\" two cells in the main loop of the CKY Algorithm because then the input of the RHS would be two non-terminals (which as far as I knew if there were two then you would use RHS) and then check the left of those in that list. However, I am getting a true output too often, so I'm thinking II am messing something up there. </paragraph></document>",
+                "target": [
+                    "<document version=\"1.0\"><paragraph>Your approach sounds correct. You match the nonterminal combinations from the two subspans against the rule rhss.\u00a0</paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "hw2 part2 using atis3_test.ptb for testing",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>Are all the sentences in atis3_test.ptb valid sentences in the atis3.pcfg grammar?</paragraph><paragraph>I would like to test my function with these sentences<break/><break/></paragraph></document>",
+                "target": [
+                    "<document version=\"1.0\"><paragraph>No, some of the sentences can it be parsed.\u00a0</paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Hw 2 part 3",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>I just wanted to ask what we should have for values in part 3 of hw 2. Should the values within the dictionaries be a tuple of tuples, with each tuple containing 3 entries?</paragraph></document>",
+                "target": [
+                    "<document version=\"1.0\"><paragraph>That\u2019s correct, as illustrated in the example. The values will be something like ((\u2018NP\u2019,0,2),(\u2018VP\u2019,2,4)).\u00a0</paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "hw2 part2 example sentence",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>The example sentence which should return true for \"is_in_language\" according to the assignment is \"['flights', 'from', 'miami', 'to', 'cleveland', '.']\". However I do not see how this sentence is true using atis3.pcfg, seeing as \"cleveland\" can only come from the nonterminal CLEVELAND which appears on the right hand side of only one rule, NP -&gt; CLEVELAND OHIO, so for this to be a valid sentence it would need to have \"ohio\" after \"cleveland\". Am I missing something?</paragraph></document>",
+                "target": [
+                    "<document version=\"2.0\"><paragraph>There's <code>NP -&gt; cleveland ; 0.0186746987952</code></paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Exam time for Friday Section on 3/1",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>Hi! Will the exam be held during the first or the second half of lecture on Friday, March 1 for Section 2?</paragraph><paragraph/></document>",
+                "target": [
+                    "<document version=\"1.0\"><paragraph>It will be held during the first half.\u00a0</paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "hw2 pt1 error message",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>For part 1, if a PCFG is not in CNF, when printing the error message, do we need to print the specific rule not satisfied (eg. nonterminal \u2192 nonterminal is not in CNF), or just printing the PCFG is not in CNF is enough?</paragraph><paragraph>Thanks!</paragraph></document>",
+                "target": [
+                    "<document version=\"1.0\"><paragraph>The latter is sufficient.</paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Video recording for 2/16",
+        "statements": [
+            {
+                "source": "<document version=\"1.0\"><paragraph>Hi, Dear Professor and TAs,</paragraph><paragraph>I wanted to know whether the video recording for the last Friday will be uploaded?</paragraph><paragraph>Thank you!</paragraph></document>",
+                "target": [
+                    "<document version=\"1.0\"><paragraph>It should be available in the video library, but I\u2019ll make sure to also link it in the modules section.\u00a0</paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "HW2 unseen vocabulary",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>How should we deal with the test data having new terminal words? </paragraph><paragraph>Thanks in advance.</paragraph><paragraph/></document>",
+                "target": [
+                    "<document version=\"1.0\"><paragraph>If this is occurring in part 5, you can do a try/except block in your get_tree function. If the word is unseen, raise and handle a KeyError, and then return None to indicate that the sentence can't be parsed.</paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "No Office Hours Today?",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>I'm in the CS TA Room right now but nobody's here. Maybe it's already over?</paragraph></document>",
+                "target": [
+                    "<document version=\"2.0\"><paragraph>Hm, not sure -- but my office hours are starting in 10 minutes (in 704 CEPSR). </paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Question about maximum likelihood estimates",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>In the slides, it says that MLE, for bigrams, is calculated as <break/><break/>p(w|u) = count(u, w) / count(u)</paragraph><paragraph>I'm wondering if count(u, w) takes the order into account, or if it is purely the existence of u and w next to one another. Like, is \"dog eats\" and \"eats dog\" still counted as p(dog, eats?) </paragraph><paragraph>Thanks!</paragraph></document>",
+                "target": [
+                    "<document version=\"2.0\"><paragraph>Yes, it's order dependent count(u,w) is the count of the bigram (u,w), so u followed by w. </paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "HW2 Can we use Part 3 to do Part 2?",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>If we build a working part 3, can we just call part 3 in part 2 and use that? </paragraph></document>",
+                "target": [
+                    "<document version=\"2.0\"><paragraph>Yes.</paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "hw2 pt3 dict of dicts question",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>In the instructions for hw2 part3, it says:</paragraph><paragraph><bold>For example the table entry for table[(2,3)][\"FLIGHTS\"] should be \"flights\".</bold></paragraph><paragraph>Could I get a bit of clarification on why this is, if \"flights\" is the first word of the sentence (first token) -- why should the entry not be for table[(0,1)]?</paragraph><paragraph>Thank you!!</paragraph></document>",
+                "target": [
+                    "<document version=\"2.0\"><paragraph>I think it's referring to the following, not the code sample</paragraph><blockquote>For example, the value of <italic>table[(0,3)]['NP']</italic> could be <italic>((\"NP\",0,2),(\"FLIGHTS\",2,3))</italic></blockquote></document>",
+                    "<document version=\"1.0\"><paragraph>The example illustrates the format, but not necessarily the specific content of the table for a specific example sentence.\u00a0</paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "CNF for homework 2",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>A CFG is in Chomsky normal form when every rule is of the form:</paragraph><paragraph>A \u2192 BC or A \u2192 a, where a is a terminal, and A, B, and C are variables. </paragraph><paragraph>Further B and C are not the start variable.</paragraph><paragraph>Is that a satisfactory criteria to check for CNF for HW2?</paragraph></document>",
+                "target": [
+                    "<document version=\"1.0\"><paragraph>Actually the start nonterminal is allowed to appear on the right hand side.\u00a0</paragraph><paragraph>Terminology: A,B,C are non-terminal, not variables.\u00a0</paragraph><paragraph>But yes, you only need to check that all rules have one of the permitted formats.\u00a0</paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Arc-Standard Transitions",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>Hello,</paragraph><paragraph>According to the lecture notes, the Right-Arc operation should build an edge from the top word on the stack to the next word on the buffer without moving any words between the stack and the buffer. However, one of the class examples showed that a word moves from the stack to the buffer during a Right-Arc operation. I am confused about it.</paragraph><paragraph>Thank you very much.</paragraph><paragraph/></document>",
+                "target": [
+                    "<document version=\"1.0\"><paragraph>Hm where so you see this note about the right arc not moving a token?\u00a0</paragraph><paragraph>In arc standard, the right arc operation deletes the first token on the buffer and moves the first token from the stack back to the buffer.\u00a0</paragraph><paragraph>In arc eager, the right arc operation just moves the first word on the buffer to the stack, without deleting a token.\u00a0</paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "TA office hours on friday 2/16",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>hi, just wanted to know what happened with the office hours today? I tried to join both that were happening today and none of the TA's were present. </paragraph></document>",
+                "target": [
+                    "<document version=\"2.0\"><paragraph>I'm not sure about the earlier OH today, but mine are currently on and I'm using a queue to admit students individually. I appreciate your patience!</paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Exam 1 - Date Conformation",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>Hello,</paragraph><paragraph>I just wanted to confirm that the exam I will be on 3/1. I have noticed that the syllabus doesn't specify anything on 3/8, so I just wanted to double-check that the exam won't be moved there.</paragraph><paragraph>I might have to travel around the Spring Break, so I just want to make sure that I won't miss the exam.</paragraph><paragraph>Thanks!</paragraph></document>",
+                "target": [
+                    "<document version=\"2.0\"><paragraph>For me, the exam appears on 3/6. I'm on the Monday-Wednesday section</paragraph></document>",
+                    "<document version=\"1.0\"><paragraph>The exams are as specified, 3/1 for section 2 and 3/6 for section 1. Section 2 will have a regular class on 3/8.\u00a0</paragraph><paragraph>Note that section 2 started one session ahead of section 1 in the first week. We lost some time, but I\u2019m not changing the exam schedule.\u00a0</paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Office hours link",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>Hello, I am trying to use Andrew's link to his office hours. However, it is taking me to an empty room </paragraph></document>",
+                "target": [
+                    "<document version=\"1.0\"><paragraph>My office hours will be from 11-1 today. Sorry about that.\u00a0</paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Section 2 Schedule Question",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>I was wondering whether there is class on 3/8 for section 2? This is not listed on the syllabus, but I just wanted to check</paragraph></document>",
+                "target": [
+                    "<document version=\"1.0\"><paragraph>Yes, there is class on 3/8. I\u2019ll fix the syllabus. Sorry for that.\u00a0</paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "Viewing recordings from Monday/Wednesday?",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>Is there any way for Friday students to access the lecture recordings for the Monday and Wednesday classes as we did for lecture two weeks ago? </paragraph><paragraph/></document>",
+                "target": [
+                    "<document version=\"1.0\"><paragraph>The recordings for the Monday/Wednesday lectures should be available here: https://cvn.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=09609aa4-9a15-43bc-b205-b0cc015a096c</paragraph><paragraph>Please let us know if you don't have access to the page.</paragraph></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "CVN Student and Exams",
         "statements": [
             {
                 "source": "<document version=\"1.0\"><paragraph>To preface, I am a CVN student not in the New York area. I\u2019m not sure how I glossed over this, but in the syllabus and first lecture it is mentioned that the exams are \u201cin-person\u201d.</paragraph><paragraph>Just to confirm, are there no provisions for remote test-tasking made to CVN students? I am a new CVN student, so I have assumed that there is always an option for me to take exams remotely as a CVN student.</paragraph></document>",
@@ -11,7 +266,7 @@
         ]
     },
     {
-        "context": "General Late Policy",
+        "context": "Late Policy",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hello,</paragraph><paragraph>The syllabus said homework assignments may be submitted up to 4 days late for a 20-point penalty. Does it mean 5 points for each day, or no matter the days, the penalty is always 20 points?</paragraph><paragraph>Thank you very much.</paragraph></document>",
@@ -22,7 +277,19 @@
         ]
     },
     {
-        "context": "Assignments HW1 P5",
+        "context": "Tentative Homework Schedule?",
+        "statements": [
+            {
+                "source": "<document version=\"2.0\"><paragraph>Is there a tentative homework schedule for this semester?</paragraph><paragraph/></document>",
+                "target": [
+                    "<document version=\"2.0\"><paragraph>I believe there are 4 HW in total. </paragraph><paragraph>2 before midterm and 2 after. </paragraph><paragraph>note I might be wrong tho</paragraph></document>",
+                    "<document version=\"2.0\"><paragraph>Prof Bauer mentioned in class yesterday that there are 5 homework assignments - and that the last one may be due sometime during reading week (no schedule though)</paragraph><paragraph/></document>"
+                ]
+            }
+        ]
+    },
+    {
+        "context": "HW1 P5",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi,</paragraph><paragraph>Just wanted to confirm that testing part 5 with this line -</paragraph><pre>print(model.sentence_logprob([\"roey\",\"elmelech\"]))\n</pre><paragraph>should throw an error since these words are definitely not in the corpus and were never seen before when the dictionaries were created so this means they are not even recognized as \"UNK\", correct?</paragraph><paragraph>Their probability is 0 and since math.log2() cannot take 0, it is expected to get a \"math domain error\" right?</paragraph></document>",
@@ -33,7 +300,7 @@
         ]
     },
     {
-        "context": "General HW1 P.2 - How to count the bigrams and trigrams that contain START",
+        "context": "HW1 P.2 - How to count the bigrams and trigrams that contain START",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>When we have a bigram that is, for example, ('START','natural'), do we add 1 to the unigram of 'natural', or do we include ('START','natural') in the bigram counts?</paragraph><paragraph>What about ('START', 'START', 'natural')?</paragraph></document>",
@@ -44,7 +311,7 @@
         ]
     },
     {
-        "context": "General HW1 6 Negative Perplexity",
+        "context": "HW1 6 Negative Perplexity",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>I am observing low perplexity scores, so low they are negative. My train test perplexity is -7.08 and my train train perplexity is -3.71. Since each probability is less than 1, returning a negative log, and we sum negative logs, it is unclear to me how the perplexity could be positive. Are we just taking the absolute value, or am I missing something?</paragraph></document>",
@@ -55,7 +322,7 @@
         ]
     },
     {
-        "context": "Assignments 'STOP' for Sentences or Corpus",
+        "context": "'STOP' for Sentences or Corpus",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hello,</paragraph><paragraph>For part 5, do we need to include 'STOP' for each sentence when we calculate probability? And for part 6, do we only include 'STOP' for the whole corpus? (M = number of words + 1)or Do we include 'STOP' for every sentence? (M = number of words + number of sentences)</paragraph><paragraph>Thank you very much.</paragraph><paragraph/></document>",
@@ -66,7 +333,7 @@
         ]
     },
     {
-        "context": "Assignments Getting error for for one of the missing file in 'test_high'.",
+        "context": "Getting error for for one of the missing file in 'test_high'.",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>I am getting this error when I am trying to run the model for ETS data, does anyone else faced this, if so would appreciate any help with this.</paragraph><paragraph/><pre>FileNotFoundError: [Errno 2] No such file or directory: 'ets_toefl_data/test_high/1449754.txt'\n</pre><paragraph/></document>",
@@ -77,7 +344,7 @@
         ]
     },
     {
-        "context": "Assignments Part 6 Perplexity",
+        "context": "Part 6 Perplexity",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>For part 6 of the homework, I keep getting a testing perplexity score of ~665 but my training perplexity and essay scoring seem to be fine. My M value is 93002. My accuracy score is 0.804. Any advice on this? Thank you!</paragraph></document>",
@@ -88,7 +355,7 @@
         ]
     },
     {
-        "context": "General Discriminative vs. generative models",
+        "context": "Discriminative vs. generative models",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>What's the working definition we're using for discriminative vs. generative models in this class? </paragraph></document>",
@@ -99,7 +366,7 @@
         ]
     },
     {
-        "context": "Assignments Smoothed_trigram_probability question",
+        "context": "Smoothed_trigram_probability question",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hey, </paragraph><paragraph>I am trying to figure out why my perplexity score is so low since I am consistently getting &lt;20. </paragraph><paragraph>Something that I noticed was in my sentence_log_prob function, when I call smoothed_trigram_probability on a trigram I get that the smoothed_trigram_probability == 0 pretty often. Professor Bauer mentioned to me in OH that this should not be 0, did anyone else have a similar issue?</paragraph><paragraph>Thanks!</paragraph></document>",
@@ -110,7 +377,7 @@
         ]
     },
     {
-        "context": "Assignments HW 1 PT 3",
+        "context": "HW 1 PT 3",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Is there a difference between</paragraph><paragraph>\"if bigram in self.bigramcounts:\"</paragraph><paragraph>      and</paragraph><paragraph>\" if self.bigramcounts[bigram]&gt;0:\" ? </paragraph><paragraph/></document>",
@@ -121,7 +388,7 @@
         ]
     },
     {
-        "context": "General submitting hw1",
+        "context": "submitting hw1",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>we just submit the hws on courseworks, right? There is no gradescope for this course? Thank you!</paragraph></document>",
@@ -132,7 +399,7 @@
         ]
     },
     {
-        "context": "General HW1 Perplexity",
+        "context": "HW1 Perplexity",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi, </paragraph><paragraph>I received a relatively low perplexity score of around 86. I thought this might be due to including counts for 'START' and 'STOP' when calculating M in perplexity(). After excluding them, the perplexity increased to 156, which falls within the normal range as reported by other students. Does this suggest that we shouldn't include counts of 'START' and 'STOP' when calculating M? If so, why is that the case?</paragraph><paragraph>Thanks!</paragraph></document>",
@@ -143,7 +410,7 @@
         ]
     },
     {
-        "context": "Assignments Perplexity Score",
+        "context": "Perplexity Score",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Is a perplexity score of 109.9 acceptable? I know the range I should be aiming to get is 150-300. I've been trying to fix this for a few hours but I still cannot figure out what is causing my lower perplexity score. My M value is 93002, so I'm guessing it's because my probabilities of the sentences are too high. Would really appreciate any insights into what could potentially be the issue (or if my current value is ok). My accuracy score is 0.854. Thank you so much!</paragraph><paragraph/></document>",
@@ -154,7 +421,7 @@
         ]
     },
     {
-        "context": "Assignments Getting perplexity score of 575",
+        "context": "Getting perplexity score of 575",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Dear professor/TA,</paragraph><paragraph>I'm getting following result from my code.</paragraph><pre>Perplexity on Brown Corpus Test Data: 575.07025455153\nAccuracy of Essay Scoring Experiment: 0.8047808764940239\n</pre><paragraph>I'm including START and excluding STOP as instructed, and I think is calculating total_words of test corpus correctly with len(sentence) and then add 1 for STOP token.</paragraph><pre>    def perplexity(self, corpus):\n        total_logprob = 0.0\n        total_words = 0\n\n        for sentence in corpus:\n            total_logprob += self.sentence_logprob(sentence)\n            total_words += len(sentence) + 1  # adding 1 for STOP token\n\n        average_logprob = total_logprob / total_words\n        return 2 ** (-average_logprob)\n\n</pre><paragraph>I'm not sure why I'm getting &gt;400 perplexity, when the HW instruction says we're expected to get lower than 400. Which part am I doing sth wrong, or is this score range falls in to get full grade?</paragraph><paragraph/><paragraph>Thank you!</paragraph></document>",
@@ -165,7 +432,7 @@
         ]
     },
     {
-        "context": "Assignments HW1 PT6",
+        "context": "HW1 PT6",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi,</paragraph><paragraph>I was wondering if someone could help me debug this.</paragraph><paragraph>I'm getting an error trying to compute the raw_unigram_probability for the first sentence since it's trying to get the probability of ('START',) and that is not included in my unigramcounts.</paragraph><paragraph/><paragraph>I thought about some things:</paragraph><paragraph>1. if unigram='start' in the smoothed trigram probability, I should use prob=0.0* lambda3</paragraph><paragraph>2. I actually need to include ('START',) in the unigram count.</paragraph><paragraph>3. I am slicing something wrong.</paragraph><paragraph/><paragraph>From what I understand, to do the smoothed trigram probability of the first sentence:</paragraph><paragraph>I calculate the trigram probability of [START START the] as p (the | START START).</paragraph><paragraph>then, I calculate the bigram probability of [START START] as p (START | START).</paragraph><paragraph>And I would need p (START) for the unigram probability --&gt; which I don't have.</paragraph><paragraph>I would really appreciate it if someone could tell me what part of this is wrong.</paragraph><figure><image src=\"https://static.us.edusercontent.com/files/cKnF1rnICFJ15lBYSDGWUwDI\" width=\"658\" height=\"225.63375224416518\"/></figure></document>",
@@ -176,7 +443,7 @@
         ]
     },
     {
-        "context": "General HW1 - 'START' unigrams, smoothing, and lexicons",
+        "context": "HW1 - 'START' unigrams, smoothing, and lexicons",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hello,</paragraph><paragraph>I just have a few questions about HW1.</paragraph><list style=\"number\"><list-item><paragraph>I read #26 and tried to incorporate the advice there - namely, for unigram <code>('START',)</code>, I return probability 0, and I also exclude this unigram from the overall unigram count for counting the probabilities. I am less sure about how to approach the bigram probability - here, I simply return 0 for <code>('START','START')</code>. Doing this slightly improves my perplexity (212 from 215) but also worsens the experimental test accuracy (by 0.004 to 0.842). Do I understand the notes about excluding the probability for the start unigram correctly? Also, for grading, does perplexity &lt;400 and accuracy &gt;0.8 suggest full grade, or is it more nuanced and we should try to improve the model even further? I am afraid that with these small edits, I will inadvertently create some edge-case bug. Also, for context, if a trigram context is missing, I use the probability of the unigram instead (<code>P(v | u,w) = P(v)</code>).</paragraph></list-item><list-item><paragraph>Just to be sure since it's not explicitly mentioned, for <code>sentence_logprob()</code> we use the output of <code>smoothed_trigram_probability()</code>, right? And for <code>perplexity()</code>, we use <code>sentence_logprob()</code> to compute the probability of each sentence (and thus we don't need to do the log again), right?</paragraph></list-item><list-item><paragraph>FInally, for the perplexity calculation in the classification function, we always use the lexicon of the corresponding model, right? So whenever we calculate perplexity of <code>model1</code>, we use <code>model1.lexicon</code> for <code>corpus_reader()</code> and similarly for <code>model2</code>. I think it makes sense this way, as otherwise, we could risk getting words that are not in the corpus, but I just wanted to double-check.</paragraph></list-item></list><paragraph>Thank you in advance. I think these all make some sense, but I just want to make sure because I was surprised that my code worked well with the expected results on pretty much the first try, which got me paranoid...</paragraph><paragraph/></document>",
@@ -187,7 +454,7 @@
         ]
     },
     {
-        "context": "Assignments HW 1 Part 6",
+        "context": "HW 1 Part 6",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>I am getting low perplexity numbers ~ 10-20 and I think it has to do with my value of M, but I'm not sure what to change.</paragraph><figure><image src=\"https://static.us.edusercontent.com/files/9ZFR6LdYnaX9KCPdOo4P2Via\" width=\"658.0000000000001\" height=\"140.75478260869568\"/></figure><paragraph/><paragraph/></document>",
@@ -198,7 +465,7 @@
         ]
     },
     {
-        "context": "Assignments hw1 - Is it ok to use deque data structure?",
+        "context": "hw1 - Is it ok to use deque data structure?",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>I used deque for quicker front pops and appends and was wondering if that is acceptable. </paragraph></document>",
@@ -210,7 +477,7 @@
         ]
     },
     {
-        "context": "Assignments HW1 Part 6",
+        "context": "HW1 Part 6",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>When calculating the perplexity for \"brown_test\" I get the following result:</paragraph><paragraph>sum of log probabilities: -385547.4037536603<break/>total number of tokens: 93001<break/>perplexity: 17.69937401609537</paragraph><paragraph>I think this is too low considering how the assignment specification said it would be around 400. I read the posts before and made sure I was using # of tokens for M value, but does 93001 seem like the right value for M? I do not know which of the two values I am using (log prob or # of tokens) is wrong. </paragraph></document>",
@@ -222,7 +489,7 @@
         ]
     },
     {
-        "context": "Assignments hw1 part 7 - output format",
+        "context": "hw1 part 7 - output format",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>just to sanity check, should we output the percentage accuracy on a 0-1 scale or a 0-100 scale?</paragraph></document>",
@@ -233,7 +500,7 @@
         ]
     },
     {
-        "context": "Assignments Good Range for Perplexity",
+        "context": "Good Range for Perplexity",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>I'm currently getting around 60 for my perplexity on brown test with 84% accuracy for classification. Do these seem like acceptable values?</paragraph></document>",
@@ -244,7 +511,7 @@
         ]
     },
     {
-        "context": "Assignments HW1 General Confirmations about Understanding",
+        "context": "HW1 General Confirmations about Understanding",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi! I am currently on part 5 (calculating the probability of a whole sentence) and was getting domain errors for math.log2 because some of my smoothed probabilities were returning 0. This led me to re-analyze how I was calculating some of the raw n-gram probabilities because I saw from other Ed posts that the smoothed probability should always return a non-zero value. I'm not sure if this is giving away too much, which is why I'm posting privately, but I just wanted to confirm that I was interpreting some things correctly since it's kind of hard to tell from the probability values given.</paragraph><paragraph>Sorry, I know this is super long, but the most important questions are 1, 4, 5, 7, 8, 9, 10 if those are the only ones you have time to answer!<break/></paragraph><paragraph><bold>Raw unigram prob:</bold><break/>1. raw unigram probability = count of the unigrams / total number of tokens (which is all words in the lexicon, <underline>includin</underline>g repeats). if unigram=UNK is this calculation still performed or is it just supposed to return 0.0?</paragraph><paragraph>2. if the unigram given is 'START' we just return 0.0</paragraph><paragraph><bold>Raw bigram prob:</bold></paragraph><paragraph>3. for the raw bigram probability, if the bigram begins with 'START' we return the count of the bigram divided by the total number of sentences. </paragraph><paragraph>4. if the unigram has been seen (whether the bigram has been seen or not), we just return bigram counts / unigram counts --&gt; this could give 0.0 if the bigram has not been seen.</paragraph><paragraph>5. do we just return 0.0 if the bigram and unigram have both not been seen? or are we supposed to do something similar to the 1/|V| like in raw trigram probability where both trigram and bigram have not been seen?</paragraph><paragraph><bold>Raw trigram prob:</bold></paragraph><paragraph>6. if trigram begins with 'START', 'START' we just return count(trigram)/sentence count.</paragraph><paragraph>7. if both trigram and bigram have not been seen, return 1/length of lexicon (which is all the words in the lexicon <underline>including</underline> repeats).</paragraph><paragraph>8. similar to bigram prob, but if the bigram has been seen but the trigram has not, it's okay to return 0.0</paragraph><paragraph><bold>Smoothed Trigram Prob + Sentence Log Prob:</bold></paragraph><paragraph>9. using the formula from lecture and the raw probabilities, there is a case where the smoothed probability could be 0.0 if the trigram, bigram, and unigrams have all not been seen, especially if the last word in the trigram is a word that does not exist in the lexicon. or is this not the case?</paragraph><paragraph>10. right now for the sentence log prob, I have a check to ensure the returned smoothed probability is not zero to avoid domain errors in math.log2(0.0), but is this not necessary if the smoothed probability should be non zero?</paragraph><paragraph>11. for a test.txt file I made up and a sentence I gave it for testing purposes it gave a sentence_logprob of -8.9, which I think seems reasonable given the size of my sample and the sentence, so it seems like this probability is calculated and working correctly, but I'm not sure.</paragraph></document>",
@@ -255,7 +522,7 @@
         ]
     },
     {
-        "context": "Assignments HW1 Part3",
+        "context": "HW1 Part3",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Just want to make sure, when we say raw probability of a N-gram, e.g. (u,v,w), does it refer to P(u,v,w)=P(w|u,v)*P(u,v) or just P(w|u,v)? Thanks.</paragraph><paragraph/></document>",
@@ -266,7 +533,7 @@
         ]
     },
     {
-        "context": "Assignments Testing HW 1",
+        "context": "Testing HW 1",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Just wanted to confirm that when the assignment is graded, each function will be tested individually? If so, is it okay to add our own testing code? </paragraph><paragraph/></document>",
@@ -277,7 +544,7 @@
         ]
     },
     {
-        "context": "Assignments HW1 Runtime",
+        "context": "HW1 Runtime",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi, I saw in #32 that there will be deductions if the code takes too long to run while grading. How fast should the code run to avoid deductions? My code currently takes around 40 seconds to run.</paragraph><paragraph/></document>",
@@ -288,7 +555,7 @@
         ]
     },
     {
-        "context": "General HW1 submission",
+        "context": "HW1 submission",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi,</paragraph><paragraph>we should not print anything in the final py file right?</paragraph><paragraph/><paragraph/></document>",
@@ -299,7 +566,7 @@
         ]
     },
     {
-        "context": "General HW1 Part 7",
+        "context": "HW1 Part 7",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi,</paragraph><paragraph>For Part 7 we know the arguments to the function will be such that the files in testdir1 should have the same category as training_file1 to be deemed correct and the files in testdir2 should have the same category as training_file2 to be deemed correct. </paragraph><paragraph>When our code is tested, will this always be the case? </paragraph><paragraph>If someone enters the arguments in a different order, or say the files in testdir1 don't match the category of training_file1, then our function will not work. So it okay if our code works under the specific assumptions provided in the assignment of argument order and file categorization?</paragraph></document>",
@@ -310,7 +577,7 @@
         ]
     },
     {
-        "context": "Assignments HW 1 pt 3",
+        "context": "HW 1 pt 3",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi. For part 3, I understood that if the unigram is not in unigramcounts, the raw probability is 0. In the raw_bigram_probability method, I am assuming I also return 0 if the bigram is not in bigramcounts. Is that correct?</paragraph><paragraph/></document>",
@@ -321,7 +588,7 @@
         ]
     },
     {
-        "context": "Assignments HW1 raw probability",
+        "context": "HW1 raw probability",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>I'm a bit confused how to calculate raw bigram and unigram probabilities if the bigram/unigram is not in the text file. Should it be 0 or 1/|V|, where V = len(lexicon)? Or is 1/|V| only used in trigram probabilities, when bigram is not in the text?</paragraph><paragraph/><paragraph>Thanks</paragraph><paragraph/></document>",
@@ -332,7 +599,7 @@
         ]
     },
     {
-        "context": "Assignments HW1 Part 6",
+        "context": "HW1 Part 6",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hello staff,</paragraph><paragraph>I am trying to figure out why my perplexity function returns an unreasonably low number.</paragraph><pre>    def perplexity(self, corpus):\n        preplexity = 0\n        for sentence in corpus:\n            preplexity += self.sentence_logprob(sentence)\n\n        return 2 ** -(preplexity / self.total_word_count)\n</pre><paragraph>I think I got the formula right based on #45 but from what I understand, the division should be by the <bold>number of word tokens in the test corpus</bold> rather than the total words in the training corpus. I also tried <code>len(self.lexicon)</code> instead of <code>self.total_word_count</code> but got a ridiculously high number as a result.</paragraph><paragraph>my sentence_logprob function looks like this:</paragraph><pre>    def sentence_logprob(self, sentence):\n        trigram = get_ngrams(sentence, 3)\n        log_prob = 0.0\n        for word in trigram:\n            log_prob += math.log2(self.smoothed_trigram_probability(word))\n        \n        return log_prob\n</pre><paragraph>Where do you suspect my mistake is?</paragraph></document>",
@@ -343,7 +610,7 @@
         ]
     },
     {
-        "context": "Assignments High Perplexity but Accurate Classification",
+        "context": "High Perplexity but Accurate Classification",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>When I calculate the perplexity of the model trained on brown_train.txt on brown_test.txt I end up with a very high perplexity, around 1000. However, my model is able to classify the essays with pretty high accuracy (80%+) . Is there anything that could explain this? The perplexity is around 17 when I run the model on the text it was trained on.</paragraph><paragraph>Also would it be acceptable to submit the homework in this state or should I try and lower the perplexity?</paragraph></document>",
@@ -354,7 +621,7 @@
         ]
     },
     {
-        "context": "Assignments Is it ok to leave comments in the final submission?",
+        "context": "Is it ok to leave comments in the final submission?",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi team, is it okay if I leave rubber duck comments in the test code area or should I clean it up before submitting? I wanted to leave it just for future reference. </paragraph><paragraph/></document>",
@@ -365,7 +632,7 @@
         ]
     },
     {
-        "context": "Assignments Hw 1 Part 7",
+        "context": "Hw 1 Part 7",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><figure><image src=\"https://static.us.edusercontent.com/files/LiLZHD0hPDx57nXxIi75LfiW\" width=\"642\" height=\"434.2778257118205\"/></figure><paragraph>For this part of the homework I am getting a really low score of: 0.8067729083665338, which I know is more then 80% but not by much. I went office hours and was told that it was too low but even after looking through all my other code we couldn't pinpoint what might be causing it. Could I get some guidance on what to do?</paragraph><paragraph/><paragraph/></document>",
@@ -376,7 +643,7 @@
         ]
     },
     {
-        "context": "Problem Sets HW1 - a couple of errors, bugs and otherwise intriguing issues",
+        "context": "HW1 - a couple of errors, bugs and otherwise intriguing issues",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Dear team, I hope you are all well.</paragraph><paragraph>I am having a few issues with my code, and wonder if any of you can help me with this. I went to two office hours sessions yesterday, but have been hitting my head on the wall for a long time. Below is the status of each part of my code:</paragraph><heading level=\"2\"><bold>Part 1</bold></heading><paragraph>Seems to be working fine.</paragraph><heading level=\"2\"><bold>Part 2.1:</bold></heading><paragraph>In the terminal, when I run</paragraph><pre>&gt;&gt;&gt; generator = corpus_reader(\"\")\n\n&gt;&gt;&gt; for sentence in generator:\n\n...  print(sentence)\n</pre><paragraph>I get another line of <code>...</code>. It is stuck in that line, until I hit a key, when I get the error below: </paragraph><pre>Traceback (most recent call last):\n\n File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n\n File \"/Users/renatorusso/Desktop/Ed.D./Spring_2024/COMS_4705/trigram_model.py\", line 14, in corpus_reader\n\n with open(corpusfile, 'r') as corpus:\n\nFileNotFoundError: [Errno 2] No such file or directory: ''\n</pre><paragraph>The files are all in the same directory, and I manage to reproduce the code with successful output on Google Colab:</paragraph><figure><image src=\"https://static.us.edusercontent.com/files/v8JfV25SeGRmTdqQxdjxhAYa\" width=\"658\" height=\"243.21489971346705\"/></figure><paragraph/><heading level=\"2\"><bold>Part 2.2</bold></heading><paragraph>Runs as expected: it returns the numbers as shown in the homework description</paragraph><figure><image src=\"https://static.us.edusercontent.com/files/hzixKBejllDTiPCR12xb2yoe\" width=\"400\" height=\"107\"/></figure><paragraph/><heading level=\"2\"><bold>Part 3</bold></heading><paragraph>This is how I test:</paragraph><pre>&gt;&gt;&gt; trigram = [('START','START','the')]\n\n&gt;&gt;&gt; model.raw_trigram_probability(trigram)\n</pre><paragraph>And I get this error:</paragraph><pre>Traceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"/Users/renatorusso/Desktop/Ed.D./Spring_2024/COMS_4705/trigram_model.py\", line 124, in raw_trigram_probability\n    if trigram in self.trigramcounts and (trigram[0], trigram[1]) in self.bigramcounts:\nTypeError: unhashable type: 'list'</pre><paragraph>This is the code that I have for defining the <code>raw_trigram_probability</code> method:</paragraph><pre>    def raw_trigram_probability(self, trigram):\n        # \"\"\"\n        # COMPLETE THIS METHOD (PART 3)\n        # Returns the raw (unsmoothed) trigram probability\n        # \"\"\"\n        # conditional probability ofsmoothed_trigram_probability(self, trigram)w3 given w1, w2\n        # print(f\"Type of trigram argument: {type(trigram)}\")\n        if trigram in self.trigramcounts and (trigram[0], trigram[1]) in self.bigramcounts:\n            \n            return self.trigramcounts[trigram]/self.bigramcounts[(trigram[0], trigram[1])]\n        else:\n            return 0.0\n</pre><paragraph>I tried adding a print() statement right before line 124 (<code>print(f\"Type of trigram argument: {type(trigram)}\u201d</code>). I reproduced that on Google Colab, and it shows that the type is tuple, but it returns an AttributeError after printing type</paragraph><figure><image src=\"https://static.us.edusercontent.com/files/F0nyrRUgaa2u41RECdfmKnVh\" width=\"480\" height=\"253\"/></figure><paragraph>The same problem with raw_trigram_probability probabilities also happens with raw_bigram_probability and raw_unigram_probability</paragraph><heading level=\"2\"><bold>Part 4:</bold></heading><paragraph>I\u2019m not sure how I should proceed to test the code, but it looks coherent:</paragraph><pre>    def smoothed_trigram_probability(self, trigram):\n        \"\"\"\n        COMPLETE THIS METHOD (PART 4)\n        Returns the smoothed trigram probability (using linear interpolation). \n        \"\"\"\n        lambda1 = 1/3.0\n        lambda2 = 1/3.0\n        lambda3 = 1/3.0\n\n        #extract bigram and unigrams from the trigram\n        bigram = trigram[1:2]\n        unigram = trigram[:1]\n\n        # specific raw probabilities for the input trigram\n        raw_trigram_probability = self.raw_trigram_probability(trigram)\n        raw_bigram_probability = self.raw_bigram_probability(bigram)\n        raw_unigram_probability = self.raw_unigram_probability(unigram)\n\n        #calculate the smoothed trigram probability using the formulas with given lambdas1\n        smoothed_trigram_probability = (lambda1*raw_trigram_probability +\n                                        lambda2*raw_bigram_probability +\n                                        lambda3*raw_unigram_probability)\n\n        return smoothed_trigram_probability\n        #return 0.0 - provided code\n</pre><paragraph/><heading level=\"2\"><bold>Part 5:</bold></heading><paragraph>This is how I test:</paragraph><pre>&gt;&gt;&gt; sentence = \"Joe waited for the train.\"\n&gt;&gt;&gt; sentence_logprob(sentence)\n</pre><paragraph>And these are the errors I get:</paragraph><pre>Traceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nNameError: name 'sentence_logprob' is not defined\n&gt;&gt;&gt; model.sentence_logprob(sentence)\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"/Users/renatorusso/Desktop/Ed.D./Spring_2024/COMS_4705/trigram_model.py\", line 196, in sentence_logprob\n    trigrams = self.get_ngrams(sentence, 3)\nAttributeError: 'TrigramModel' object has no attribute 'get_ngrams'\n</pre><paragraph>I get the AttributeError: 'TrigramModel' object has no attribute 'get_ngrams\u2019. Should I place the get_ngrams under TrigramModel? I tried that and the get the same error.</paragraph><paragraph>Is that error connected to the error in Part 3?</paragraph><heading level=\"2\"><bold>Part 6:</bold></heading><paragraph>This is what I\u2019m using to test perplexity:</paragraph><pre>&gt;&gt;&gt; model.perplexity(\"brown_test.txt\")\n</pre><paragraph>And I\u2019m getting:</paragraph><pre>Traceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"/Users/renatorusso/Desktop/Ed.D./Spring_2024/COMS_4705/trigram_model.py\", line 224, in perplexity\n    sentence_logprob = self.sentence_logprob(sentence)\n  File \"/Users/renatorusso/Desktop/Ed.D./Spring_2024/COMS_4705/trigram_model.py\", line 196, in sentence_logprob\n    trigrams = self.get_ngrams(sentence, 3)\nAttributeError: 'TrigramModel' object has no attribute 'get_ngrams'\n</pre><paragraph>Now, besides the get_ngrams AttributeError:</paragraph><list style=\"unordered\"><list-item><paragraph>in line 224, I\u2019m initializing one of the variables used in perplexity() (sum_logprob = 0)</paragraph></list-item><list-item><paragraph>line 196 is a commented out instruction</paragraph></list-item></list><heading level=\"2\"><bold>Part 7:</bold></heading><paragraph>This is how I\u2019m testing:</paragraph><pre>&gt;&gt;&gt; essay_scoring_experiment('train_high.txt', 'train_low.txt', 'test_high', 'test_low')\n</pre><paragraph>And the output:</paragraph><pre>Traceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nTypeError: essay_scoring_experiment() missing 4 required positional arguments: 'training_file1', 'training_file2', 'testdir1', and 'testdir2'\n&gt;&gt;&gt; essay_scoring_experiment('train_high.txt', 'train_low.txt', 'test_high', 'test_low')\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n  File \"/Users/renatorusso/Desktop/Ed.D./Spring_2024/COMS_4705/trigram_model.py\", line 243, in essay_scoring_experiment\n    pp = model1.perplexity(corpus_reader(os.path.join(testdir1, f), model1.lexicon))\n  File \"/Users/renatorusso/Desktop/Ed.D./Spring_2024/COMS_4705/trigram_model.py\", line 224, in perplexity\n    sentence_logprob = self.sentence_logprob(sentence)\n  File \"/Users/renatorusso/Desktop/Ed.D./Spring_2024/COMS_4705/trigram_model.py\", line 196, in sentence_logprob\n    trigrams = self.get_ngrams(sentence, 3)\nAttributeError: 'TrigramModel' object has no attribute 'get_ngrams'\n</pre><list style=\"unordered\"><list-item><paragraph>line 243 is within def essay_scoring_experiment. This is where I initialize \u2018correct\u2019 (\u201ccorrect = 0\u201d)</paragraph></list-item><list-item><paragraph>line 224 is within def perplexity(self, corpus):. It is where I initialize sum_logprob, a variable that I. use to obtain the cumulative logprob while iterating across sentences</paragraph></list-item><list-item><paragraph>line 196 is a commented out instruction</paragraph></list-item></list><paragraph>I appreciate your patience and support. In case it helps, I'm attaching my .py file.</paragraph><file url=\"https://static.us.edusercontent.com/files/ymBFB0D9qkAFhUc0nFrwEnhq\" filename=\"trigram_model.py\"/></document>",
@@ -387,7 +654,7 @@
         ]
     },
     {
-        "context": "Assignments Grading criteria",
+        "context": "Grading criteria",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Will the grade be based on perplexity score? I'm able to get 19 and 318 perplexity but I see many other got much lower score.</paragraph><paragraph/></document>",
@@ -398,7 +665,7 @@
         ]
     },
     {
-        "context": "Assignments Perplexity Scores",
+        "context": "Perplexity Scores",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Does a 16 perplexity score for training and a 222 for test make sense? </paragraph></document>",
@@ -409,7 +676,7 @@
         ]
     },
     {
-        "context": "General OH via Zoom now",
+        "context": "OH via Zoom now",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi teaching team! Is there an office hours session via Zoom now (Fri, 4pm) as indicated in the calendar? I'm waiting outside the room at <link href=\"https://www.google.com/url?q=https://columbiauniversity.zoom.us/j/93696474305?pwd%3DSTRsZ1NSQjFPNHVGbFpYM0JyZ05pdz09&amp;sa=D&amp;source=calendar&amp;usd=2&amp;usg=AOvVaw1WJRZUXbjq6iJrVGFvXZy6\">https://columbiauniversity.zoom.us/j/93696474305?pwd=STRsZ1NSQjFPNHVGbFpYM0JyZ05pdz09</link> and nothing happens.<break/>Thanks!</paragraph></document>",
@@ -420,7 +687,7 @@
         ]
     },
     {
-        "context": "Assignments HW 1 part 6",
+        "context": "HW 1 part 6",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>M is the numbers of tokens. is each single word in the text document a token or is (''start'', ''start'', ''i'' ) a token?</paragraph></document>",
@@ -431,7 +698,7 @@
         ]
     },
     {
-        "context": "Assignments word counts",
+        "context": "word counts",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>So, we should have two different total word counts, one for the training and one for the testing data. We use the training total word count to count the unigram probabilities but use the testing total word count for perplexity? </paragraph></document>",
@@ -442,7 +709,7 @@
         ]
     },
     {
-        "context": "Assignments Homework 1 Perplexity Values Incorrect",
+        "context": "Homework 1 Perplexity Values Incorrect",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi,</paragraph><paragraph>I went to an OH and the TA wasn't able to find anything wrong with my code. However, I am getting values for perplexity which do not seem correct even though my accuracy is above 80% as it should be. Specificially, the values are: </paragraph><paragraph>Perplexity on Training data: 34.96057236763446<break/>Perplexity on Test data: 70587.93522043075<break/>Essay Scoring Accuracy: 0.8127490039840638</paragraph><paragraph>I've attached my code below and would appreciate any help you can provide. Thanks!</paragraph><file url=\"https://static.us.edusercontent.com/files/WotpmyR50ADXQhcv2yr08Yma\" filename=\"trigram_model.py\"/><paragraph/></document>",
@@ -454,7 +721,7 @@
         ]
     },
     {
-        "context": "General HW-1 part 2, unigram count",
+        "context": "HW-1 part 2, unigram count",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hello,</paragraph><paragraph>my unigram count returns zero</paragraph><pre>&gt;&gt;model.unigramcounts[('the',)]\n0</pre><paragraph>but when I change the code to</paragraph><pre>&gt;&gt;model.unigramcounts[('the')]\n61428</pre><paragraph>should I tweak my code so that &gt;&gt;model.unigramcounts[('the',)] returns 61428, or its fine to have unigramcounts without  ','  ?</paragraph></document>",
@@ -465,7 +732,7 @@
         ]
     },
     {
-        "context": "General Andrew Zoom OH",
+        "context": "Andrew Zoom OH",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi, are these OH still happening 9-11? I'm in the Zoom room but don't see anyone else.</paragraph><paragraph/></document>",
@@ -476,7 +743,7 @@
         ]
     },
     {
-        "context": "Assignments Helper functions?",
+        "context": "Helper functions?",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Are we allowed to create additional helper functions to reduce repeated code?</paragraph></document>",
@@ -487,7 +754,7 @@
         ]
     },
     {
-        "context": "General Hw 1 Part 7",
+        "context": "Hw 1 Part 7",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>I'm getting back around 68% accuracy for the essay_scoring_experiment() function when I test it on the two training text files, and two testing directories. How could I increase my accuracy to reach above 80% as mentioned in the hw instructions?</paragraph></document>",
@@ -498,7 +765,7 @@
         ]
     },
     {
-        "context": "General Are the office hours at 3 pm happening?",
+        "context": "Are the office hours at 3 pm happening?",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>^^^</paragraph></document>",
@@ -509,7 +776,7 @@
         ]
     },
     {
-        "context": "General sentence_logprob",
+        "context": "sentence_logprob",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>hello,</paragraph><paragraph>I get -50.9 when i do (model.sentence_logprob([\"natural\",\"language\",\"processing\"]))</paragraph><paragraph>how is this ok? cant seem to understand the logic behind it... </paragraph></document>",
@@ -520,7 +787,7 @@
         ]
     },
     {
-        "context": "General Andrew's OH this AM",
+        "context": "Andrew's OH this AM",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>hello there are a few of us in the zoom, cant tell if Andrew is in a break out room or not.. been here for almost 30min so please let us know!</paragraph></document>",
@@ -531,7 +798,7 @@
         ]
     },
     {
-        "context": "General HW1 Part 6",
+        "context": "HW1 Part 6",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>As M is explained in #45, are these \"tokens\" unique? Does M include either \"START\" or \"STOP\" tokens?</paragraph><paragraph>\"M = is the <bold>total number of word tokens in the test corpus\".</bold></paragraph><paragraph>Thank you!</paragraph><paragraph/></document>",
@@ -542,7 +809,7 @@
         ]
     },
     {
-        "context": "General solution for ungraded exercise",
+        "context": "solution for ungraded exercise",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi, </paragraph><paragraph>The solutions for the 3rd ungraded exercise (HMM) are just the problems themselves again. Could someone be so kind as to repost the actual solutions? </paragraph><paragraph>Thank you!</paragraph><paragraph/></document>",
@@ -553,7 +820,7 @@
         ]
     },
     {
-        "context": "General HW1 Part 5 - Question about sentence_logprob()",
+        "context": "HW1 Part 5 - Question about sentence_logprob()",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Any time I pass a sentence to sentence_logprob() that is not in the corpus, I get an error because math.log2() is passed a 0. Taking #39 into account, does sentence_logprob() only take in sentences that are already in the corpus? I don't see how the unigram would be non-0 if the is not in the corpus.</paragraph></document>",
@@ -564,7 +831,7 @@
         ]
     },
     {
-        "context": "Assignments t in the optional part",
+        "context": "t in the optional part",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hello,<break/><break/>In the optional part, t represents the maximum sequence length. Does it include START and STOP tokens? Include both; only have STOP or exclude them.</paragraph><paragraph>Thank you very much.</paragraph></document>",
@@ -575,7 +842,7 @@
         ]
     },
     {
-        "context": "General CS Building 5th Floor",
+        "context": "CS Building 5th Floor",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hello, </paragraph><paragraph>I could not find the CS building 5th Floor for Tony's OH. I first went to the Mudd 5th floor and then got to this place via CS rooms. </paragraph><figure><image src=\"https://static.us.edusercontent.com/files/uw0tN7BvQO9rBY6u1CkpVEN6\" width=\"658\" height=\"877.3333333333333\"/></figure><paragraph>But it seems this is not the correct place.</paragraph><paragraph>Does anyone know how to get to the correct place?<break/>Thank you very much.</paragraph></document>",
@@ -587,7 +854,7 @@
         ]
     },
     {
-        "context": "General HW1 Part 3: unigram probability is 0, dealing with 'START' unigram",
+        "context": "HW1 Part 3: unigram probability is 0, dealing with 'START' unigram",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi, </paragraph><paragraph>in #39 Prof. Bauer said \"For the interpolated probabilities, the result will never be 0 because the unigram will be non-0.\" How should we ensure the unigram probability is non-0? If the unigram v has never appeared in the corpus, should we use P(v)=1/(num_tokens)? Or should we use P(v)=1/count(UNK)?</paragraph><paragraph>Also, in another post #26 , Prof. Bauer said not to count 'START' in our total tokens. How should we handle the unigram probability for 'START'?</paragraph></document>",
@@ -598,7 +865,7 @@
         ]
     },
     {
-        "context": "General Total words",
+        "context": "Total words",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph/><paragraph>What does it mean when we compute the total number of words in part 3? Is it the size of the lexicon or the actual total number of tokens encountered in the corpus when we iterate through it excluding the start tokens?</paragraph></document>",
@@ -609,7 +876,7 @@
         ]
     },
     {
-        "context": "General Start and Stop",
+        "context": "Start and Stop",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>When do we include start and stop tokens? Like when we are counting total word count when calculating the raw unigram probabilities do we count start and stop or just count the words in the lexicon? And then I saw somewhere that for perplexity we include stop and not start? That confused me. Is there a general rule for what to include? </paragraph></document>",
@@ -620,7 +887,7 @@
         ]
     },
     {
-        "context": "General Gurnoor Virdi's OH",
+        "context": "Gurnoor Virdi's OH",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>I am waiting in the CS TA room in Mudd and no one here do I have the wrong place?</paragraph><paragraph>Or have the OH been rescheduled?</paragraph></document>",
@@ -631,7 +898,7 @@
         ]
     },
     {
-        "context": "Assignments HW1 Part 3 - How to deal with ('START') or ('START', 'START') context grams",
+        "context": "HW1 Part 3 - How to deal with ('START') or ('START', 'START') context grams",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>What should we do for raw trigram probability P(v|u,w)=count(u,v,w)/count(u,w) if (u,v,w) has been seen but (u,w) hasn't been seen? For example if the trigram is ('START', 'START', 'the') then the trigram may appear but the context bigram ('START', 'START') has 0 appearances. How should we calculate the trigram probability in this case? </paragraph><paragraph>Similarly, what should we do to handle the case of a bigram of the form ('START', 'word')? </paragraph><paragraph>Should we use the unigram probability of v in these cases? </paragraph></document>",
@@ -642,7 +909,7 @@
         ]
     },
     {
-        "context": "Assignments HW1 Part 7",
+        "context": "HW1 Part 7",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi there</paragraph><paragraph>I'm confused that what should be sys.argv[1] and sys.argv[2]? In other words, what should be implement in [corpus_file]? Brown_train.text or train_high and train_low. I think I finish all function parts and want to check the accuracy. Thanks</paragraph><figure><image src=\"https://static.us.edusercontent.com/files/Sr39cb5DtMl1uYJBrqy9hG2V\" width=\"658\" height=\"401.1958762886598\"/></figure></document>",
@@ -653,7 +920,7 @@
         ]
     },
     {
-        "context": "General HW1 Part 3",
+        "context": "HW1 Part 3",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>I'm struggling to understand how the raw trigram probability would not be 0 if count(u,w,v) = 0? In addition, if count(u,w) is also 0 then I don't understand where to fit 1 / |V| in my equation in a way where my answer will not be 0 every time.<break/></paragraph><paragraph>Any tips for testing my work here for Part 3 would also be greatly appreciated!</paragraph></document>",
@@ -664,7 +931,7 @@
         ]
     },
     {
-        "context": "Problem Sets Hw1 Part 5",
+        "context": "Hw1 Part 5",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Is the point of this part that we split the sentence into trigrams ie: </paragraph><pre>[('START', 'START', 'natural'), ('START', 'natural', 'language'), ('natural', 'language', 'processing'), ('language', 'processing', 'STOP')]\n</pre><paragraph>then calculate the probability of each trigram in the sentence ie:</paragraph><paragraph>{('START', 'START', 'natural'): .032,('START', 'natural', 'language'): .05, ('natural', 'language', 'processing'): .043, ('language', 'processing', 'STOP'): .062} </paragraph><paragraph>and then finding the log probability of each of these and adding them together?</paragraph></document>",
@@ -675,7 +942,7 @@
         ]
     },
     {
-        "context": "General HW1 P6 do words tokens for M include punctions?",
+        "context": "HW1 P6 do words tokens for M include punctions?",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>HW1 P6 says: \"Here M is the total number of word tokens, while m is the number of sentences in the test corpus\". Does a \"word token\" include punctuation like \",\"?</paragraph><paragraph/></document>",
@@ -686,7 +953,7 @@
         ]
     },
     {
-        "context": "Assignments Hw1 Part4",
+        "context": "Hw1 Part4",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Is the expectation for part 4 that the method returns a dictionary with the overall linear interpolation probability of all the words in the text file? </paragraph><paragraph/></document>",
@@ -697,7 +964,7 @@
         ]
     },
     {
-        "context": "General Avighna's Office Hours",
+        "context": "Avighna's Office Hours",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi, I am just wondering if Avighna's office hours are happening/if I will be able to meet with her. I've been in the \"Host has joined. We've let them know you're here\" for a bit now. Thanks!</paragraph><paragraph/></document>",
@@ -708,7 +975,7 @@
         ]
     },
     {
-        "context": "Assignments HW1 submission main method",
+        "context": "HW1 submission main method",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi,</paragraph><paragraph>Regarding the submission of HW1, should we keep the main method's contents unchanged as provided, with most lines commented out, or does it not make a difference?</paragraph><paragraph>Thank you!</paragraph><paragraph/></document>",
@@ -719,7 +986,7 @@
         ]
     },
     {
-        "context": "Assignments Homework 1",
+        "context": "Homework 1",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>According to #8 , why should get_ngrams(['n','l','p'],1) also add a START even though n doesn't exceed len(sequence)? Is it that there should be at least one START? If it is, what should the output be for get_ngrams(['natural', 'language'],2)?</paragraph><paragraph>&gt;&gt; get_ngrams(['natural', 'language'],2)<break/>[('START', 'natural'), ('natural', 'language'), ('language', 'STOP')]<break/>Is it like this?</paragraph><paragraph>That is we have at least one START and STOP and (n-1)*'START' should be added.</paragraph><paragraph/></document>",
@@ -730,7 +997,7 @@
         ]
     },
     {
-        "context": "General Waiting to be accepted into zoom link for todays OH",
+        "context": "Waiting to be accepted into zoom link for todays OH",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><list style=\"bullet\"><list-item><paragraph>title</paragraph></list-item></list><paragraph>wondering if there was a limit or time schedule or something i missed out on! Or if I joined the wrong link like last time I attended OH on zoom?</paragraph><paragraph/><paragraph>Thanks!</paragraph></document>",
@@ -741,7 +1008,7 @@
         ]
     },
     {
-        "context": "Assignments HW1 - Part 5 Values of Sentence Probs",
+        "context": "HW1 - Part 5 Values of Sentence Probs",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>I'm getting very strange values for perplexity in part 6, so I wanted to check to see if my log sentence probabilities were reasonable. </paragraph><paragraph>For most sentences, I am getting somewhere between -10 to -60 when calling model.sentence_logprob(sentence) on some sentence from the training corpus. Is this reasonable?</paragraph><paragraph>I think this is correct as sentences should have a very low probability, but I could be wrong about just how low the probabilities are supposed to be. A negative log prob of &lt; -10 means an extremely low probability. </paragraph><paragraph/></document>",
@@ -752,7 +1019,7 @@
         ]
     },
     {
-        "context": "General Perplexity score",
+        "context": "Perplexity score",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>I'm getting around ~8 for a perplexity score when running python trigram_model.py brown_test.txt brown_test.txt. </paragraph><paragraph><break/>I don't really understand why it would be so low, I don't see any big problems with my functions. Am I running this correctly (the above)? Or is it then something in a function of mine? In my perplexity function, I'm using M = number of word tokens (total word count), is that what is meant by tokens?</paragraph><paragraph><break/>EDIT: </paragraph><paragraph>running python trigram_model.py brown_test.txt brown_train.txt: 6e^19<break/>running python trigram_model.py brown_test.txt brown_test.txt: 8.8<break/>running python trigram_model.py brown_train.txt brown_train.txt: 11.3<break/>running python trigram_model.py brown_train.txt brown_test.txt: 1.6</paragraph></document>",
@@ -764,7 +1031,7 @@
         ]
     },
     {
-        "context": "Assignments HW1 - Part5",
+        "context": "HW1 - Part5",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>How should we handle the log probability calculation when the smoothed probability of a trigram is zero? Thank you!</paragraph></document>",
@@ -775,7 +1042,7 @@
         ]
     },
     {
-        "context": "Assignments HW 1 part 6",
+        "context": "HW 1 part 6",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi!</paragraph><paragraph>Firstly, when I run : </paragraph><pre>dev_corpus = corpus_reader(sys.argv[2], model.lexicon)\npp = model.perplexity(dev_corpus)\r\nprint(pp)\n</pre><paragraph>I get </paragraph><paragraph>File \"C:\\Users\\HP\\Downloads\\trigram_model.py\", line 208, in  dev_corpus = corpus_reader(sys.argv[2], model.lexicon) IndexError: list index out of range</paragraph><paragraph/><paragraph>Also, it seems my code is going into an infinite loop after I added the code for perplexity function. Any help would be really really appreciated! Thanks! </paragraph><paragraph>Below is my code (attaching everything to increase clarity):</paragraph><pre>def get_ngrams(sequence, n):\r\n   \r\n    if n == 1:\r\n        padded_seq = ['START'] + sequence + ['STOP']  \r\n    else:\r\n        padded_seq = (['START'] * (n-1)) + sequence + ['STOP']\r\n\r\n    res = []\r\n    for i in range(0, len(padded_seq)-n+1):\r\n        res.append(tuple(padded_seq[i: i+n]))\r\n\r\n    return res\r\n\r\n\r\nclass TrigramModel(object):\r\n    \r\n    def __init__(self, corpusfile):\r\n    \r\n        # Iterate through the corpus once to build a lexicon \r\n        generator = corpus_reader(corpusfile)\r\n        self.lexicon = get_lexicon(generator)\r\n        self.lexicon.add(\"UNK\")\r\n        self.lexicon.add(\"START\")\r\n        self.lexicon.add(\"STOP\")\r\n    \r\n        # Now iterate through the corpus again and count ngrams\r\n        generator = corpus_reader(corpusfile, self.lexicon)\r\n        self.count_ngrams(generator)\r\n\r\n\r\n    def count_ngrams(self, corpus):\r\n        self.unigramcounts = Counter() # might want to use defaultdict or Counter instead\r\n        self.bigramcounts = Counter() \r\n        self.trigramcounts = Counter() \r\n\r\n        for s in corpus:\r\n            # print(s)\r\n            unigrams = get_ngrams(s, 1)\r\n            bigrams = get_ngrams(s, 2)\r\n            trigrams = get_ngrams(s, 3)\r\n\r\n            # ref on how to update counter objects https://docs.python.org/3/library/collections.html#counter-objects\r\n            # print(trigrams)\r\n            self.unigramcounts.update(unigrams)\r\n            self.bigramcounts.update(bigrams)\r\n            self.trigramcounts.update(trigrams)\r\n\r\n    def raw_trigram_probability(self,trigram):\r\n        u, v, w = trigram\r\n        tri_count = self.trigramcounts[trigram]\r\n        if u == 'START' and v == 'START':\r\n            bi_count = self.bigramcounts[(v, w)]\r\n        else:\r\n            bi_count = self.bigramcounts[(u, v)]\r\n        \r\n        lexi_size = len(self.unigramcounts) - 1\r\n\r\n        if lexi_size == 0:\r\n            return 0.0\r\n\r\n        if bi_count == 0:\r\n            ans = 1 / lexi_size\r\n        else:\r\n            ans = tri_count / bi_count\r\n        return ans\r\n\r\n    def raw_bigram_probability(self, bigram):        \r\n        u, v = bigram\r\n        bi_count = self.bigramcounts[bigram]\r\n        uni_count = self.unigramcounts[(u,)]\r\n        lexi_size = len(self.unigramcounts) - 1\r\n\r\n        if lexi_size == 0:\r\n            return 0.0\r\n        \r\n        if uni_count == 0:\r\n            ans = 1/lexi_size\r\n        else:\r\n            ans = bi_count/uni_count\r\n        return ans\r\n    \r\n    def raw_unigram_probability(self, unigram):\r\n        total_words = sum(self.unigramcounts.values()) - self.unigramcounts[('START',)]\r\n        uni_count = self.unigramcounts[unigram]\r\n        if total_words == 0:\r\n            return 0.0\r\n        else:\r\n            return uni_count / total_words \r\n\r\n    def generate_sentence(self,t=20): \r\n        \"\"\"\r\n        COMPLETE THIS METHOD (OPTIONAL)\r\n        Generate a random sentence from the trigram model. t specifies the\r\n        max length, but the sentence may be shorter if STOP is reached.\r\n        \"\"\"\r\n        return result            \r\n\r\n    def smoothed_trigram_probability(self, trigram):\r\n        lambda1 = 1/3.0\r\n        lambda2 = 1/3.0\r\n        lambda3 = 1/3.0\r\n        u, v, w = trigram\r\n        p_tri = self.raw_trigram_probability(trigram)\r\n        p_bi = self.raw_bigram_probability((v, w))\r\n        p_uni = self.raw_unigram_probability((w,))\r\n        return (lambda1 * p_uni) + (lambda2 * p_bi) + (lambda3 * p_tri)\r\n        \r\n    def sentence_logprob(self, sentence):\r\n        \r\n        trigrams = get_ngrams(sentence, 3)\r\n        ans = 0.0\r\n\r\n        for t in trigrams:\r\n            # print('hi1')\r\n            p = self.smoothed_trigram_probability(t)\r\n\r\n            if p == 0:\r\n                return float(\"-inf\")\r\n            ans += math.log2(p)\r\n\r\n        return ans\r\n\r\n    def perplexity(self, corpus):\r\n\r\n        sum = 0.0\r\n        \r\n        for s in corpus:\r\n            log_prob = self.sentence_logprob(s)\r\n            \r\n            if log_prob == float(\"-inf\"):\r\n                return float(\"-inf\")\r\n            \r\n            sum += log_prob\r\n\r\n        l = -1 * (sum / (len(self.unigramcounts) - 1))\r\n        print(2**l)\r\n        return  2**l\n</pre></document>",
@@ -789,7 +1056,7 @@
         ]
     },
     {
-        "context": "Lectures Class today?",
+        "context": "Class today?",
         "statements": [
             {
                 "source": "<document version=\"1.0\"><paragraph>Is today\u2019s class still going to be remote?\u00a0</paragraph></document>",
@@ -801,7 +1068,7 @@
         ]
     },
     {
-        "context": "General HW 1 - Part 6",
+        "context": "HW 1 - Part 6",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>For the perplexity calc and the corpus, the instructions say the following:</paragraph><pre>Write the method perplexity(corpus), which should compute the perplexity of the model on an entire corpus. \nCorpus is a corpus iterator (as returned by the corpus_reader method). \nRecall that the perplexity is defined as 2-l, where l is defined as: \n</pre><paragraph>It's not clear to me how exactly the corpus should be passed into this method as there's an existing method that reads in the corpus. Should it be read in again somehow, local to this function?</paragraph><paragraph/><paragraph>Also, is it possible to get examples of what the log prob of sample sentences would be to help check work along the way?</paragraph></document>",
@@ -812,7 +1079,7 @@
         ]
     },
     {
-        "context": "General HW 1 - Part 3",
+        "context": "HW 1 - Part 3",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>When we calculate raw_unigram_probability(unigram), it's the count(unigram) / (total tokens). In this case should \"total tokens\" include counts of 'START' and 'STOP' or only \"real tokens\"?</paragraph></document>",
@@ -823,7 +1090,7 @@
         ]
     },
     {
-        "context": "General HW1 - Part 2",
+        "context": "HW1 - Part 2",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>For HW1 - Part 2, when we read in line by line, should each line have a number of 'START's inserted in the front, and one 'STOP' at the end? Or, should there only be one 'STOP' and one set of 'START's for the whole corpus?</paragraph><paragraph>I'm assuming the former, but wanted to be sure.</paragraph><paragraph/></document>",
@@ -834,7 +1101,7 @@
         ]
     },
     {
-        "context": "Problem Sets HW 1 Reasonable Perplexity + Accuracy",
+        "context": "HW 1 Reasonable Perplexity + Accuracy",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi, I am getting 293 perplexity for the Brown test set and 84.66% accuracy for the essay classification, do these numbers seem reasonable or do they seem indicative of an underlying error? I get 18 perplexity when I run the Brown train set on the Brown train set</paragraph><paragraph/></document>",
@@ -845,7 +1112,7 @@
         ]
     },
     {
-        "context": "General Ungraded exercise: Naive Bayes",
+        "context": "Ungraded exercise: Naive Bayes",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi! Thanks for posting the solution for the Ungraded exercise: Naive Bayes.<break/>I am a little confused about the difference between that solution and the worked example on page 7 of chapter 4 in Jurafsky and Martin's book.</paragraph><paragraph>To me, it seems that both b) in the ungraded exercise and the worked example (screenshot attached) present a very similar structure, but different approaches to solving, leading to different solutions. I would appreciate your help figuring out the what the differences are between the problems.</paragraph><paragraph>Thanks!</paragraph><figure><image src=\"https://static.us.edusercontent.com/files/GrvqmwFI8qIKxCweVwuTtmj3\" width=\"391\" height=\"459.1334379905809\"/></figure></document>",
@@ -856,7 +1123,7 @@
         ]
     },
     {
-        "context": "Assignments HW1 Part 7",
+        "context": "HW1 Part 7",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi, </paragraph><paragraph>I got a trigram key error from my code and was wondering how to account for trigrams that occurred in the test file but not in the training file?   </paragraph><paragraph>Thank you!</paragraph></document>",
@@ -867,7 +1134,7 @@
         ]
     },
     {
-        "context": "General OH on zoom from 9.30 am",
+        "context": "OH on zoom from 9.30 am",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi!</paragraph><paragraph>Is there still going to be an OH today on zoom as indicated by the calendar?</paragraph><paragraph>Thanks!</paragraph></document>",
@@ -878,7 +1145,7 @@
         ]
     },
     {
-        "context": "Problem Sets How do I test my functions?",
+        "context": "How do I test my functions?",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi!</paragraph><paragraph>This might be a silly question, but is there a way to test each part of my hw? Or is it only possible to test it once the entire hw is done?</paragraph><paragraph>Thanks!</paragraph></document>",
@@ -889,7 +1156,7 @@
         ]
     },
     {
-        "context": "General Problem Viewing OH Calendar",
+        "context": "Problem Viewing OH Calendar",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Is anyone else having problems seeing the calendar for office hours? Could this be because I have a Barnard email and not a Columbia one? If so, could those would a Barnard email be added to it? Thank you!</paragraph><figure><image src=\"https://static.us.edusercontent.com/files/E6euChiT2lNYYEWXZOT1sV0S\" width=\"658\" height=\"507.8591117917304\"/></figure><paragraph/></document>",
@@ -900,7 +1167,7 @@
         ]
     },
     {
-        "context": "General Final Exam Timing",
+        "context": "Final Exam Timing",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi,</paragraph><paragraph>I know it's about 3 months away, but due to unplanned circumstances, I might not able to take the exam with my current group on 4/26. I was wondering if there's an option to take the final exam with the second group on 4/29 or any other alternative. </paragraph><paragraph>Thank you in advance,</paragraph><paragraph>Orr</paragraph></document>",
@@ -911,7 +1178,7 @@
         ]
     },
     {
-        "context": "Problem Sets Naive Bayes Warm Up Clarification",
+        "context": "Naive Bayes Warm Up Clarification",
         "statements": [
             {
                 "source": "<document version=\"1.0\"><paragraph>Super quick question for calculating the class of a document given a word. I know the solutions state that we can disregard the denominator because \"It's sufficient to compute the joint probabilities, because the denominator for the conditional probability is constant between classes.\"\u00a0</paragraph><paragraph>Can someone explain a little bit more what is meant by \"constant between classes\"? Are we saying that bc there are only ten possible words in the \"universe\" for these documents we don't need to calculate the probability that one word occurs because they're all equally likely to occur (1/10 chance of occurring)? Or is it something else.</paragraph><paragraph/><figure><image src=\"https://static.us.edusercontent.com/files/ldrTBh86xJ0wUVOaBbUnxaTi\" width=\"2137\" height=\"686\"/></figure></document>",
@@ -922,7 +1189,7 @@
         ]
     },
     {
-        "context": "General Where is cs ta room?",
+        "context": "Where is cs ta room?",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>As title.</paragraph></document>",
@@ -933,7 +1200,7 @@
         ]
     },
     {
-        "context": "Problem Sets Hw1 Part 6",
+        "context": "Hw1 Part 6",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi, </paragraph><paragraph>For the value of M in Part 6, should we count the number of 'START' and 'STOP' token too ? I believe we do but we get a value closer to 400 for the perplexity if we don't.</paragraph><paragraph/></document>",
@@ -944,7 +1211,7 @@
         ]
     },
     {
-        "context": "Assignments HW1 part 7",
+        "context": "HW1 part 7",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>For part 7, I am a bit confused on what should I do. We need the accuracy of each model, but how do we determine if a perplexity is correct? The two for loops given seems to iterate the high model through the high data set, and iterate the low model through the low data set separately. Are we supposed to loop the high model through both high and low, and loop the low model through both high and low, and compare their results for each test data to see if their perplexity difference is correct?</paragraph></document>",
@@ -956,7 +1223,7 @@
         ]
     },
     {
-        "context": "General HW1 Part3 n-gram probabilities are 0",
+        "context": "HW1 Part3 n-gram probabilities are 0",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>For the case the prob for n-gram is 0, do we need to consider similar case for bigram?</paragraph><paragraph>And what if the count(u,w,v) is 0, while count(u, w) is not 0?</paragraph></document>",
@@ -967,7 +1234,7 @@
         ]
     },
     {
-        "context": "General Hw1 Part1",
+        "context": "Hw1 Part1",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><figure><image src=\"https://static.us.edusercontent.com/files/JaFh6e80Be8GbJlZ9tOo8iJp\" width=\"642\" height=\"385.4012539184953\"/></figure><paragraph>Is this the correct logic of how i should be using the START and STOP padding for the ngram? </paragraph></document>",
@@ -978,7 +1245,7 @@
         ]
     },
     {
-        "context": "Assignments Hw1 Part 2",
+        "context": "Hw1 Part 2",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>I just have a question about this part of the homework. What exactly does the content in the corpus looklike? Are we counting the instances of specific trigram, bigram and unigrams or are we counting trigram, bigrams and unigrams in general (hence looking at whats in the corpus and looking at the size and counting it occordingly)? Lastly what would be the best way to test this part of the code specifically? Thank you!</paragraph></document>",
@@ -990,7 +1257,7 @@
         ]
     },
     {
-        "context": "Assignments Hw1 part 3 |V|",
+        "context": "Hw1 part 3 |V|",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>We need to do P(v | u,w) = 1 / |V| (where |V| is the size of the lexicon), if count(u,w) is 0. But I am confused what |V| represent. Does it mean number of types of bigrams or number of types of single words or frequency of word \"v\"?</paragraph></document>",
@@ -1001,7 +1268,7 @@
         ]
     },
     {
-        "context": "General HW1 Part 4",
+        "context": "HW1 Part 4",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Should we just use the given values (1/3 each) for lambda?</paragraph></document>",
@@ -1012,7 +1279,7 @@
         ]
     },
     {
-        "context": "General HW1 - Interlude",
+        "context": "HW1 - Interlude",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Is the optional portion of the homework extra credit? Or is it strictly for fun?</paragraph></document>",
@@ -1023,7 +1290,7 @@
         ]
     },
     {
-        "context": "General HW1 Part 5",
+        "context": "HW1 Part 5",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Are we using bigrams or trigrams to calculate the log probability?</paragraph></document>",
@@ -1034,7 +1301,7 @@
         ]
     },
     {
-        "context": "Assignments HW1 Part 3",
+        "context": "HW1 Part 3",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Can we compute the total words each time we run this function or will we be docked points for doing this?</paragraph></document>",
@@ -1045,7 +1312,7 @@
         ]
     },
     {
-        "context": "Assignments Possible need for an extension for HW1",
+        "context": "Possible need for an extension for HW1",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hello, I am a medic in the Army National Guard, and I will have to go away for training for a week starting this Friday. I will try very hard to finish the HW as soon as I can and on time, but how could I obtain an extension given the circumstances? I can submit paperwork that showcases my responsibilities.  <break/><break/>Thank you</paragraph></document>",
@@ -1056,7 +1323,7 @@
         ]
     },
     {
-        "context": "General HW1 Part 6",
+        "context": "HW1 Part 6",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi,</paragraph><paragraph/><paragraph>Is M total number of unique word tokens or number of word tokens which might be repeated in the corpus?</paragraph><paragraph/><paragraph>When we sum log probability for each sentence to calculate perplexity, do we include START and END tokens to calculate log probablity of a sentence?</paragraph><paragraph/><paragraph>Do we include START and STOP tokens in M?</paragraph><paragraph/><paragraph>Thanks</paragraph><paragraph>Abhinav</paragraph></document>",
@@ -1067,7 +1334,7 @@
         ]
     },
     {
-        "context": "General HW1 part 6",
+        "context": "HW1 part 6",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>For part 6, is the \"perplexity\" function supposed to return perplexity for a sentence or the entire corpus? The comments in the function is different from in the assignment on courseworks.</paragraph><paragraph/><paragraph>Also for part 6, when we use the log2 probabilities for calculating perplexity, do we need to log the output of the function sentence_logprob again? or is the output already log2 prob?</paragraph></document>",
@@ -1078,7 +1345,7 @@
         ]
     },
     {
-        "context": "Assignments Hw1 part 7 accuracy file path",
+        "context": "Hw1 part 7 accuracy file path",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>The starter code (acc = essay_scoring_experiment('train_high.txt', \"train_low.txt\",\"test_high\", \"test_low\") ) does not work for me and it keeps saying No such file or directory: 'train_high.txt' And my python file is in the same directory with them. I am not sure why it says no such file.</paragraph><paragraph>So I used my exact file path which worked.</paragraph><paragraph>I wonder if I should submit with my exact file path or change it back, or should I comment out the testing part?</paragraph></document>",
@@ -1089,7 +1356,7 @@
         ]
     },
     {
-        "context": "Assignments HW1 part3 total # of words",
+        "context": "HW1 part3 total # of words",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi</paragraph><paragraph>If I understand correctly, total number of words is not including the (START,) and (STOP,) token? Why do we not count those tokens in unigrams? (My guess is the start and stop token are meaningless here.)</paragraph><paragraph>Best,</paragraph></document>",
@@ -1101,7 +1368,7 @@
         ]
     },
     {
-        "context": "Assignments HW1 perplexity question",
+        "context": "HW1 perplexity question",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi. I am perplexed by a perplexity score \ud83d\ude35\u200d\ud83d\udcab. </paragraph><paragraph>Specifically, I ran perplexity on the brown_train which gave me <bold>14.6</bold>, a low value as expected. However, when running on brown_test I  get <bold>9.07</bold> a low score, but importantly, it's <italic>lower than the training perplexity.</italic> This seemed odd since I expected the test perplexity to be higher than that of the training data. </paragraph><paragraph/><paragraph>Can I assume there is a bug in my code, or is it possible for test perplexity be lower than train perplexity? </paragraph></document>",
@@ -1112,7 +1379,7 @@
         ]
     },
     {
-        "context": "Assignments HW! part 3",
+        "context": "HW! part 3",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>For HW1 part 3 where we need to compute the total words for unigram, can we edit __init__ directly to add object variables? Or can we only edit the functions specifically for each part?</paragraph></document>",
@@ -1123,7 +1390,7 @@
         ]
     },
     {
-        "context": "Lectures Add-one smoothing",
+        "context": "Add-one smoothing",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Does V (the size of the vocab) in the denominator include all the START and END tokens? </paragraph></document>",
@@ -1134,7 +1401,7 @@
         ]
     },
     {
-        "context": "General Exam format",
+        "context": "Exam format",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>For the exams will there be coding? How are they formatted? Sorry I know this is super in advance just curious! </paragraph></document>",
@@ -1145,7 +1412,7 @@
         ]
     },
     {
-        "context": "Assignments hw1 part2 about Punctuations",
+        "context": "hw1 part2 about Punctuations",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Do we need to regard the punctuations as a \"word\" or we need to remove all of them?</paragraph><paragraph>Eg. For bigram, \"Hi, Bob.\", do we use [...('Hi', ','), (',', 'Bob')...] or [...('Hi', 'Bob'), ...]</paragraph></document>",
@@ -1156,7 +1423,7 @@
         ]
     },
     {
-        "context": "Assignments HW 1 Part 5",
+        "context": "HW 1 Part 5",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>What is the datatype of \"sentence\" in sentence_logprob(sentence)? Can we assume it will be given as an array? Or is it a string?<break/></paragraph></document>",
@@ -1167,7 +1434,7 @@
         ]
     },
     {
-        "context": "Problem Sets HW1 Part 1",
+        "context": "HW1 Part 1",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Should the case for n = 3 have only one start at the beginning, or is that correct?</paragraph><paragraph>IE:</paragraph><pre>[('START', 'START', 'natural'), ('START', 'natural', 'language'), ('natural', 'language', 'processing'), ('language', 'processing', 'STOP')]</pre><paragraph>Should be</paragraph><pre>[('START', 'natural', 'language'), ('natural', 'language', 'processing'), ('language', 'processing', 'STOP')]</pre><paragraph/></document>",
@@ -1178,7 +1445,7 @@
         ]
     },
     {
-        "context": "General HW 1 Part 3",
+        "context": "HW 1 Part 3",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>What are the unigram, trigram, bigram arguments for the functions? Are they particular n-gram queries or are they the dictionaries populated in part 2?</paragraph><paragraph/></document>",
@@ -1189,7 +1456,7 @@
         ]
     },
     {
-        "context": "General Request for OH Google Calendar",
+        "context": "Request for OH Google Calendar",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi! Would it be possible to create a Google calendar of scheduled office hours so we can import them into our own calendar? No worries if not, but it would be really helpful! Thank you so much!</paragraph></document>",
@@ -1200,7 +1467,7 @@
         ]
     },
     {
-        "context": "Assignments HW 1 Part 4",
+        "context": "HW 1 Part 4",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>For this part, can we use this equation to implement it?<break/></paragraph><figure><image src=\"https://static.us.edusercontent.com/files/MACE3wNpyq5fcbnS5QfeVl7k\" width=\"658\" height=\"147.7142857142857\"/></figure></document>",
@@ -1211,7 +1478,7 @@
         ]
     },
     {
-        "context": "Problem Sets HW 1 Part 2",
+        "context": "HW 1 Part 2",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Just to clarify, nothing is returned in count_ngrams, right?</paragraph></document>",
@@ -1222,7 +1489,7 @@
         ]
     },
     {
-        "context": "Assignments Where to code",
+        "context": "Where to code",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Are we recommended to work in a specific python environment?  </paragraph></document>",
@@ -1233,7 +1500,7 @@
         ]
     },
     {
-        "context": "Problem Sets HW1 submission",
+        "context": "HW1 submission",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi, just wonder how we should submit HW1 since canvas only accepts zip/tgz while we are asked to submit .py only</paragraph><paragraph/></document>",
@@ -1244,7 +1511,7 @@
         ]
     },
     {
-        "context": "General Bigram Probability, First Word Not in Lexicon",
+        "context": "Bigram Probability, First Word Not in Lexicon",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>From the homework \"\"\"One issue you will encounter is the case if which you have a trigram u,w,v where count(u,w,v) = 0 but count(u,w) is also 0. In that case, it is not immediately clear what P(v | u,w) should be. My recommendation is to make P(v | u,w) = 1 / |V| (where |V| is the size of the lexicon), if count(u,w) is 0\"\"\"</paragraph><paragraph>Doesn't this same behavior happen for bigrams if u is not in the lexicon? Would the approach be the same?</paragraph><paragraph/></document>",
@@ -1255,7 +1522,7 @@
         ]
     },
     {
-        "context": "Assignments Question regarding get_ngrams function.",
+        "context": "Question regarding get_ngrams function.",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi! I had a quick question about the <bold><italic>get_ngrams()</italic></bold> function for HW1. I'm assuming this function should pad out our inputs even if <bold>n</bold> is greater than the number of words in the input sequence? </paragraph><paragraph>Ex: </paragraph><paragraph>sequence = [\"Hi\", \"there\"]</paragraph><paragraph>n = 4</paragraph><paragraph>Output: </paragraph><paragraph>[('START', 'START', 'START', 'Hi'),    ('START', 'START', 'Hi', 'there'),    ('START', 'Hi', 'there', 'STOP')]</paragraph></document>",
@@ -1266,7 +1533,7 @@
         ]
     },
     {
-        "context": "General Ungraded Exercise Submission",
+        "context": "Ungraded Exercise Submission",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hello,</paragraph><paragraph>Do we need to submit the ungraded exercise? </paragraph><paragraph>Thank you very much.</paragraph><paragraph/></document>",
@@ -1277,7 +1544,7 @@
         ]
     },
     {
-        "context": "General What is the term \"Class\" referring to?",
+        "context": "What is the term \"Class\" referring to?",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>I am wondering what the term \"class\" refers to in relation to a document-- is class related to a word? </paragraph><paragraph/></document>",
@@ -1288,7 +1555,7 @@
         ]
     },
     {
-        "context": "General Question about Participation Points",
+        "context": "Question about Participation Points",
         "statements": [
             {
                 "source": "<document version=\"2.0\"><paragraph>Hi Professor and TAs,</paragraph><paragraph>I hope you are well! I was wondering about how to earn participation points (the 10% of our overall grade) as someone who works 9-5 and needs to watch the recordings asynchronously. If I do not participate during class time, can I still earn the full participation points by participating on Ed instead? </paragraph><paragraph>If it is mandatory that I attend class in-person, I can try and work something out with my boss. For the next few weeks, however, I will need to watch the recordings afterward. And I'm just worried I will miss out on those participation points! :) </paragraph><paragraph>I appreciate your help in advance!</paragraph><paragraph>Best regards,</paragraph><paragraph>Mia</paragraph></document>",

@@ -43,8 +43,8 @@ def clean_json_file(file_path):
 
     print(f"Processed and cleaned {file_path}")
 
-# List all JSON files in Edstem Data directory
-json_files = glob.glob(os.path.join('edstem_data', '*.json'))
+# List all JSON file paths in Edstem Data directory
+file_paths = glob.glob(os.path.join('edstem_data', '*.json'))
 
-for json_file in json_files:
-    clean_json_file(json_file)
+for file in file_paths:
+    clean_json_file(file)

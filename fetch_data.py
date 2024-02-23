@@ -36,7 +36,7 @@ async def process_thread(thread):
 
     if thread_info['answers']: # Fetch only threads with answers
         return {
-                "context": thread_info['category'] + ' ' + thread_info['title'],
+                "context": thread_info['title'],
                 "statements": [
                     {
                         "source": thread_info['content'],
@@ -44,12 +44,14 @@ async def process_thread(thread):
                     }
                 ]
         }
-    return None # If threads doesn't contain, comments/answers return None
+    return None # If thread doesn't contain answers return None
 
-""" Given thread dictionary, return True if it was made by a student:
-    None if it's by an anonymous person """
+""" Given thread dictionary, return True if it was made by a student, else False """
 def valid(thread):
-    return (thread.get('user') is None) or (thread.get('user')['course_role'] == 'student')
+    if (thread.get('user') is None) or (thread.get('user')['course_role'] == 'student'):
+        if thread.get('is_staff_answered') or thread.get('is_answered') is True:
+            return True
+    return None
 
 # Retrieve all threads for a course and process them
 async def retrieve_and_process_threads(course_id):
@@ -70,8 +72,7 @@ async def retrieve_and_process_threads(course_id):
             all_threads.extend(filtered_threads)
             offset += 100
             total_threads_fetched += len(threads)
-            print(f"Fetched {total_threads_fetched} threads from "
-                  f"course {course_id} so far..")
+            print(f"Fetched {total_threads_fetched} threads from course {course_id} so far..")
         except Exception as e:
             if 'rate_limit' in str(e):
                 print(f"Rate limit reached. Waiting before retrying..")
