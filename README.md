@@ -2,7 +2,7 @@
 
 The NLP TA Agent is designed to streamline the process of managing and responding to student inquiries in Natural Language Processing (NLP) courses.
 
-Utilizing the EdStem API, this tool uses NLP course data and fetches threads, questions, answers, and comments from all previous NLP courses. Then, it processes the text, and organizes the data for easy access and analysis.
+Utilizing the EdStem API, this tool uses NLP course data and fetches threads, questions and answers from all previous NLP courses. Then, it processes the text, and organizes the data for easy access and analysis.
 
 This project aims to assist TAs and instructors in efficiently monitoring and participating in course discussions, identifying frequently asked questions, and enhancing the overall learning experience.
 
