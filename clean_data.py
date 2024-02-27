@@ -17,11 +17,6 @@ def clean(text):
 
     return text
 
-def clean_text_or_list(input):
-    if isinstance(input, list):
-        return [clean(item) for item in input]
-    return clean(input)
-
 # Given a file path with json files, clean the file and create a cleaned version of it
 def clean_json_file(file_path):
     cleaned_file_path = file_path.replace('.json', '_cleaned.json')
@@ -29,14 +24,15 @@ def clean_json_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as input_file:
         data = json.load(input_file)
         for entry in data:
-            cleaned_context = clean(entry["context"])
-            cleaned_statements = []
-            for statement in entry["statements"]:
-                cleaned_source = clean_text_or_list(statement["source"])
-                cleaned_target = clean_text_or_list(statement["target"])
-                cleaned_statements.append({"source": cleaned_source,
-                                           "target": cleaned_target})
-            cleaned_data.append({"context": cleaned_context, "statements": cleaned_statements})
+            if isinstance(entry, list):
+                for pair in entry: # More than 1 pair of source-target
+                    pair["source"] = clean(pair["source"])
+                    pair["target"] = clean(pair["target"])
+                    cleaned_data.append(pair)
+            else:
+                entry["source"] = clean(entry["source"])
+                entry["target"] = clean(entry["target"])
+                cleaned_data.append(entry)
 
     with open(cleaned_file_path, 'w', encoding='utf-8') as output_file:
         json.dump(cleaned_data, output_file, indent=4)

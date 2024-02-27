@@ -11,13 +11,15 @@ ed.login()
 user_info = ed.get_user_info()
 NLP_courses = {}
 for course in user_info.get('courses', []):
-    if course['course']['name'] == 'Natural Language Processing':
+    if (course['course']['name'] == 'Natural Language Processing') and (course['course']['year'] != "2024"):
         course_info = (f"{course['course']['session'].lower()}"
                        f"{course['course']['year']}")
         NLP_courses[course['course']['id']] = course_info
 
 """ Get thread information using thread ID and handle rate limits by catching
     exceptions and retrying after a pause """
+
+
 async def retrieve_thread_info(thread_id):
     try:
         return ed.get_thread(thread_id)
@@ -26,32 +28,39 @@ async def retrieve_thread_info(thread_id):
             await asyncio.sleep(1)
             return await retrieve_thread_info(thread_id)
         else:
-            print("An error occurred: ", e) # Print other error message
+            print("An error occurred: ", e)  # Print other error message
             raise
+
 
 """ Process individual threads by retrieving first and then
     assign answers to available answers/comments of each thread """
+
+
 async def process_thread(thread):
     thread_info = await retrieve_thread_info(thread['id'])
 
-    if thread_info['answers']: # Fetch only threads with answers
-        return {
-                "context": thread_info['title'],
-                "statements": [
-                    {
-                        "source": thread_info['content'],
-                        "target": [answer['content'] for answer in thread_info['answers']]
-                    }
-                ]
-        }
-    return None # If thread doesn't contain answers return None
+    if thread_info['answers']:  # Fetch only threads with answers
+        if len(thread_info['answers']) > 1:  # Split thread with multiple targets
+            source_targets = []
+            for answer in thread_info['answers']:
+                source_targets.append({"source": thread_info['title'] + ". " + thread_info['content'],
+                                       "target": answer['content']})
+            return source_targets
+        else:
+            return {"source": thread_info['title'] + ". " + thread_info['content'],
+                    "target": thread_info['answers'][0]['content']}
+
+    return None  # If thread doesn't contain answers return None
+
 
 """ Given thread dictionary, return True if it was made by a student, else False """
+
 def valid(thread):
     if (thread.get('user') is None) or (thread.get('user')['course_role'] == 'student'):
         if thread.get('is_staff_answered') or thread.get('is_answered') is True:
             return True
     return None
+
 
 # Retrieve all threads for a course and process them
 async def retrieve_and_process_threads(course_id):
@@ -66,7 +75,7 @@ async def retrieve_and_process_threads(course_id):
                 break
             filtered_threads = []
             for thread in threads:
-                if valid(thread): # Filters out non-student posts
+                if valid(thread):  # Filters out non-student posts
                     filtered_threads.append(thread)
 
             all_threads.extend(filtered_threads)
@@ -78,7 +87,7 @@ async def retrieve_and_process_threads(course_id):
                 print(f"Rate limit reached. Waiting before retrying..")
                 await asyncio.sleep(1)
             else:
-                raise # Re-raise other exceptions
+                raise  # Re-raise other exceptions
 
     qa_list = []
     for thread in all_threads:
@@ -87,6 +96,7 @@ async def retrieve_and_process_threads(course_id):
             qa_list.append(processed_thread)
 
     return qa_list
+
 
 # Process threads for all NLP courses and save the data to a file qac.txt
 async def main():
@@ -107,5 +117,5 @@ async def main():
 
     print(f"Total of {num_questions} questions were fetched from NLP courses")
 
-asyncio.run(main())
 
+asyncio.run(main())
