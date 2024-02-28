@@ -528,7 +528,7 @@
         "target": "We use the same shared VxE embedding matrix for each of the tokens. We do compute the embedding matrix multiplication three times, but the matrix we multiply the one-hot encoding by is the same for each of these three multiplications, so there are only V*E new learnable parameters."
     },
     {
-        "source": "ARM Question. Hi, I wonder how could we differentiate between ARG2 and ARG3 in AMR parsing? Thank you!",
+        "source": "AMR Question. Hi, I wonder how could we differentiate between ARG2 and ARG3 in AMR parsing? Thank you!",
         "target": "You would need to look up the definition for ARG2 and ARG3 in the propbank framefile as these differ per predicate. Clearly not something you can do on the exam. "
     },
     {
@@ -584,7 +584,7 @@
         "target": "(e / expect-01\n          :ARG1 (w / we)\n          :ARG2 (m / meet\n                    :ARG0 (w / we)\n                    :ARG1 (h / him)\n                    :time (t / time-12 :value 4:00pm)\n                    :location (c / courtyard)))\"We are expected to . .. .\", thus, with respect to the verb expect, \"we\" are being affected and thus become the patient/theme, hence tag ARG1. What about the word \"meet\" ? Who is the person that takes this action ? The answer is \"we\", hence the tag ARG0 under meet."
     },
     {
-        "source": "vertbi ungraded. hi i hope you are wellI dont quite understand why we say we take the max at every step for vertibi.  This is from the ungraded question solution:[0, Start] = 1[1, N] = [0, Start]  P(N|start)  P(time |N) = 1  1/2  2/4 = 1/4[1, V] = [0, Start]  P(V|start)  P(time |V) = 1  1/2  1/6 = 1/12[2, N] = max( [1, N]  P(N|N)  P(flies|N), [1, V]  P(N|V)  P(flies|N)) = max( (1/4 1/4  1/4), (1/12 2/3  1/4)) = 1/64[2, V] = max( [1, N]  P(V|N)  P(flies |V), [1, V]  P(N|V)  P(flies|N)) = max( (1/4 2/4  2/6), (1/12  0  2/6)) = 1/24[3, V] = max( [2, N] P(V|N)  P(like|V), [2, V]  P(V|V)  P(like|V)) = max( (1/64  2/4  2/6), (1/24  0  2/6)) = 1/384[3, Prep] = max( [2, N] P(Prep|N)  P(like|Prep), [2, V]  P(Prep|V)  P(like|Prep)) = max( (1/64  1/4  1), (1/24  1/3  1)) = 1/72[4, N] = max( [3, V] P(N|V)  P(leaves|N), [3, Prep]  P(N|Prep)  P(leaves|N)) = max( (1/384  2/3  1/4), (1/72  1  1/4 )) = 1/288[4, V] = max( [3, V] P(V|V)  P(leaves|V), [3, Prep]  P(V|Prep)  P(leaves|V)) = max( (1/384  0  1/6), (1/72  0  1/6)) = 0The most likely state sequence is N V Prep N. I dont understand why we saying we take the max at each step.  It seems like we are work out each sequence from start to end and picking the one with the highest probability.  thank you!",
+        "source": "viterbi ungraded. hi i hope you are wellI dont quite understand why we say we take the max at every step for viterbi.  This is from the ungraded question solution:[0, Start] = 1[1, N] = [0, Start]  P(N|start)  P(time |N) = 1  1/2  2/4 = 1/4[1, V] = [0, Start]  P(V|start)  P(time |V) = 1  1/2  1/6 = 1/12[2, N] = max( [1, N]  P(N|N)  P(flies|N), [1, V]  P(N|V)  P(flies|N)) = max( (1/4 1/4  1/4), (1/12 2/3  1/4)) = 1/64[2, V] = max( [1, N]  P(V|N)  P(flies |V), [1, V]  P(N|V)  P(flies|N)) = max( (1/4 2/4  2/6), (1/12  0  2/6)) = 1/24[3, V] = max( [2, N] P(V|N)  P(like|V), [2, V]  P(V|V)  P(like|V)) = max( (1/64  2/4  2/6), (1/24  0  2/6)) = 1/384[3, Prep] = max( [2, N] P(Prep|N)  P(like|Prep), [2, V]  P(Prep|V)  P(like|Prep)) = max( (1/64  1/4  1), (1/24  1/3  1)) = 1/72[4, N] = max( [3, V] P(N|V)  P(leaves|N), [3, Prep]  P(N|Prep)  P(leaves|N)) = max( (1/384  2/3  1/4), (1/72  1  1/4 )) = 1/288[4, V] = max( [3, V] P(V|V)  P(leaves|V), [3, Prep]  P(V|Prep)  P(leaves|V)) = max( (1/384  0  1/6), (1/72  0  1/6)) = 0The most likely state sequence is N V Prep N. I dont understand why we saying we take the max at each step.  It seems like we are work out each sequence from start to end and picking the one with the highest probability.  thank you!",
         "target": "I think the reason of taking the max at each step is to avoid the need to explicitly calculate and store probabilities for all possible sequences since that would be computationally expensive. "
     },
     {
@@ -616,7 +616,7 @@
         "target": "i think its already posted :))"
     },
     {
-        "source": "ungraded exercise - graph based dependency pasring. Hi there, In the lecture notes, for the graph-based dependency parsing, we start from a completely connected graph and then find the maximum spanning tree from the fully connected graph as the dependency tree, so why the answer to the first question is \" The approach might create graphs that are disconnected\" given the generated tree is MST. Thanks a lot!",
+        "source": "ungraded exercise - graph based dependency parsing. Hi there, In the lecture notes, for the graph-based dependency parsing, we start from a completely connected graph and then find the maximum spanning tree from the fully connected graph as the dependency tree, so why the answer to the first question is \" The approach might create graphs that are disconnected\" given the generated tree is MST. Thanks a lot!",
         "target": "The approach described on the ungraded exercise does NOT use an MST algorithm. It simply greedily selects the highest scoring head for each token. "
     },
     {
