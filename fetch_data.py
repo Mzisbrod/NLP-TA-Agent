@@ -2,6 +2,7 @@ from edapi import EdAPI
 import json
 import os
 import asyncio
+import re
 
 # Initialize Ed API & log in
 ed = EdAPI()
@@ -33,8 +34,7 @@ async def retrieve_thread_info(thread_id):
 
 
 """ Process individual threads by retrieving first and then
-    assign answers to available answers/comments of each thread """
-
+    assign answers to available answers of each thread """
 
 async def process_thread(thread):
     thread_info = await retrieve_thread_info(thread['id'])
@@ -43,11 +43,13 @@ async def process_thread(thread):
         if len(thread_info['answers']) > 1:  # Split thread with multiple targets
             source_targets = []
             for answer in thread_info['answers']:
-                source_targets.append({"source": thread_info['title'] + ". " + thread_info['content'],
+                source_targets.append({"source": "#" + str(thread_info['number']) + ": " + thread_info['title'] + ". " +
+                                                 thread_info['content'],
                                        "target": answer['content']})
             return source_targets
         else:
-            return {"source": thread_info['title'] + ". " + thread_info['content'],
+            return {"source": "#" + str(thread_info['number']) + ": " + thread_info['title'] + ". " +
+                              thread_info['content'],
                     "target": thread_info['answers'][0]['content']}
 
     return None  # If thread doesn't contain answers return None

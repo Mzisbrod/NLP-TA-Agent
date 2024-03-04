@@ -1,16 +1,24 @@
 import json
 from txtinstruct.models import Instructor
-import glob
+import torch
 import os
+
+os.environ['PYTORCH_MPS_HIGH_WATERMARK_RATIO'] = '0.8'  # Adjust as necessary within the range [0.0, 1.0]
+
+# For CPU
+torch.set_default_device('cpu')
+
+# For GPU (if available)
+if torch.cuda.is_available():
+    torch.set_default_device('cuda')
 
 data = []
 
 # Load all cleaned edstem_data json files
-file_paths = glob.glob(os.path.join('course_data', '*.json')) # glob.glob(os.path.join('edstem_data', '*_cleaned.json'))
+file_path = 'merged_data.json'
 
-for file_path in file_paths:
-    with open(file_path, encoding="utf-8") as f:
-        data += json.load(f)
+with open(file_path, encoding="utf-8") as f:
+    data += json.load(f)
 
 # Initialize the Instructor
 instructor = Instructor()
@@ -23,8 +31,12 @@ model, tokenizer = instructor(
     # Optional: specify a custom prompt template if necessary
     # prompt=
     learning_rate=1e-3,
-    per_device_train_batch_size=8,
-    gradient_accumulation_steps=128 // 8,
+    per_device_train_batch_size=8, # Changed from 4
+    gradient_accumulation_steps=32, # Changed from 128 // 8,
     num_train_epochs=3,
     logging_steps=100,
 )
+
+path = "./trained_model"
+model.save_pretrained(path)
+tokenizer.save_pretrained(path)
