@@ -27,12 +27,17 @@ These instructions will get you a copy of the project up and running on virtual 
 
 1. Clone the repository to your local machine: `git clone https://github.com/<yourusername>/nlp-ta-agent.git`
 2. Navigate to the project directory: `cd nlp-ta-agent`
+3. Install any necessary Python packages
 
 ### Usage
 1. Configure the '.env' file with your EdStem API token (`https://edstem.org/us/settings/api-tokens`)
-2. Run the script to fetch and process data: `model.ipynb`
-3. Check the generated output to a chosen question
-4. Generated models are saved in the following directories: `/trained_completion_model, /trained_model`
+2. Fetch EdStem data by running `python fetch_data.py` (saved in `/edstem_data` directory)
+3. Prepare the data for training by running `python clean_data.py` (saved in `/edstem_data` directory)
+4. Merge the data fetched from all courses by running `python merge_data.py`. Now `merged_data.json` conatains all course data fetched from EdStem
+5. Prepare course data as JSON file and save in `/course_data`
+6. Run the script load and process data: `model.ipynb`
+7. Check the generated output to chosen question
+8. Generated models are saved in the following directories: `/trained_completion_model, /trained_model`
 
 ### License
 This project is licensed under the MIT license
