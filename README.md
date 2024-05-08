@@ -10,29 +10,28 @@ This project aims to assist TAs and instructors in efficiently monitoring and pa
 
 - **Thread Fetching**: Automatically retrieves discussion threads from all user's NLP courses on EdStem.
 - **Content Cleaning**: Cleans and normalizes the text content of questions, answers, and comments to remove HTML tags and handle Unicode punctuation.
-- **TBD**
-- **TBD**
+- **Text Completion**: The model learns course material by providing output to any input from it.
+- **Instruction Tuning**: Model is further trained on previous EdStem posts and comments.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will get you a copy of the project up and running on virtual machine for development and testing purposes.
 
 ### Prerequisites
 
 - Python 3.6+
 - Access to EdStem API
-- Required Python packages: `requests`, `re`, `json`, `asyncio`, `unicodedata`
+- Python packages: sentencepiece, txtinstruct, transformers, torch, os
 
 ### Installation
 
-1. Clone the repository to your local machine: `git clone https://github.com/yourusername/nlp-ta-agent.git`
+1. Clone the repository to your local machine: `git clone https://github.com/<yourusername>/nlp-ta-agent.git`
 2. Navigate to the project directory: `cd nlp-ta-agent`
-3. Install the required Python packages: `pip install -r requirements.txt`
 
 ### Usage
 1. Configure the '.env' file with your EdStem API token (`https://edstem.org/us/settings/api-tokens`)
-2. Run the script to fetch and process data: `python nlp_ta_agent.py`
-3. Check the generated `qa_list_cleaned.json` for the processed course data.
+2. Run the script to fetch and process data: `model.ipynb`
+3. Check the generated output to a chosen question 
 
 ### License
 This project is licensed under the MIT license
