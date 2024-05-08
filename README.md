@@ -38,12 +38,44 @@ These instructions will get you a copy of the project up and running on virtual 
 6. Run the script load and process data: `model.ipynb`
 7. Check the generated output to chosen question
 8. Generated models are saved in the following directories: `/trained_completion_model, /trained_model`
+9. The follwing snippet is an example usage:
+    ```
+    # Testing
+    from txtai.pipeline import Extractor
+    from txtai.pipeline import Sequences
+
+    # Load statement generation model
+
+    def prompt(query):
+        template = ("Answer the following question using only the context below. "
+                    "Say 'I don't have data on that' when the question can't be answered.\n"
+                    f"Question: {query}\n"
+                    "Context: The assignment focuses on n-gram extraction/counting. "
+                    "For Part 1, `get_ngrams` needs to generate padded n-grams from strings. "
+                    "Part 2 involves counting n-grams within two datasets, primarily the Brown corpus, "
+                    "using a lexicon for unseen words, marked as 'UNK'. The `TrigramModel` is initialized "
+                    "with a corpus file for lexicon collection and n-gram counting. `count_ngrams` updates "
+                    "frequency dictionaries for unigrams, bigrams, and trigrams. The process accommodates unseen words "
+                    "and efficient reading, with model testing done via `brown_test.txt` for perplexity evaluation.")
+        return template
+
+    question = ("Homework 1 Question 6. Do we need to count the word 1 more than each sentence "
+                "when computing perplexity? Because I think there will be a hiding STOP "
+                "for each sentence. So the total word tokens is the words in document plus "
+                "number of sentences. Am I understanding this correctly?")
+
+    extractor = Extractor(embeddings, Sequences((model, tokenizer)))
+    extractor([{"query": f"{question}", "question": prompt(f"{question}")}])
+    ```
+
 
 ### License
 This project is licensed under the MIT license
 
-## Acknowledgements
-- Thanks to EdStem for providing the API.
-- Thanks to Prof. Daniel Bauer for supporting this project.
-- Inspired by the needs of NLP students and instructors for better engagement and support.
+## Acknowledgements and credits
+- Thanks to  EdStem for providing the token API
+- Credit for fetching EdStem data: `https://github.com/smartspot2/edapi/tree/master`
+- Credit for Instruction Tuning inspiration: `https://medium.com/neuml/instruction-tune-models-using-your-own-data-with-txtinstruct-3008d8c8d025`
+- Thanks to Prof. Daniel Bauer for supporting this project
+- Inspired by the needs of NLP students and instructors for better engagement and support
 
