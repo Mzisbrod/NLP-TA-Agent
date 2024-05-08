@@ -31,7 +31,8 @@ These instructions will get you a copy of the project up and running on virtual 
 ### Usage
 1. Configure the '.env' file with your EdStem API token (`https://edstem.org/us/settings/api-tokens`)
 2. Run the script to fetch and process data: `model.ipynb`
-3. Check the generated output to a chosen question 
+3. Check the generated output to a chosen question
+4. Generated models are saved in the following directories: `/trained_completion_model, /trained_model`
 
 ### License
 This project is licensed under the MIT license
