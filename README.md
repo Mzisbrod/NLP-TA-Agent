@@ -21,7 +21,7 @@ These instructions will get you a copy of the project up and running on virtual 
 
 - Python 3.6+
 - Access to EdStem API
-- Python packages: sentencepiece, txtinstruct, transformers, torch, os
+- Python packages: `sentencepiece, txtinstruct, transformers, torch, os`
 
 ### Installation
 
